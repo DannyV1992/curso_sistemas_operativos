@@ -51,3 +51,4 @@ $RECYCLE.BIN/
 # --- Archivos locales que no deben subirse ---
 *.log
 .env
+.claude
