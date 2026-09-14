@@ -1,0 +1,53 @@
+# --- Compilados C/C++ ---
+*.o
+*.obj
+*.ko
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+a.out
+
+# --- Depuración y perfilado ---
+*.su
+*.idb
+*.pdb
+*.gcno
+*.gcda
+*.gcov
+core
+core.*
+vgcore.*
+*.stackdump
+
+# --- Directorios de build ---
+build/
+bin/
+obj/
+
+# --- Editores e IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.*.kate-swp
+
+# --- Windows ---
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- Google Drive (esta carpeta está sincronizada) ---
+*.tmp.drivedownload
+*.tmp.driveupload
+
+# --- Archivos locales que no deben subirse ---
+*.log
+.env
