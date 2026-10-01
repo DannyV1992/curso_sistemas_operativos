@@ -1,13 +1,13 @@
 # Clase 4 — Algoritmos de asignación de procesos
 
-- **Curso:** IIIC2026 - Sistemas Operativos, LEAD University
-- **Docente:** Mario Miguel Agüero Obando
-- **Fecha:** 28 de septiembre de 2026 (estimada por continuidad semanal respecto a la Clase 3; no se menciona explícitamente en la transcripción)
-- **PDF fuente:** `3 - Asignacion De Procesos.pdf` (apoyado en `EjemplosAlgoritmosProcesos.xlsx`, la hoja de cálculo con la que se resolvieron los ejemplos en clase)
-- **Cobertura del PDF:** Completo (diapositivas 1 a 16): FCFS, Shortest Next Job, Prioridad, Próximo a terminar, Round Robin, SO modernos y ejercicio final.
-- **Nota sobre la transcripción:** varios cálculos hechos a mano en clase contienen errores aritméticos corregidos sobre la marcha o mal transcritos (p. ej. el turnaround de Shortest Next Job y de Próximo a terminar). En esos casos se usan los valores del PDF. El resultado del ejemplo de Round Robin no se enuncia completo en la transcripción y se calculó a partir de los tiempos de salida dichos en clase.
+**Curso:** IIIC2026 - Sistemas Operativos, LEAD University
+**Docente:** Mario Miguel Agüero Obando
+**Fecha:** 28 de septiembre de 2026 (estimada por continuidad semanal respecto a la Clase 3; no se menciona explícitamente en la transcripción)
+**PDF fuente:** `3 - Asignacion De Procesos.pdf` (16 diapositivas), apoyado en `EjemplosAlgoritmosProcesos.xlsx`, la hoja de cálculo con la que se resolvieron los ejemplos en clase. El repaso inicial coincide con las diapositivas 26 a 28 de `2 - Kernel y Procesos.pdf` (criterios de las políticas y tiempos muertos).
+**Cobertura del PDF:** Completo (diapositivas 1 a 16): FCFS, Shortest Next Job, Prioridad, Próximo a terminar, Round Robin, SO modernos y ejercicio final.
+**Nota sobre la transcripción:** varios cálculos hechos a mano en clase contienen errores aritméticos corregidos sobre la marcha o mal transcritos (p. ej. el turnaround de Shortest Next Job y de Próximo a terminar). En esos casos se usan los valores del PDF. El resultado del ejemplo de Round Robin no se enuncia completo en la transcripción y se calculó a partir de los tiempos de salida dichos en clase.
 
-Sesión práctica sobre las **políticas del Process Scheduler**: en qué orden se asigna la CPU a los procesos que están en estado *Ready*. Se resuelven ejemplos en Excel con diagramas de tiempo y se introduce la métrica **turnaround time** para comparar algoritmos.
+**Contexto.** Sesión práctica sobre las **políticas del Process Scheduler**: en qué orden se asigna la CPU a los procesos que están en estado *Ready*. Se resuelven ejemplos en Excel con diagramas de tiempo y se introduce la métrica **turnaround time** para comparar algoritmos.
 
 **Repaso:** el *Process Manager* tiene dos partes: el **Job Scheduler** (mete y saca procesos del ciclo de ejecución) y el **Process Scheduler** (alterna los procesos en la CPU). Un proceso pasa a *Waiting* por una interrupción de E/S o cuando se le acaba el tiempo asignado, y regresa a *Ready*. Hay máquinas y SO antiguos que tienen Process Manager pero **no** Process Scheduler: solo ejecutan los procesos en orden de llegada (el Process Scheduler apareció hace unos 40–50 años). Aun con varios núcleos, cada CPU rota sus propios procesos; a eso se le llama **multiprogramación**.
 
@@ -15,12 +15,27 @@ Sesión práctica sobre las **políticas del Process Scheduler**: en qué orden 
 
 **Simplificación de los ejercicios:** se ignoran los **tiempos muertos** del cambio de proceso (en la realidad, cambiar de proceso cuesta tiempo); también en la tarea programada. Los procesos se miden en milisegundos/ciclos de CPU.
 
-## 1. First Come / First Served (FCFS)
+---
+
+## Ruta de la clase
+
+| Bloque | Tema | Diapositivas |
+|--------|------|--------------|
+| 1 | FCFS y turnaround time | 2–5 |
+| 2 | Shortest Next Job | 6–7 |
+| 3 | Prioridad | 8 |
+| 4 | Próximo a terminar | 9–11 |
+| 5 | Round Robin | 12–14 |
+| 6 | SO modernos y ejercicio propuesto | 15–16 |
+
+---
+
+## 1. First Come / First Served (FCFS) (diapositivas 2–5)
 
 - Filosofía **FIFO**: apenas se crea el PCB, el proceso se coloca al final de una cola. Los procesos pasan directo a *Ready* y se ejecutan en orden de llegada.
 - **No hay estado *Wait*:** cada proceso se ejecuta **hasta completarse**, sin interrupciones. Era el modelo de las computadoras que solo hacían una cosa a la vez.
 
-### Métrica: turnaround time
+### Métrica: turnaround time (diapositiva 4)
 Tiempo requerido para completar un proceso **desde el momento en que está listo** (no es la duración del proceso):
 
 $$TAT_i = t_{\text{fin},i} - t_{\text{llegada},i} \qquad \overline{TAT} = \frac{\sum_i TAT_i}{n}$$
@@ -36,7 +51,9 @@ $$TAT_i = t_{\text{fin},i} - t_{\text{llegada},i} \qquad \overline{TAT} = \frac{
 - **Interpretación de la métrica:** un turnaround bajo indica que los procesos cortos salen rápido; uno alto, que los largos son los que se ejecutan primero. No permite afirmar por sí sola que una política sea «mejor»: dar prioridad a los cortos maximiza la cantidad de trabajo terminado por unidad de tiempo; dar prioridad a los largos es «sacarse las tareas pesadas» primero. Depende de la filosofía que se quiera seguir.
 - Esta es la política que implementa la **Tarea programada 1**.
 
-## 2. Shortest Next Job (SNJ)
+---
+
+## 2. Shortest Next Job (SNJ) (diapositivas 6–7)
 
 Surgió como reacción a la variabilidad de FCFS: en lugar de respetar el orden de llegada, se prioriza la **productividad** ejecutando siempre el proceso de **menor duración**. En empates se respeta el orden de llegada.
 
@@ -53,7 +70,9 @@ Terminaciones: L 3, J 7, M 13, N 18, K 26. Al restar la llegada, N (que llegó t
 - Los programadores aprendieron a «engañar» al planificador dividiendo un programa grande en pedazos pequeños (como un *pipeline*) para que recibieran prioridad.
 - Es fácil de implementar en SO de **lotes** (*batch*), donde se conoce el volumen de datos y la duración total; en **sistemas interactivos es prácticamente imposible**, porque no se sabe cuándo terminará un Word o un Excel (terminan cuando el usuario los cierra). El modelo de eventos no encaja con este algoritmo.
 
-## 3. Prioridad
+---
+
+## 3. Prioridad (diapositiva 8)
 
 - Es el algoritmo **más común en sistemas batch**, porque da preferencia a los procesos importantes.
 - Se ordena la cola de procesos con PCB creados según su **prioridad** (el campo *prioridad* del PCB). **Si dos procesos tienen la misma prioridad, se usa FIFO.**
@@ -61,7 +80,9 @@ Terminaciones: L 3, J 7, M 13, N 18, K 26. Al restar la llegada, N (que llegó t
 - Criterios posibles para asignar la prioridad: accesos a memoria, accesos a dispositivos de E/S, tiempo de operaciones de CPU y **tiempo que el proceso ya lleva en el sistema (*aging*)**.
 - Calcular todo eso analizando el código es muy complejo (sería como un sistema que evalúa programas y los ordena, con posibilidad de equivocarse); por eso en la práctica las prioridades se asignan de otras formas y este algoritmo suele quedar como complemento (ver sección 6).
 
-## 4. Próximo a terminar (*Shortest Remaining Time*)
+---
+
+## 4. Próximo a terminar (*Shortest Remaining Time*) (diapositivas 9–11)
 
 Variante **con desalojo** de SNJ: se escoge el proceso que está «más cerca» de terminar (el criterio básico es qué tan cerca está el puntero de instrucciones del final). Regla clave:
 
@@ -82,7 +103,9 @@ $$\overline{TAT} = \frac{14+4+1+6}{4} = 6.25$$
 
 - Al trabajar el ejercicio conviene ir anotando, bajo el proceso en ejecución, cuánto le queda a cada uno, y no temer hacer el cambio en medio de la ejecución de un proceso.
 
-## 5. Round Robin
+---
+
+## 5. Round Robin (diapositivas 12–14)
 
 - El sistema más común en los **SO interactivos** (sistemas que esperan estímulos del usuario y permiten alternar entre programas). Es lo que permitió pasar de abrir un solo programa (DOS) a varios a la vez en las primeras versiones de Windows.
 - La CPU reparte su tiempo en segmentos fijos llamados **quantums** (*time quantums*); por ejemplo, de los miles de millones de ciclos por segundo de un procesador, cada proceso recibe un quantum y luego cede su turno.
@@ -111,12 +134,16 @@ Terminaciones: A 20, B 8, C 26, D 25 → TAT = 20, 7, 24, 22 → $\overline{TAT}
 - Al inicio todos recibían **el mismo** quantum (en los Windows 95/98 se notaban «tirones» al escribir en Word porque se repartía igual el tiempo entre todos). Hoy el SO **detecta actividad** (muchas interrupciones de teclado, edición de video, muchas pestañas) y asigna más tiempo a los procesos con mayor actividad; los procesos inactivos se dejan guardados (memoria virtual, tema posterior). Esto es más fácil de programar que estimar cuántos registros va a leer un programa.
 - **Variante para reducir cambios de proceso:** si un proceso solo ejecutó **2 ciclos o menos** del quantum actual (le quedaba poco), no se cambia de proceso al terminar el quantum: se le deja seguir en el siguiente. Busca economizar cambios de contexto consecutivos.
 
-## 6. ¿Qué hacen los SO más modernos?
+---
+
+## 6. ¿Qué hacen los SO más modernos? (diapositiva 15)
 
 - Hoy los SO son en su mayoría **interactivos**. Linux, Windows y macOS usan **Round Robin** y lo complementan con técnicas vistas (en especial **colas de prioridad**) para acelerar algunas tareas.
 - Los programas actuales responden a eventos del usuario y no a procesamiento secuencial de datos en bloques, por lo que Round Robin es una forma mucho más sencilla de darle tiempo a todos los procesos para que avancen o estén listos para ejecutarse.
 
-## 7. Ejercicio propuesto
+---
+
+## 7. Ejercicio propuesto (diapositiva 16)
 
 Dados los jobs: A(llegada 0, 2 ciclos), B(1, 12), C(2, 4), D(4, 3), E(5, 8), F(7, 5), G(8, 3), calcular el turnaround time con:
 
@@ -129,6 +156,8 @@ Dados los jobs: A(llegada 0, 2 ciclos), B(1, 12), C(2, 4), D(4, 3), E(5, 8), F(7
 
 Se revisan la próxima clase; el Excel con los ejemplos de clase sirve de plantilla.
 
+---
+
 ## Conceptos clave
 
 - **Turnaround time** = tiempo de terminación − tiempo de llegada (promediado); mide cuánto tarda un proceso en completarse desde que está listo.
@@ -138,6 +167,8 @@ Se revisan la próxima clase; el Excel con los ejemplos de clase sirve de planti
 - **Próximo a terminar:** SNJ con desalojo; si llega un proceso más corto que lo que le queda al actual, se cambia de inmediato.
 - **Round Robin:** quantums fijos, cola FIFO y reencolado al final; base de la multiprogramación y de los SO modernos, complementado con prioridades y asignación dinámica de tiempo según la actividad.
 - Los ejercicios ignoran los tiempos muertos del cambio de proceso.
+
+---
 
 ## Fuera del PDF — logística, tareas y metodología
 

@@ -1,20 +1,36 @@
 # Clase 2 — Memoria, historia de los SO y el Kernel
 
-- **Curso:** IIIC2026 - Sistemas Operativos, LEAD University
-- **Docente:** Mario Miguel Agüero Obando
-- **Fecha:** 14 de septiembre de 2026 (estimada por continuidad semanal respecto a la Clase 1 del 7 de septiembre; no se menciona explícitamente en la transcripción)
-- **PDF fuente:** `1 - Conceptos básicos.pdf` (segunda mitad) y `2 - Kernel y Procesos.pdf` (primera mitad)
-- **Cobertura:**
-  - `1 - Conceptos básicos.pdf`: continúa desde donde terminó la Clase 1 (diapositiva "¿Cómo se ejecutan los programas? y 10") hasta el final del documento (diapositiva 36, "Las 4 partes de un Sistema Operativo"). **Completo** en lo que corresponde a esta clase.
-  - `2 - Kernel y Procesos.pdf`: **parcial**, diapositivas 1 a 5 de 20 (hasta la crítica al microkernel). No se alcanzaron los ejemplos de SO de microkernel (AmigaOS, Minix, NexStep, AIX), los núcleos híbridos, el exonúcleo, ni nada de arranque del SO en forma de diapositiva, Process Control Block o estados de proceso — esos temas quedan para la Clase 3.
+**Curso:** IIIC2026 - Sistemas Operativos, LEAD University
+**Docente:** Mario Miguel Agüero Obando
+**Fecha:** 14 de septiembre de 2026 (estimada por continuidad semanal respecto a la Clase 1 del 7 de septiembre; no se menciona explícitamente en la transcripción)
+**PDF fuente:** `1 - Conceptos básicos.pdf` (segunda mitad; en adelante «PDF 1», 36 diapositivas) y `2 - Kernel y Procesos.pdf` (primera mitad; en adelante «PDF 2», 28 diapositivas)
+**Cobertura del PDF:**
+- **PDF 1:** Parcial respecto al PDF, completo en lo que corresponde a esta clase: diapositivas 22 a 36 de 36 (de «Memoria» a «Las 4 partes de un Sistema Operativo»). Las diapositivas 1 a 21 se cubrieron en la Clase 1.
+- **PDF 2:** Parcial: diapositivas 1 a 5 de 28 (hasta «Tipos de Kernel (2)», la crítica al microkernel). Los ejemplos de SO de microkernel, los núcleos híbridos, el exonúcleo, el arranque del SO, el Process Control Block y los estados de proceso quedan para la Clase 3.
 
-Segunda sesión del curso. Retoma la administración de recursos y la memoria, cierra la historia de los sistemas operativos (de los años 40 a Linux/Windows en los 90), y abre el tema de Kernel: qué es, sus funciones y sus tipos (monolítico y microkernel).
+**Contexto.** Segunda sesión del curso. Retoma la administración de recursos y la memoria, cierra la historia de los sistemas operativos (de los años 40 a Linux/Windows en los 90), y abre el tema de Kernel: qué es, sus funciones y sus tipos (monolítico y microkernel).
 
-## 1. Repaso: el sistema operativo como ilusionista (la papelera de reciclaje)
+---
+
+## Ruta de la clase
+
+| Bloque | Tema | Diapositivas |
+|--------|------|--------------|
+| 1 | Memoria y jerarquía de memoria | PDF 1: 22–24 |
+| 2 | Tipos de SO e historia de los SO | PDF 1: 25–29 |
+| 3 | Computadoras personales | PDF 1: 30–31 |
+| 4 | Kernel, modos de trabajo, proceso, shell y las 4 partes de un SO | PDF 1: 32–36 |
+| 5 | Kernel: qué es, funciones y tipos | PDF 2: 2–5 |
+
+---
+
+## 1. Repaso: el sistema operativo como ilusionista (la papelera de reciclaje) (explicación oral)
 
 Como ejemplo adicional al rol de **ilusionista** visto en la Clase 1: borrar un archivo no borra sus datos. La papelera de reciclaje no es un espacio físico aparte; es una lista de direcciones de inicio de los archivos "borrados". Al borrar, el sistema operativo solo marca ese espacio como **libre** (free), pero los datos siguen físicamente ahí hasta que algo los sobrescribe — de forma similar a quitar la placa de un carro en un parqueo para que el sistema crea que el espacio está vacío. Por eso existen herramientas de "undelete", y por eso los archivos borrados eran (y son) un vector de robo de información si no se sobrescriben realmente.
 
-## 2. La memoria: evolución, jerarquía y costo
+---
+
+## 2. La memoria: evolución, jerarquía y costo (PDF 1, diapositivas 22–24)
 
 La memoria ha cambiado radicalmente en tamaño, velocidad y costo: un disco de **5 MB pesaba y costaba como un contenedor en 1956**, uno de **10 MB en 1964** era del tamaño de un plato grande, y para los años 80 un disco duro de 10 MB costaba cerca de **$3,398**. Hasta mediados de los 70 una memoria RAM de 16 KB (del tamaño de una carta larga) era de supercomputadora.
 
@@ -26,7 +42,9 @@ $$\text{Registros} \to \text{Caché (L1, L2, L3)} \to \text{RAM} \to \text{Disco
 - A mayor lejanía: **más capacidad y menor costo**, pero **menos velocidad**.
 - Los discos de estado sólido (SSD) y PCI Express "rompen" la pirámide clásica: un SSD moderno es mucho más rápido que cualquier disco mecánico, sin importar cuán optimizado esté este último — los dispositivos mecánicos siempre pierden frente a los puramente electrónicos.
 
-## 3. Tipos de sistemas operativos
+---
+
+## 3. Tipos de sistemas operativos (PDF 1, diapositiva 25)
 
 Según el tipo de interacción que ofrecen, los sistemas operativos se clasifican en 5 tipos:
 
@@ -36,7 +54,9 @@ Según el tipo de interacción que ofrecen, los sistemas operativos se clasifica
 - **Híbridos:** combinan lote e interactivo.
 - **Embebidos (o empotrados):** construidos para un propósito único dentro de un dispositivo (microondas, equipo de sonido, un decodificador de TV tradicional — no una caja Android TV, que corre un SO de propósito general).
 
-## 4. Historia de los sistemas operativos
+---
+
+## 4. Historia de los sistemas operativos (PDF 1, diapositivas 26–29)
 
 **Primera generación (años 40 a mediados de los 50):** los programas eran prácticamente "alambrados" (cableados a mano); no existían sistemas operativos. Los primeros sistemas que aparecieron fueron de **lote**, para dirigir la carga de tarjetas perforadas; los programadores debían **reservar tiempo** de la máquina para correr sus programas.
 
@@ -46,7 +66,9 @@ Según el tipo de interacción que ofrecen, los sistemas operativos se clasifica
 
 **Cuarta generación:** superado el problema de los dispositivos, el siguiente cuello de botella fue la escasez y el costo de la memoria RAM. A mediados de los 70 apareció la **memoria virtual**: usar parte del almacenamiento físico (disco) como extensión de la RAM. También aparecieron las primeras bases de datos.
 
-## 5. Las computadoras personales: de las "caseras" a la guerra de los 90
+---
+
+## 5. Las computadoras personales: de las "caseras" a la guerra de los 90 (PDF 1, diapositivas 30–31)
 
 En los 80 surgieron las computadoras caseras (monoprocesador, capacidad limitada, poco o nulo almacenamiento interno), pensadas para llevar la computación a los hogares. La británica **Sinclair** fue muy popular en Europa por su bajo costo; su competencia, **Acorn Computers**, construyó la **BBC Micro** (subvencionada por el gobierno británico para enseñar programación) y de ese proyecto nació la arquitectura **ARM**, creada por **Sophie Wilson** (diseño del set de instrucciones y del primer intérprete de BASIC) y **Steve Furber** (hardware). Es la misma arquitectura que hoy domina los procesadores de los celulares y los chips Apple Silicon.
 
@@ -58,7 +80,9 @@ El triunfo de las PC en el mercado no fue solo por hardware: lo definieron las a
 
 En los 90, **Windows** venció a sus competidores no solo por el modo gráfico (inspirado en el Macintosh de Apple), sino porque Microsoft integró su propia suite ofimática (**Office**: Word, Excel, PowerPoint), contratando a programadores clave de WordPerfect, Lotus y Harvard Graphics. En paralelo, en 1992, nació **Linux**, que resolvió lo que le faltaba al proyecto **GNU**: un **kernel**.
 
-## 6. Concepto clave: Kernel
+---
+
+## 6. Concepto clave: Kernel (PDF 1, diapositivas 32–33)
 
 El kernel es el **corazón** del sistema operativo: controla todo. Tiene un área de memoria exclusiva llamada **espacio de kernel**, a la que nadie puede entrar salvo el propio kernel (Windows es un ejemplo clásico de sistema con debilidades de seguridad históricas por brechas que permitían a atacantes llegar hasta ese espacio). El kernel decide quién usa cada recurso, quién lo libera, a quién le toca el turno, quién recibe memoria y qué hacer ante interrupciones.
 
@@ -66,7 +90,9 @@ El kernel tiene dos **modos de trabajo**:
 - **Modo kernel:** instrucciones que solo el kernel puede ejecutar, relacionadas con la administración de bajo nivel del sistema.
 - **Modo usuario:** donde corren las aplicaciones del usuario (el navegador, un editor de texto), con acceso restringido a los recursos.
 
-## 7. Proceso, hilo y Shell
+---
+
+## 7. Proceso, hilo y Shell (PDF 1, diapositivas 34–36)
 
 - **Proceso:** un programa que se está ejecutando. Se guarda en memoria y pasa por varias etapas. Todo programa en ejecución se relaciona con al menos un proceso.
 - **Hilo (thread):** un proceso puede tener uno o más hilos de ejecución; todo proceso tiene al menos uno.
@@ -74,11 +100,15 @@ El kernel tiene dos **modos de trabajo**:
 
 Estudiar sistemas operativos es, en esencia, estudiar **cómo trabaja el kernel**: cómo administra el procesador, la memoria, los dispositivos y los archivos — las **4 partes** en las que se va a analizar un sistema operativo a lo largo del curso.
 
-## 8. ¿Qué es un Kernel? (profundizando)
+---
+
+## 8. ¿Qué es un Kernel? (profundizando) (PDF 2, diapositiva 2)
 
 El kernel es quien separa las aplicaciones entre sí y mantiene segura la máquina — no solo frente a ataques externos, sino para evitar, por ejemplo, que lo que se escribe en Word aparezca en el Notepad. En el fondo, el sistema operativo y el kernel actúan como un **proxy**: un intermediario entre el hardware y las aplicaciones, procurando que todas "se entiendan" aunque no "hablen el mismo idioma".
 
-## 9. Funciones del Kernel
+---
+
+## 9. Funciones del Kernel (PDF 2, diapositiva 3)
 
 - Garantizar que los procesos (programas, entradas/salidas) se ejecuten.
 - Asegurar que los recursos sean usados exclusivamente por la aplicación que corresponde en cada momento (p. ej. que un `Ctrl+V` pegue lo del programa activo y no de otro).
@@ -87,10 +117,14 @@ El kernel es quien separa las aplicaciones entre sí y mantiene segura la máqui
 
 Las funciones de **comunicación** (red) y **almacenamiento físico** normalmente no viven dentro del núcleo mismo, pero su gestión se administra como un proceso más dentro del kernel — es como si el kernel tuviera "asistentes" a quienes delega tareas puntuales (p. ej. la descarga de un archivo) sin dejar de supervisarlas. Abrir un puerto de red, por ejemplo, no implica meterse directamente con el kernel.
 
-## 10. Tipos de Kernel
+---
+
+## 10. Tipos de Kernel (PDF 2, diapositivas 4–5)
 
 - **Monolítico:** está directamente ligado al hardware — en la práctica, al **juego de instrucciones** del procesador (p. ej. x64, usado por Intel y AMD; Apple Silicon; o ARM, usado también por procesadores Snapdragon). Por eso un Windows compilado para x64 no corre en un PC con Snapdragon: hace falta una versión específica ("Windows on ARM"). No es modular: agregar una funcionalidad puede implicar recompilar todo el sistema. A pesar de esta rigidez, es el modelo que ha triunfado: Linux, Unix, DOS y MacOS (hasta la versión 8.6) son monolíticos. Los sistemas operativos modernos siguen siendo, en esencia, monolíticos, aunque han ido adoptando ideas de otras filosofías de diseño.
 - **Microkernel:** el núcleo se limita a comunicación y planificación de procesos, delegando todo lo demás (entrada/salida, memoria, archivos) a servidores internos especializados. En el papel suena ideal (más modular, más fácil de optimizar y aislar fallos), pero en la práctica **nunca se ha logrado construir un microkernel que funcione bien en producción**, en casi 40 años de intentos — la sincronización entre esos servidores resulta demasiado compleja.
+
+---
 
 ## Conceptos clave
 
@@ -103,6 +137,8 @@ Las funciones de **comunicación** (red) y **almacenamiento físico** normalment
 - Un **proceso** es un programa en ejecución (con al menos un **hilo**); un **shell** es la capa que expone los servicios del SO al usuario (línea de comandos o interfaz gráfica).
 - El kernel actúa como **proxy** entre hardware y aplicaciones, con 4 funciones centrales: ejecución de procesos, aislamiento de recursos, estandarización de comunicación, y asignación de memoria/procesador/periféricos.
 - Existen kernels **monolíticos** (ligados al juego de instrucciones del hardware, pero el modelo dominante en la práctica) y **microkernel** (más modulares en teoría, pero sin implementaciones exitosas en producción hasta la fecha).
+
+---
 
 ## Fuera del PDF — logística, tareas y metodología
 

@@ -52,4 +52,6 @@ $RECYCLE.BIN/
 *.log
 .env
 .claude
+CLAUDE.md
+Notas.txt
 Preguntas_repaso.txt
