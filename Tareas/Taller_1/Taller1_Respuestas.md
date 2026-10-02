@@ -2,7 +2,7 @@
 
 **Curso:** Sistemas Operativos, LEAD University
 
-**Estudiante:** Daniel
+**Estudiante:** Daniel Vásquez González
 
 **Entorno:** Ubuntu 26.04.1 en VirtualBox 7.2.20 (máquina virtual "Ubuntu-SO", usuario `daniel`)
 
