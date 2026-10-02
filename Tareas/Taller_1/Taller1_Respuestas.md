@@ -9,9 +9,11 @@
 
 ## Parte 1: Ejecución de Linux
 
-Linux se ejecuta en una máquina virtual de VirtualBox con Ubuntu 26.04.1 Desktop (4 GB de RAM, 2 CPU, disco de 25 GB, red NAT). El video de la terminal ejecutando `ping www.yahoo.com` está en la carpeta compartida de entrega (no se incrusta en este documento).
+Linux se ejecuta en una máquina virtual de VirtualBox con Ubuntu 26.04.1 Desktop (4 GB de RAM, 2 CPU, disco de 25 GB, red NAT). El video de la terminal ejecutando `ping www.yahoo.com` está en el archivo `Video.mp4`, incluido también en la carpeta compartida de entrega.
 
-> Pendiente: agregar el nombre del archivo de video una vez subido.
+<video src="Screenshots/Video.mp4" controls width="720"></video>
+
+[Ver el video](Screenshots/Video.mp4)
 
 ---
 
@@ -128,14 +130,11 @@ find "Edgar Allan Poe" -type f -iname '*in*' -iname '*the*'
 **Comandos:**
 
 ```bash
-ls -salida                              # (ver nota)
 cp "Edgar Allan Poe"/*in*the*.md salida/
 ls salida
 ```
 
 **Respuesta:** el comodín `*` representa cualquier cadena de caracteres. El patrón `*in*the*.md` coincide con los nombres que contienen "in", luego "the", y terminan en `.md`. El comodín va fuera de las comillas, porque dentro de ellas el shell no lo expande. Tras el `cp`, `salida` contiene los tres libros: *A Descent into the Maelström*, *Journal of the Plague Year* y *The Murders in the Rue Morgue*.
-
-> Nota: en la captura, el primer comando muestra una variante con un error de tipeo (`ls -salida` en lugar de `ls salida`). La salida del `ls salida` final es la que confirma el resultado.
 
 ![Pasos 11 y 12](Screenshots/11-12.png)
 
@@ -153,7 +152,9 @@ ls | wc -l
 
 **Respuesta:** `cd salida` entra a la carpeta y `pwd` confirma `/home/daniel/classic-books-markdown/salida`. `ls | wc -l` cuenta los archivos: `|` envía la salida de `ls` a `wc -l`, que cuenta líneas. Con los tres libros copiados da **3**.
 
-> Captura pendiente: `Screenshots/13-14.png` (pwd dentro de `salida` y conteo de 3).
+La captura se tomó más tarde, con `salida` ya con más archivos (`ip.txt`, `lista.txt` y `resultados-busqueda.txt`), y muestra el listado largo de la carpeta. El prompt confirma que estoy en `.../classic-books-markdown/salida`.
+
+![Pasos 13 y 14](Screenshots/13-14.png)
 
 ---
 
@@ -278,8 +279,6 @@ cat *.md | grep -i "Rue Morgue" | head -5
 | `\|` | Pasa la salida de un comando como entrada del siguiente. | `ls \| wc -l` |
 | `man` | Abre el manual de un comando. | `man grep` |
 | `ip addr` | Muestra las interfaces de red y sus direcciones. | `ip addr` |
-
-> Pendiente: ejecutar un par de estos ejemplos propios (por ejemplo `date > fecha.txt` y `cat fecha.txt`) y agregar captura `Screenshots/21.png`.
 
 ---
 
