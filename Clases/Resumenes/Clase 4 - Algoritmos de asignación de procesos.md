@@ -3,7 +3,7 @@
 **Curso:** IIIC2026 - Sistemas Operativos, LEAD University
 **Docente:** Mario Miguel Agüero Obando
 **Fecha:** 28 de septiembre de 2026 (estimada por continuidad semanal respecto a la Clase 3; no se menciona explícitamente en la transcripción)
-**PDF fuente:** `3 - Asignacion De Procesos.pdf` (16 diapositivas), apoyado en `EjemplosAlgoritmosProcesos.xlsx`, la hoja de cálculo con la que se resolvieron los ejemplos en clase. El repaso inicial coincide con las diapositivas 26 a 28 de `2 - Kernel y Procesos.pdf` (criterios de las políticas y tiempos muertos).
+**PDF fuente:** `3 - Asignacion De Procesos.pdf` (16 diapositivas), apoyado en `3 - Ejemplos Algoritmos Procesos.xlsx`, la hoja de cálculo con la que se resolvieron los ejemplos en clase. El repaso inicial coincide con las diapositivas 26 a 28 de `2 - Kernel y Procesos.pdf` (criterios de las políticas y tiempos muertos).
 **Cobertura del PDF:** Completo (diapositivas 1 a 16): FCFS, Shortest Next Job, Prioridad, Próximo a terminar, Round Robin, SO modernos y ejercicio final.
 **Nota sobre la transcripción:** varios cálculos hechos a mano en clase contienen errores aritméticos corregidos sobre la marcha o mal transcritos (p. ej. el turnaround de Shortest Next Job y de Próximo a terminar). En esos casos se usan los valores del PDF. El resultado del ejemplo de Round Robin no se enuncia completo en la transcripción y se calculó a partir de los tiempos de salida dichos en clase.
 

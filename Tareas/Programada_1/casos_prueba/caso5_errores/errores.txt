@@ -1,0 +1,4 @@
+No se puede ejecutar la simulación. Se encontraron errores en los datos:
+  Línea 3: el tiempo de llegada no puede ser negativo (-2)
+  Línea 4: el valor de 'llegada' ('ABC') no es un número entero
+  Línea 5: la duración debe ser mayor que cero (-1)

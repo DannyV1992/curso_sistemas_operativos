@@ -1,0 +1,4 @@
+id,llegada,duracion,inicio,fin,espera,retorno
+P1,0,4,0,4,0,4
+P2,0,2,4,6,4,6
+P3,0,6,6,12,6,12
