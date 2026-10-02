@@ -1,8 +1,11 @@
 # Taller 1: Habilitación de Linux
 
 **Curso:** Sistemas Operativos, LEAD University
+
 **Estudiante:** Daniel
+
 **Entorno:** Ubuntu 26.04.1 en VirtualBox 7.2.20 (máquina virtual "Ubuntu-SO", usuario `daniel`)
+
 **Repositorio usado:** classic-books-markdown, clonado en `/home/daniel/classic-books-markdown`
 
 ---
