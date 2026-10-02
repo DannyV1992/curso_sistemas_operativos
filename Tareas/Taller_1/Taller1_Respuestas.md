@@ -11,9 +11,7 @@
 
 Linux se ejecuta en una máquina virtual de VirtualBox con Ubuntu 26.04.1 Desktop (4 GB de RAM, 2 CPU, disco de 25 GB, red NAT). El video de la terminal ejecutando `ping www.yahoo.com` está en el archivo `Video.mp4`, incluido también en la carpeta compartida de entrega.
 
-<video src="Screenshots/Video.mp4" controls width="720"></video>
-
-[Ver el video](Screenshots/Video.mp4)
+[Ver el video (Video.mp4)](Screenshots/Video.mp4)
 
 ---
 
