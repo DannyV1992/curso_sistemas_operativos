@@ -1,0 +1,54 @@
+--- Traza de la simulacion ---
+[0] P1 llega al sistema
+[0] P1 inicia ejecucion
+[0]   CPU: P1 (restante 15) | Cola: vacia
+[1] P2 llega al sistema
+[1] P2 entra a la cola
+[1]   CPU: P1 (restante 14) | Cola: P2
+[2] P3 llega al sistema
+[2] P3 entra a la cola
+[2]   CPU: P1 (restante 13) | Cola: P2, P3
+[3] P4 llega al sistema
+[3] P4 entra a la cola
+[3]   CPU: P1 (restante 12) | Cola: P2, P3, P4
+[4]   CPU: P1 (restante 11) | Cola: P2, P3, P4
+[5]   CPU: P1 (restante 10) | Cola: P2, P3, P4
+[6]   CPU: P1 (restante 9) | Cola: P2, P3, P4
+[7]   CPU: P1 (restante 8) | Cola: P2, P3, P4
+[8]   CPU: P1 (restante 7) | Cola: P2, P3, P4
+[9]   CPU: P1 (restante 6) | Cola: P2, P3, P4
+[10]   CPU: P1 (restante 5) | Cola: P2, P3, P4
+[11]   CPU: P1 (restante 4) | Cola: P2, P3, P4
+[12]   CPU: P1 (restante 3) | Cola: P2, P3, P4
+[13]   CPU: P1 (restante 2) | Cola: P2, P3, P4
+[14]   CPU: P1 (restante 1) | Cola: P2, P3, P4
+[15] P1 termina
+[15] P2 inicia ejecucion
+[15]   CPU: P2 (restante 2) | Cola: P3, P4
+[16]   CPU: P2 (restante 1) | Cola: P3, P4
+[17] P2 termina
+[17] P3 inicia ejecucion
+[17]   CPU: P3 (restante 1) | Cola: P4
+[18] P3 termina
+[18] P4 inicia ejecucion
+[18]   CPU: P4 (restante 2) | Cola: vacia
+[19]   CPU: P4 (restante 1) | Cola: vacia
+[20] P4 termina
+
+========================================
+  RESULTADO MINIOS
+========================================
+
+Proceso  Llegada  Inicio    Fin  Espera  Retorno
+P1             0       0     15       0       15
+P2             1      15     17      14       16
+P3             2      17     18      15       16
+P4             3      18     20      15       17
+
+Procesos ejecutados: 4
+Tiempo total: 20
+Espera promedio: 11.00
+Retorno promedio: 16.00
+Mayor tiempo de espera: P3, P4 (15)
+Menor tiempo de espera: P1 (0)
+Utilizacion del CPU: 100.00%

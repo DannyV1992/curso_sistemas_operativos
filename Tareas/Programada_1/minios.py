@@ -5,24 +5,28 @@ Simula un computador con un único CPU y una cola FIFO, sin interrupciones:
 una vez que un proceso empieza a ejecutarse, continúa hasta terminar.
 
 Uso:
-    python minios.py [archivo.csv] [--salida DIRECTORIO] [-v]
+    python minios.py        (abre un menú interactivo)
 
-Entrada:  procesos.csv (columnas: id,llegada,duracion)
-Salidas:  resultados.csv y eventos.txt
+Entrada:  archivos CSV de la carpeta casos/ (columnas: id,llegada,duracion)
+Salidas:  carpeta salida/, con <fecha_hora>_resultados_<caso>.csv,
+          <fecha_hora>_eventos_<caso>.txt y <fecha_hora>_traza_<caso>.txt
+          (la traza termina con el mismo resumen que se muestra en pantalla).
+          Si los datos tienen errores solo se genera <fecha_hora>_errores_<caso>.txt
 """
 
-import argparse
 import csv
 import re
 import sys
 import unicodedata
 from collections import defaultdict, deque
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 
-ARCHIVO_ENTRADA = "procesos.csv"
-ARCHIVO_RESULTADOS = "resultados.csv"
-ARCHIVO_EVENTOS = "eventos.txt"
+# Las carpetas se buscan junto al script, sin importar desde dónde se ejecute
+CARPETA_BASE = Path(__file__).resolve().parent
+CARPETA_CASOS = CARPETA_BASE / "casos"
+CARPETA_SALIDA = CARPETA_BASE / "salida"
 COLUMNAS = ["id", "llegada", "duracion"]
 
 # Estados de un proceso
@@ -129,11 +133,22 @@ def validar_procesos(procesos):
     return errores
 
 
-def mostrar_errores(errores):
-    print("No se puede ejecutar la simulación. Se encontraron errores en los datos:", file=sys.stderr)
+def formatear_errores(errores):
+    """Devuelve el texto de los errores, igual para la pantalla y para el archivo."""
+    lineas = ["No se puede ejecutar la simulación. Se encontraron errores en los datos:"]
     for linea, mensaje in sorted(errores, key=lambda e: e[0]):
         prefijo = f"  Línea {linea}: " if linea else "  "
-        print(prefijo + mensaje, file=sys.stderr)
+        lineas.append(prefijo + mensaje)
+    return "\n".join(lineas)
+
+
+def mostrar_errores(errores):
+    print(formatear_errores(errores), file=sys.stderr)
+
+
+def guardar_errores(errores, nombre_caso, ruta):
+    with open(ruta, "w", encoding="utf-8") as f:
+        f.write(f"Archivo: {nombre_caso}\n{formatear_errores(errores)}\n")
 
 
 # ---------------------------------------------------------------------------
@@ -229,47 +244,53 @@ def calcular_metricas(procesos):
     }
 
 
-def mostrar_resumen(procesos, metricas):
+def formatear_resumen(procesos, metricas):
+    """Devuelve el texto del resumen, igual para la pantalla y para el archivo."""
     linea = "=" * 40
-    print(linea)
-    print("  RESULTADO MINIOS")
-    print(linea)
-    print()
-
     ancho = max(len("Proceso"), *(len(p.id) for p in procesos))
-    print(f"{'Proceso':<{ancho}}  {'Llegada':>7}  {'Inicio':>6}  {'Fin':>5}  {'Espera':>6}  {'Retorno':>7}")
-    for p in procesos:
-        print(f"{p.id:<{ancho}}  {p.llegada:>7}  {p.inicio:>6}  {p.fin:>5}  {p.espera:>6}  {p.retorno:>7}")
-
     mayor, ids_mayor = metricas["mayor_espera"]
     menor, ids_menor = metricas["menor_espera"]
-    print()
-    print(f"Procesos ejecutados: {metricas['cantidad']}")
-    print(f"Tiempo total: {metricas['tiempo_total']}")
-    print(f"Espera promedio: {metricas['espera_promedio']:.2f}")
-    print(f"Retorno promedio: {metricas['retorno_promedio']:.2f}")
-    print(f"Mayor tiempo de espera: {', '.join(ids_mayor)} ({mayor})")
-    print(f"Menor tiempo de espera: {', '.join(ids_menor)} ({menor})")
-    print(f"Utilización del CPU: {metricas['utilizacion_cpu']:.2f}%")
+
+    lineas = [linea, "  RESULTADO MINIOS", linea, ""]
+    lineas.append(f"{'Proceso':<{ancho}}  {'Llegada':>7}  {'Inicio':>6}  {'Fin':>5}  {'Espera':>6}  {'Retorno':>7}")
+    for p in procesos:
+        lineas.append(f"{p.id:<{ancho}}  {p.llegada:>7}  {p.inicio:>6}  {p.fin:>5}  {p.espera:>6}  {p.retorno:>7}")
+    lineas += [
+        "",
+        f"Procesos ejecutados: {metricas['cantidad']}",
+        f"Tiempo total: {metricas['tiempo_total']}",
+        f"Espera promedio: {metricas['espera_promedio']:.2f}",
+        f"Retorno promedio: {metricas['retorno_promedio']:.2f}",
+        f"Mayor tiempo de espera: {', '.join(ids_mayor)} ({mayor})",
+        f"Menor tiempo de espera: {', '.join(ids_menor)} ({menor})",
+        f"Utilización del CPU: {metricas['utilizacion_cpu']:.2f}%",
+    ]
+    return "\n".join(lineas)
+
+
+def mostrar_resumen(procesos, metricas):
+    print(formatear_resumen(procesos, metricas))
 
 
 def sin_tildes(texto):
     return "".join(c for c in unicodedata.normalize("NFD", texto) if unicodedata.category(c) != "Mn")
 
 
-def mostrar_traza(eventos, traza):
-    """Imprime la simulación instante por instante, sin tildes (opción -v)."""
+def guardar_traza(eventos, traza, resumen, ruta):
+    """Guarda la simulación instante por instante (eventos + estado del CPU y la cola)
+    seguida del resumen final. Todo el archivo va sin tildes."""
     por_tiempo = defaultdict(list)
     for t, texto in eventos:
         por_tiempo[t].append(texto)
     estado = dict(traza)
-    print("--- Simulacion ---")
-    for t in sorted(set(por_tiempo) | set(estado)):
-        for texto in por_tiempo.get(t, []):
-            print(sin_tildes(f"[{t}] {texto}"))
-        if t in estado:
-            print(sin_tildes(f"[{t}]   {estado[t]}"))
-    print()
+    with open(ruta, "w", encoding="utf-8") as f:
+        f.write("--- Traza de la simulacion ---\n")
+        for t in sorted(set(por_tiempo) | set(estado)):
+            for texto in por_tiempo.get(t, []):
+                f.write(sin_tildes(f"[{t}] {texto}") + "\n")
+            if t in estado:
+                f.write(sin_tildes(f"[{t}]   {estado[t]}") + "\n")
+        f.write("\n" + sin_tildes(resumen) + "\n")
 
 
 def guardar_resultados(procesos, ruta):
@@ -287,44 +308,137 @@ def guardar_eventos(eventos, ruta):
 
 
 # ---------------------------------------------------------------------------
-# Programa principal
+# Ejecución de un caso
 # ---------------------------------------------------------------------------
 
+def ejecutar_caso(ruta):
+    """Lee, valida, simula y guarda un caso. Devuelve True si terminó bien.
 
-def main(argv=None):
-    parser = argparse.ArgumentParser(description="MiniOS: simulador básico de procesos (CPU único, cola FIFO).")
-    parser.add_argument("archivo", nargs="?", default=ARCHIVO_ENTRADA,
-                        help=f"CSV de entrada (por defecto {ARCHIVO_ENTRADA})")
-    parser.add_argument("--salida", default=".",
-                        help="directorio donde se escriben resultados.csv y eventos.txt (por defecto el actual)")
-    parser.add_argument("-v", "--verbose", action="store_true",
-                        help="muestra la simulación instante por instante")
-    args = parser.parse_args(argv)
+    Si los datos tienen errores no se simula: se muestran en pantalla y se
+    guardan en un archivo de errores.
+    """
+    # El timestamp va primero para que los archivos queden ordenados por ejecución:
+    # 20261004_153012_resultados_caso1.csv
+    marca = datetime.now().strftime("%Y%m%d_%H%M%S")
 
-    procesos, errores = leer_procesos(args.archivo)
+    procesos, errores = leer_procesos(ruta)
     errores += validar_procesos(procesos)
     if errores:
         mostrar_errores(errores)
-        return 1
+        ruta_errores = CARPETA_SALIDA / f"{marca}_errores_{ruta.stem}.txt"
+        try:
+            CARPETA_SALIDA.mkdir(exist_ok=True)
+            guardar_errores(errores, ruta.name, ruta_errores)
+        except OSError as e:
+            print(f"Error al guardar el archivo de errores: {e}", file=sys.stderr)
+            return False
+        print(f"\nArchivo generado en {CARPETA_SALIDA.name}/:\n  {ruta_errores.name}")
+        return False
 
     eventos, traza = simular(procesos)
     metricas = calcular_metricas(procesos)
 
-    if args.verbose:
-        mostrar_traza(eventos, traza)
     mostrar_resumen(procesos, metricas)
 
-    salida = Path(args.salida)
+    ruta_resultados = CARPETA_SALIDA / f"{marca}_resultados_{ruta.stem}.csv"
+    ruta_eventos = CARPETA_SALIDA / f"{marca}_eventos_{ruta.stem}.txt"
+    ruta_traza = CARPETA_SALIDA / f"{marca}_traza_{ruta.stem}.txt"
     try:
-        salida.mkdir(parents=True, exist_ok=True)
-        guardar_resultados(procesos, salida / ARCHIVO_RESULTADOS)
-        guardar_eventos(eventos, salida / ARCHIVO_EVENTOS)
+        CARPETA_SALIDA.mkdir(exist_ok=True)
+        guardar_resultados(procesos, ruta_resultados)
+        guardar_eventos(eventos, ruta_eventos)
+        guardar_traza(eventos, traza, formatear_resumen(procesos, metricas), ruta_traza)
     except OSError as e:
         print(f"Error al guardar los archivos de salida: {e}", file=sys.stderr)
-        return 1
-    print(f"\nArchivos generados: {salida / ARCHIVO_RESULTADOS}, {salida / ARCHIVO_EVENTOS}")
-    return 0
+        return False
+    print(f"\nArchivos generados en {CARPETA_SALIDA.name}/:")
+    for destino in (ruta_resultados, ruta_eventos, ruta_traza):
+        print(f"  {destino.name}")
+    return True
+
+
+# ---------------------------------------------------------------------------
+# Menú interactivo
+# ---------------------------------------------------------------------------
+
+def listar_casos():
+    """Devuelve los archivos CSV de la carpeta de casos, ordenados por nombre."""
+    if not CARPETA_CASOS.is_dir():
+        return []
+    return sorted(CARPETA_CASOS.glob("*.csv"), key=lambda r: r.name.lower())
+
+
+def mostrar_casos(casos):
+    print(f"\nCasos disponibles en {CARPETA_CASOS.name}/:")
+    for i, caso in enumerate(casos, 1):
+        print(f"  {i}. {caso.name}")
+
+
+def elegir_caso(casos):
+    """Pide el nombre (o número) del archivo. Devuelve la ruta o None si no es válido."""
+    mostrar_casos(casos)
+    texto = input("\nNombre del archivo o número (Enter para cancelar): ").strip()
+    if not texto:
+        return None
+
+    if texto.isdigit():
+        indice = int(texto)
+        if 1 <= indice <= len(casos):
+            return casos[indice - 1]
+        print(f"No hay un caso con el número {indice}.")
+        return None
+
+    if Path(texto).name != texto:
+        print("Escriba solo el nombre del archivo, sin carpetas.")
+        return None
+    if not texto.lower().endswith(".csv"):
+        texto += ".csv"
+    ruta = CARPETA_CASOS / texto
+    if not ruta.is_file():
+        print(f"El archivo '{texto}' no existe en {CARPETA_CASOS.name}/.")
+        return None
+    return ruta
+
+
+def mostrar_menu():
+    print()
+    print("=" * 40)
+    print("  MINIOS - Simulador de procesos")
+    print("=" * 40)
+    print("  1. Ejecutar un caso")
+    print("  2. Ver casos disponibles")
+    print("  0. Salir")
+
+
+def menu():
+    while True:
+        mostrar_menu()
+        try:
+            opcion = input("\nOpción: ").strip()
+            casos = listar_casos()
+
+            if opcion == "0":
+                print("Hasta luego.")
+                return
+            if opcion not in ("1", "2"):
+                print("Opción no válida. Escriba 1, 2 o 0.")
+                continue
+            if not casos:
+                print(f"No hay archivos .csv en {CARPETA_CASOS}.")
+                continue
+
+            if opcion == "2":
+                mostrar_casos(casos)
+                continue
+
+            ruta = elegir_caso(casos)
+            if ruta is not None:
+                print(f"\nEjecutando {ruta.name}...\n")
+                ejecutar_caso(ruta)
+        except (EOFError, KeyboardInterrupt):
+            print("\nHasta luego.")
+            return
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    menu()

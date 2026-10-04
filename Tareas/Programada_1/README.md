@@ -4,26 +4,25 @@
 
 MiniOS simula un computador con **un único CPU** y una **cola FIFO** (First In, First Out). Los procesos se leen de un archivo CSV, llegan en distintos instantes, esperan en la cola y se ejecutan **sin interrupciones**: una vez que un proceso toma el CPU, lo conserva hasta terminar. Al final se calculan métricas de espera y retorno.
 
-Solo usa la biblioteca estándar de Python (`csv`, `argparse`, `collections`, `dataclasses`, `pathlib`, `re`, `sys`). No requiere `pip install`.
+Solo usa la biblioteca estándar de Python (`csv`, `collections`, `dataclasses`, `datetime`, `pathlib`, `re`, `sys`, `unicodedata`). No requiere `pip install`.
 
 ## Estructura de la carpeta
 
 ```
 Programada_1/
-├── minios.py                  Programa principal
-├── procesos.csv               Entrada por defecto (ejemplo del enunciado con 4 procesos)
-├── resultados.csv             Salida generada al ejecutar con procesos.csv
-├── eventos.txt                Registro de eventos generado al ejecutar con procesos.csv
-├── casos_prueba/              Distintos escenarios 
-│   ├── caso1_un_proceso/
-│   ├── caso2_misma_llegada/
-│   ├── caso3_cpu_inactivo/
-│   ├── caso4_proceso_largo/
-│   └── caso5_errores/
-└── enunciado/                 PDFs entregados por el docente
+├── minios.py        Programa principal (menú interactivo)
+├── casos/           CSV de entrada: aquí se agregan los archivos a ejecutar
+│   ├── procesos.csv               Ejemplo del enunciado (4 procesos)
+│   ├── caso1_un_proceso.csv
+│   ├── caso2_misma_llegada.csv
+│   ├── caso3_cpu_inactivo.csv
+│   ├── caso4_proceso_largo.csv
+│   └── caso5_errores.csv
+├── salida/          Archivos generados, uno por ejecución (con fecha y hora en el nombre)
+└── enunciado/       PDFs entregados por el docente
 ```
 
-Cada carpeta de `casos_prueba/` contiene la entrada (`procesos.csv`) y lo que produce el programa con ella (`resultados.csv` y `eventos.txt`, o `errores.txt` en el caso 5).
+Las carpetas `casos/` y `salida/` se buscan junto a `minios.py`, así que el programa funciona aunque se ejecute desde otra ubicación.
 
 ## Requisitos
 
@@ -31,73 +30,62 @@ Python 3.10 o superior (usa la sintaxis `int | None`). Desarrollado y probado co
 
 ## Uso
 
-### Inicio rápido
-
 1. Abre una terminal (PowerShell, CMD o Git Bash) y ubícate en esta carpeta:
 
    ```powershell
    cd "H:\Mi unidad\Universidad\Ulead\Repos\curso_sistemas_operativos\Tareas\Programada_1"
    ```
 
-2. Ejecuta el programa:
+2. Ejecuta el programa. No recibe argumentos: todo se elige desde el menú.
 
    ```powershell
    python minios.py
    ```
 
-Eso es todo. Sin más argumentos, MiniOS lee `procesos.csv` de la carpeta actual, muestra el resumen en pantalla y escribe `resultados.csv` y `eventos.txt` en la misma carpeta (si ya existían, los sobrescribe).
-
 > Si `python` no se reconoce, prueba con `py minios.py` (Windows) o `python3 minios.py` (Linux/macOS).
 
-### Sintaxis completa
+### El menú
 
 ```
-python minios.py [archivo.csv] [--salida DIRECTORIO] [-v]
+========================================
+  MINIOS - Simulador de procesos
+========================================
+  1. Ejecutar un caso
+  2. Ver casos disponibles
+  0. Salir
+
+Opción:
 ```
 
-Todos los argumentos son opcionales y pueden ir en cualquier orden después de `minios.py`.
+| Opción | Qué hace |
+|--------|----------|
+| `1` | Pide el archivo, simula, muestra el resumen final y guarda los archivos de salida (resultados, eventos y traza) |
+| `2` | Lista los CSV que hay en `casos/` |
+| `0` | Sale del programa |
 
-| Argumento | Para qué sirve | Si se omite |
-|-----------|----------------|-------------|
-| `archivo.csv` | **Qué leer:** ruta del CSV con los procesos | Usa `procesos.csv` |
-| `--salida DIRECTORIO` | **Dónde guardar:** carpeta donde se escriben `resultados.csv` y `eventos.txt`. Se crea si no existe | Usa la carpeta actual |
-| `-v`, `--verbose` | **Más detalle en pantalla:** muestra la simulación instante por instante antes del resumen. No cambia los archivos generados | Solo muestra el resumen |
+Al elegir `1` se muestra la lista de casos y se pide el archivo. Se puede escribir:
 
-Lo más importante:
+- el **nombre** del archivo, con o sin `.csv` (`caso4_proceso_largo` o `caso4_proceso_largo.csv`), o
+- el **número** que aparece en la lista (`4`).
 
-- El primer valor sin guion es siempre el **archivo de entrada**. Para guardar en otra carpeta hay que usar `--salida`.
-- `--salida` necesita un valor justo después (el nombre de la carpeta). `-v` no lleva valor.
+Con solo pulsar Enter se cancela y se vuelve al menú. Después de cada ejecución el menú vuelve a aparecer, así que se pueden correr varios casos seguidos. `Ctrl+C` también sale del programa.
 
-### Ejemplos
+### Ejecutar tus propios procesos
 
-| Quiero... | Comando |
-|-----------|---------|
-| Correr el ejemplo por defecto | `python minios.py` |
-| Ver qué pasa en cada unidad de tiempo | `python minios.py -v` |
-| Correr mis propios procesos | `python minios.py mis_procesos.csv` |
-| Correr un caso de prueba | `python minios.py casos_prueba/caso4_proceso_largo/procesos.csv` |
-| Guardar las salidas en otra carpeta | `python minios.py --salida mi_carpeta` |
-| Combinar todo | `python minios.py mis_procesos.csv --salida mi_carpeta -v` |
+Crea un archivo `.csv` dentro de `casos/` con el formato descrito en *Formato de entrada* y aparecerá en la lista la próxima vez que lo pidas.
 
-En PowerShell y CMD también funcionan las rutas con `\` (por ejemplo `casos_prueba\caso4_proceso_largo\procesos.csv`).
+### Dónde quedan los resultados
 
-### Qué verás al ejecutarlo
+Cada ejecución guarda tres archivos en `salida/`. Sus nombres empiezan con la fecha y hora (`AAAAMMDD_HHMMSS`) y terminan con el caso, de modo que ninguna ejecución sobrescribe a otra y los archivos quedan ordenados cronológicamente, con los de una misma ejecución juntos:
 
-- **Sin `-v`:** solo el resumen (la tabla y las métricas que se muestran más abajo en *Salidas*), seguido de la línea `Archivos generados: ...` que indica dónde se guardaron los archivos.
-- **Con `-v`:** primero la traza de la simulación y después el mismo resumen. Si la ventana es pequeña, la traza puede quedar arriba y fuera de la vista; sube con el scroll.
-- **Si los datos tienen errores:** se listan los errores con su número de línea y no se genera ningún archivo. Ver la sección *Validaciones*.
+```
+salida/
+├── 20261004_153012_resultados_caso4_proceso_largo.csv
+├── 20261004_153012_eventos_caso4_proceso_largo.txt
+└── 20261004_153012_traza_caso4_proceso_largo.txt
+```
 
-### Errores de uso frecuentes
-
-| Mensaje | Causa | Solución |
-|---------|-------|----------|
-| `el archivo 'salida' no existe` | Se escribió `python minios.py salida`: el primer valor se interpreta como archivo de entrada | Usar `python minios.py --salida salida` |
-| `el archivo 'procesos.csv' no existe` | La terminal no está en esta carpeta | Hacer `cd` a `Programada_1` o indicar la ruta del CSV |
-| `unrecognized arguments: ...` | Hay un argumento de más o mal escrito | Revisar la sintaxis de arriba |
-
-### Códigos de salida
-
-El programa termina con código `0` si la simulación se completó y con `1` si hubo errores en los datos o al guardar los archivos.
+Si los datos tienen errores (por ejemplo el caso 5), no se simula: los errores se muestran en pantalla y se guardan en un único archivo, `<fecha_hora>_errores_<caso>.txt`, sin resultados, eventos ni traza. Ver la sección *Validaciones*.
 
 ## Formato de entrada
 
@@ -143,7 +131,7 @@ Utilización del CPU: 100.00%
 
 Si hay empates en la mayor o menor espera, se listan todos los procesos empatados.
 
-### `resultados.csv`
+### `<fecha_hora>_resultados_<caso>.csv`
 
 Una fila por proceso, en el orden del archivo de entrada. Pensado para análisis posterior.
 
@@ -153,7 +141,7 @@ P1,0,5,0,5,0,5
 P2,2,3,5,8,3,6
 ```
 
-### `eventos.txt`
+### `<fecha_hora>_eventos_<caso>.txt`
 
 Registro de lo ocurrido durante la simulación:
 
@@ -167,6 +155,34 @@ Registro de lo ocurrido durante la simulación:
 ```
 
 El mensaje "entra a la cola" solo aparece cuando el proceso realmente tiene que esperar; si el CPU está libre al llegar, inicia de inmediato.
+
+### `<fecha_hora>_traza_<caso>.txt`
+
+La **traza** es el registro paso a paso de la simulación: además de los eventos, muestra en cada unidad de tiempo qué proceso está en el CPU, cuánto le queda y quién espera en la cola. Sirve para seguir el comportamiento FIFO instante por instante. Al final incluye el mismo **resumen** que se muestra en pantalla (tabla de procesos y métricas globales), para que esa información también quede guardada.
+
+```
+--- Traza de la simulacion ---
+[0] P1 llega al sistema
+[0] P1 inicia ejecucion
+[0]   CPU: P1 (restante 15) | Cola: vacia
+[1] P2 llega al sistema
+[1] P2 entra a la cola
+[1]   CPU: P1 (restante 14) | Cola: P2
+...
+[20] P4 termina
+
+========================================
+  RESULTADO MINIOS
+========================================
+
+Proceso  Llegada  Inicio    Fin  Espera  Retorno
+P1             0       0     15       0       15
+...
+
+Procesos ejecutados: 4
+Tiempo total: 20
+...
+```
 
 ## Cómo funciona la simulación
 
@@ -190,7 +206,7 @@ $$\text{retorno} = \text{fin} - \text{llegada} \qquad \text{espera} = \text{inic
 
 ## Validaciones
 
-Antes de simular se revisan todos los datos y se reportan **todos** los errores encontrados (con el número de línea), sin intentar repararlos. Si hay alguno, no se simula ni se generan archivos.
+Antes de simular se revisan todos los datos y se reportan **todos** los errores encontrados (con el número de línea), sin intentar repararlos. Si hay alguno, no se simula: solo se muestran en pantalla y se guardan en `<fecha_hora>_errores_<caso>.txt`, sin generar resultados, eventos ni traza.
 
 - Archivo inexistente, vacío o sin procesos
 - Encabezado distinto de `id,llegada,duracion`
@@ -209,26 +225,33 @@ No se puede ejecutar la simulación. Se encontraron errores en los datos:
   Línea 5: la duración debe ser mayor que cero (-1)
 ```
 
+El archivo `<fecha_hora>_errores_<caso>.txt` tiene este mismo texto, precedido de una línea `Archivo: caso5_errores.csv`.
+
 ## Organización del código
 
 | Función | Responsabilidad |
 |---------|-----------------|
 | `leer_procesos` | Lee el CSV y valida la estructura (columnas, enteros) |
 | `validar_procesos` | Valida reglas de negocio (ids, llegada ≥ 0, duración > 0) |
+| `formatear_errores` | Arma el texto de los errores, igual para pantalla y archivo |
 | `mostrar_errores` | Imprime los errores de datos en `stderr` |
+| `guardar_errores` | Escribe el archivo de errores |
 | `simular` | Simulación FIFO tick a tick; devuelve eventos y traza |
 | `calcular_metricas` | Espera y retorno por proceso y métricas globales |
-| `mostrar_resumen` | Tabla y métricas en pantalla |
-| `mostrar_traza` | Salida detallada de la opción `-v` |
-| `guardar_resultados` | Escribe `resultados.csv` |
-| `guardar_eventos` | Escribe `eventos.txt` |
-| `main` | Argumentos, orquestación y códigos de salida |
+| `formatear_resumen` | Arma el texto del resumen (tabla y métricas), igual para pantalla y archivo |
+| `mostrar_resumen` | Imprime el resumen en pantalla |
+| `guardar_traza` | Escribe la traza instante por instante seguida del resumen |
+| `guardar_resultados` | Escribe el CSV de resultados |
+| `guardar_eventos` | Escribe el registro de eventos |
+| `ejecutar_caso` | Lee, valida, simula, muestra y guarda un caso (con el timestamp en los nombres de salida) |
+| `listar_casos`, `mostrar_casos`, `elegir_caso` | Listan los CSV de `casos/` y resuelven el nombre o número elegido |
+| `mostrar_menu`, `menu` | Menú interactivo |
 
 Los procesos se representan con el `dataclass` `Proceso`, que guarda id, llegada, duración, estado, tiempo restante, inicio, fin, espera y retorno.
 
 ## Casos de prueba
 
-Los cinco escenarios mínimos del enunciado están en [casos_prueba/](casos_prueba/).
+Los cinco escenarios mínimos del enunciado y el ejemplo del enunciado están en [casos/](casos/).
 
 | Caso | Entrada | Qué comprueba | Resultado |
 |------|---------|---------------|-----------|
@@ -236,15 +259,12 @@ Los cinco escenarios mínimos del enunciado están en [casos_prueba/](casos_prue
 | 2 — Misma llegada | `P1,0,4` `P2,0,2` `P3,0,6` | Orden FIFO (por orden del archivo) | Espera 3.33, retorno 7.33; orden P1, P2, P3 |
 | 3 — Llegadas separadas | `P1,0,2` `P2,5,3` `P3,10,2` | CPU inactivo entre procesos | Espera 0.00, retorno 2.33; utilización 58.33% |
 | 4 — Proceso largo primero | `P1,0,15` `P2,1,2` `P3,2,1` `P4,3,2` | Efecto de un proceso largo sobre los que esperan | Espera 11.00, retorno 16.00; P3 y P4 esperan 15 |
-| 5 — Archivo con errores | `P2,-2,4` `P3,ABC,3` `P4,5,-1` | Validaciones | 3 errores reportados; no se simula |
+| 5 — Archivo con errores | `P2,-2,4` `P3,ABC,3` `P4,5,-1` | Validaciones | 3 errores reportados y guardados en `..._errores_...txt`; no se simula |
+| 6 — Ejemplo del enunciado | `P1,0,5` `P2,2,3` `P3,3,8` `P4,6,2` | Ejemplo general de la sección 4 del enunciado (archivo `procesos.csv`; no es uno de los 5 casos mínimos) | Espera 4.50, retorno 9.00; tiempo total 18; P4 espera más (10) |
 
 En el caso 4 se ve la principal debilidad de FIFO: P3 dura 1 unidad pero espera 15 porque P1 (15 unidades) llegó antes. Es el llamado *efecto convoy*.
 
-Para regenerar las salidas de los casos 1 a 4 desde esta carpeta:
-
-```bash
-for d in casos_prueba/caso[1-4]*/; do python minios.py "$d/procesos.csv" --salida "$d"; done
-```
+Para probarlos, ejecuta `python minios.py` y elige cada caso con la opción `1`. Las salidas de las corridas de ejemplo están en [salida/](salida/).
 
 ## Limitaciones conocidas
 

@@ -1,0 +1,5 @@
+id,llegada,duracion,inicio,fin,espera,retorno
+P1,0,15,0,15,0,15
+P2,1,2,15,17,14,16
+P3,2,1,17,18,15,16
+P4,3,2,18,20,15,17

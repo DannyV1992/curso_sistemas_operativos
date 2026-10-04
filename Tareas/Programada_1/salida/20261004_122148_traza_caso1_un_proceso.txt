@@ -1,0 +1,24 @@
+--- Traza de la simulacion ---
+[0] P1 llega al sistema
+[0] P1 inicia ejecucion
+[0]   CPU: P1 (restante 5) | Cola: vacia
+[1]   CPU: P1 (restante 4) | Cola: vacia
+[2]   CPU: P1 (restante 3) | Cola: vacia
+[3]   CPU: P1 (restante 2) | Cola: vacia
+[4]   CPU: P1 (restante 1) | Cola: vacia
+[5] P1 termina
+
+========================================
+  RESULTADO MINIOS
+========================================
+
+Proceso  Llegada  Inicio    Fin  Espera  Retorno
+P1             0       0      5       0        5
+
+Procesos ejecutados: 1
+Tiempo total: 5
+Espera promedio: 0.00
+Retorno promedio: 5.00
+Mayor tiempo de espera: P1 (0)
+Menor tiempo de espera: P1 (0)
+Utilizacion del CPU: 100.00%

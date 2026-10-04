@@ -1,0 +1,15 @@
+[0] P1 llega al sistema
+[0] P1 inicia ejecución
+[2] P2 llega al sistema
+[2] P2 entra a la cola
+[3] P3 llega al sistema
+[3] P3 entra a la cola
+[5] P1 termina
+[5] P2 inicia ejecución
+[6] P4 llega al sistema
+[6] P4 entra a la cola
+[8] P2 termina
+[8] P3 inicia ejecución
+[16] P3 termina
+[16] P4 inicia ejecución
+[18] P4 termina
