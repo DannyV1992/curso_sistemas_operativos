@@ -30,10 +30,10 @@ Python 3.10 o superior (usa la sintaxis `int | None`). Desarrollado y probado co
 
 ## Uso
 
-1. Abre una terminal (PowerShell, CMD o Git Bash) y ubícate en esta carpeta:
+1. Abre una terminal (PowerShell, CMD o Git Bash) y ubícate en la carpeta `Programada_1`, es decir, la que contiene `minios.py`:
 
-   ```powershell
-   cd "H:\Mi unidad\Universidad\Ulead\Repos\curso_sistemas_operativos\Tareas\Programada_1"
+   ```
+   cd "<ruta donde descargaste o clonaste el proyecto>/Programada_1"
    ```
 
 2. Ejecuta el programa. No recibe argumentos: todo se elige desde el menú.
