@@ -1,0 +1,23 @@
+[0] P1 llega al sistema
+[0] P1 inicia ejecución
+[2] P2 llega al sistema
+[2] P2 entra a la cola
+[3] P3 llega al sistema
+[3] P3 entra a la cola
+[3] P1 agota su quantum (restante=2)
+[3] P1 vuelve a la cola
+[3] P2 inicia ejecución
+[6] P2 termina
+[6] P3 inicia ejecución
+[6] P4 llega al sistema
+[6] P4 entra a la cola
+[9] P3 agota su quantum (restante=5)
+[9] P3 vuelve a la cola
+[9] P1 retoma ejecución
+[11] P1 termina
+[11] P4 inicia ejecución
+[13] P4 termina
+[13] P3 retoma ejecución
+[16] P3 agota su quantum (restante=2)
+[16] P3 continúa con un nuevo quantum (la cola está vacía)
+[18] P3 termina
