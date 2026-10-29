@@ -6,7 +6,7 @@
 
 **Fuente:** presentación «Buses», diapositiva 13 (Preguntas)
 
-**Integrantes:** Daniel Vásquez González
+**Estudiante:** Daniel Vásquez González
 
 ---
 
@@ -104,12 +104,3 @@ Resumen sin entrar en detalle, de los puertos más antiguos a los más recientes
 | **Thunderbolt** | Serial | Discos externos, pantallas, estaciones de acople |
 
 **Tendencia que se observa.** Se pasó de **un puerto distinto por cada tipo de dispositivo** (COM, LPT, PS/2, VGA, juegos) a **interfaces seriales universales** (USB y sus sucesores). Hacia dentro del equipo ocurrió lo mismo: IDE/PATA dio paso a SATA, y VESA, PCI y AGP dieron paso a PCI Express.
-
----
-
-## Conclusiones generales
-
-1. La evolución de los buses es una historia de **especialización**: separar los caminos (memoria, video, E/S, almacenamiento) para liberar a la CPU y evitar los transbordos por un único punto, como pasaba con el transporte público que obligaba a pasar por San José.
-2. **Serial supera a paralelo** cuando sube la frecuencia, porque se evitan el *skew* y el *crosstalk*, y se pasa de buses compartidos a enlaces dedicados punto a punto.
-3. Los dispositivos con exigencias propias (video, almacenamiento) acabaron teniendo su **bus dedicado** (AGP, SATA) y, finalmente, todo convergió en el modelo serial punto a punto de **PCI Express**.
-4. Los buses de **dispositivos** son donde más ha habido cambios, mientras que los buses de datos apenas han cambiado.
