@@ -1,0 +1,194 @@
+
+====================================================
+SIMULADOR DE PARTICIONES FIJAS
+Particiones: sin configurar | Estrategia: sin seleccionar
+====================================================
+1. Configurar las particiones de memoria
+2. Seleccionar estrategia de asignación
+3. Crear un proceso e intentar asignarlo
+4. Finalizar un proceso en memoria
+5. Consultar el estado de las particiones
+6. Consultar la cola de espera
+7. Mostrar estadísticas de utilización
+8. Reiniciar la simulación
+9. Salir
+Opción: 1
+Cantidad de particiones: 2
+ID de la partición #1: 1
+Tamaño de la partición 1 (KB): 100
+ID de la partición #2: 2
+Tamaño de la partición 2 (KB): 200
+
+Memoria configurada: 2 particiones, 300 KB en total.
+Partición  Tamaño  Estado  Proceso  Memoria no utilizada
+---------  ------  ------  -------  --------------------
+        1  100 KB  Libre   —                      100 KB
+        2  200 KB  Libre   —                      200 KB
+
+====================================================
+SIMULADOR DE PARTICIONES FIJAS
+Particiones: 2 configuradas | Estrategia: sin seleccionar
+====================================================
+1. Configurar las particiones de memoria
+2. Seleccionar estrategia de asignación
+3. Crear un proceso e intentar asignarlo
+4. Finalizar un proceso en memoria
+5. Consultar el estado de las particiones
+6. Consultar la cola de espera
+7. Mostrar estadísticas de utilización
+8. Reiniciar la simulación
+9. Salir
+Opción: 2
+1. First Fit (primer ajuste)
+2. Best Fit (mejor ajuste)
+Estrategia: 1
+Estrategia seleccionada: First Fit (primer ajuste).
+
+====================================================
+SIMULADOR DE PARTICIONES FIJAS
+Particiones: 2 configuradas | Estrategia: First Fit (primer ajuste)
+====================================================
+1. Configurar las particiones de memoria
+2. Seleccionar estrategia de asignación
+3. Crear un proceso e intentar asignarlo
+4. Finalizar un proceso en memoria
+5. Consultar el estado de las particiones
+6. Consultar la cola de espera
+7. Mostrar estadísticas de utilización
+8. Reiniciar la simulación
+9. Salir
+Opción: 3
+ID del proceso: P1
+Tamaño del proceso (KB): 90
+
+P1 (90 KB) asignado a la partición 1 (100 KB). Fragmentación interna: 10 KB.
+Partición  Tamaño  Estado   Proceso  Memoria no utilizada
+---------  ------  -------  -------  --------------------
+        1  100 KB  Ocupada  P1                      10 KB
+        2  200 KB  Libre    —                      200 KB
+
+====================================================
+SIMULADOR DE PARTICIONES FIJAS
+Particiones: 2 configuradas | Estrategia: First Fit (primer ajuste)
+====================================================
+1. Configurar las particiones de memoria
+2. Seleccionar estrategia de asignación
+3. Crear un proceso e intentar asignarlo
+4. Finalizar un proceso en memoria
+5. Consultar el estado de las particiones
+6. Consultar la cola de espera
+7. Mostrar estadísticas de utilización
+8. Reiniciar la simulación
+9. Salir
+Opción: 3
+ID del proceso: P2
+Tamaño del proceso (KB): 150
+
+P2 (150 KB) asignado a la partición 2 (200 KB). Fragmentación interna: 50 KB.
+Partición  Tamaño  Estado   Proceso  Memoria no utilizada
+---------  ------  -------  -------  --------------------
+        1  100 KB  Ocupada  P1                      10 KB
+        2  200 KB  Ocupada  P2                      50 KB
+
+====================================================
+SIMULADOR DE PARTICIONES FIJAS
+Particiones: 2 configuradas | Estrategia: First Fit (primer ajuste)
+====================================================
+1. Configurar las particiones de memoria
+2. Seleccionar estrategia de asignación
+3. Crear un proceso e intentar asignarlo
+4. Finalizar un proceso en memoria
+5. Consultar el estado de las particiones
+6. Consultar la cola de espera
+7. Mostrar estadísticas de utilización
+8. Reiniciar la simulación
+9. Salir
+Opción: 3
+ID del proceso: P3
+Tamaño del proceso (KB): 180
+
+No hay una partición libre donde quepan 180 KB: P3 pasa a la cola de espera.
+Partición  Tamaño  Estado   Proceso  Memoria no utilizada
+---------  ------  -------  -------  --------------------
+        1  100 KB  Ocupada  P1                      10 KB
+        2  200 KB  Ocupada  P2                      50 KB
+En espera: P3 (180 KB)
+
+====================================================
+SIMULADOR DE PARTICIONES FIJAS
+Particiones: 2 configuradas | Estrategia: First Fit (primer ajuste)
+====================================================
+1. Configurar las particiones de memoria
+2. Seleccionar estrategia de asignación
+3. Crear un proceso e intentar asignarlo
+4. Finalizar un proceso en memoria
+5. Consultar el estado de las particiones
+6. Consultar la cola de espera
+7. Mostrar estadísticas de utilización
+8. Reiniciar la simulación
+9. Salir
+Opción: 4
+ID del proceso que terminó: P2
+
+P2 finalizó y la partición 2 (200 KB) quedó libre.
+P3 (180 KB) sale de la cola y entra a la partición 2 (200 KB). Fragmentación interna: 20 KB.
+Partición  Tamaño  Estado   Proceso  Memoria no utilizada
+---------  ------  -------  -------  --------------------
+        1  100 KB  Ocupada  P1                      10 KB
+        2  200 KB  Ocupada  P3                      20 KB
+
+====================================================
+SIMULADOR DE PARTICIONES FIJAS
+Particiones: 2 configuradas | Estrategia: First Fit (primer ajuste)
+====================================================
+1. Configurar las particiones de memoria
+2. Seleccionar estrategia de asignación
+3. Crear un proceso e intentar asignarlo
+4. Finalizar un proceso en memoria
+5. Consultar el estado de las particiones
+6. Consultar la cola de espera
+7. Mostrar estadísticas de utilización
+8. Reiniciar la simulación
+9. Salir
+Opción: 6
+La cola de espera está vacía.
+
+====================================================
+SIMULADOR DE PARTICIONES FIJAS
+Particiones: 2 configuradas | Estrategia: First Fit (primer ajuste)
+====================================================
+1. Configurar las particiones de memoria
+2. Seleccionar estrategia de asignación
+3. Crear un proceso e intentar asignarlo
+4. Finalizar un proceso en memoria
+5. Consultar el estado de las particiones
+6. Consultar la cola de espera
+7. Mostrar estadísticas de utilización
+8. Reiniciar la simulación
+9. Salir
+Opción: 7
+Memoria total                  : 300 KB
+Memoria utilizada por procesos : 270 KB
+Memoria libre                  :   0 KB
+Fragmentación interna          :  30 KB
+Utilización efectiva           : 90.00 %
+Procesos en espera             :      0
+Procesos en memoria            :      2
+Procesos finalizados           :      1
+Verificación: 300 = 270 + 30 + 0 -> OK
+
+====================================================
+SIMULADOR DE PARTICIONES FIJAS
+Particiones: 2 configuradas | Estrategia: First Fit (primer ajuste)
+====================================================
+1. Configurar las particiones de memoria
+2. Seleccionar estrategia de asignación
+3. Crear un proceso e intentar asignarlo
+4. Finalizar un proceso en memoria
+5. Consultar el estado de las particiones
+6. Consultar la cola de espera
+7. Mostrar estadísticas de utilización
+8. Reiniciar la simulación
+9. Salir
+Opción: 9
+Fin de la simulación.
