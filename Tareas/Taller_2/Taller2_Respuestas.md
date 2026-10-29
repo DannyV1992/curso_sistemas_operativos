@@ -10,6 +10,29 @@
 
 ---
 
+## Entrega
+
+Todo el trabajo se entrega en este repositorio de GitHub.
+
+**Archivos de salida (`salidas/`):** [entrega/salidas](https://github.com/DannyV1992/curso_sistemas_operativos/tree/main/Tareas/Taller_2/entrega/salidas)
+
+**Scripts con mi firma (`reporte_log.sh` y `vigilar_log.sh`, con sus `reportes/` y `capturas/`):** [entrega/scripts](https://github.com/DannyV1992/curso_sistemas_operativos/tree/main/Tareas/Taller_2/entrega/scripts)
+
+**Capturas de pantalla:** [Screenshots](https://github.com/DannyV1992/curso_sistemas_operativos/tree/main/Tareas/Taller_2/Screenshots)
+
+Las dos carpetas de archivos que el enunciado pedía adjuntar en OneDrive (los archivos de salida y los scripts) se entregan como carpetas de este repositorio.
+
+### Lista de verificación
+
+- Actividad 1: capturas de la demostración, los ejercicios 1 a 4 y el checkpoint.
+- Actividad 2: `salidas/` con 15 archivos (el mínimo era 5) y IPs externas arriba en el ranking.
+- Actividad 3: `tail -f`, `tail -F`, `--line-buffered`, `tee`, rotación, `watch` y ejercicios 1 a 4.
+- Actividad 4: rangos de horas, últimos 5 minutos, errores por minuto, `ventana.txt`, fechas de `web.log` y checkpoint.
+- Actividad 5: `reporte_log.sh` (códigos de salida 0, 1 y 2, 2 reportes) y `vigilar_log.sh` (1 captura con 15 líneas, sin `tail` huérfano). Los dos llevan la firma en el encabezado.
+- Desafío opcional: códigos HTTP de `web.log`.
+
+---
+
 ## Paso 0: Preparación del entorno
 
 Se creó la carpeta de trabajo `~/lab_logs`, se copió dentro `simulador_log.py` y se comprobó que funciona con `--help`. Luego se generó un log de 500 líneas con una semilla fija (`--semilla 42`, para que el resultado sea reproducible) y con ráfagas de errores (`--rafagas`).
@@ -833,28 +856,3 @@ awk '{print $9}' web.log | sort | uniq -c | sort -rn
 **Respuesta:** En el formato web el código HTTP es la columna 9, así que `awk '{print $9}'` lo extrae y `sort | uniq -c | sort -rn` cuenta cuántas peticiones hubo de cada uno. De las **366 peticiones** de `web.log`, 150 fueron `200`, 76 `201` y 42 `304` (éxitos o respuestas en caché). Hubo 30 `404` y 23 `301`. Los códigos de error de autenticación y servidor fueron 18 `401`, 8 `403`, 10 `500`, 6 `502` y 3 `503`. Sumando todos los 4xx y 5xx (30 + 18 + 8 + 10 + 6 + 3) son 75 respuestas de error, cerca del 20 % del tráfico; de ellas, 19 son errores de servidor (5xx).
 
 ![Desafío HTTP](Screenshots/05_desafio_http.png)
-
----
-
-## Entrega
-
-Todo el trabajo se entrega en este repositorio de GitHub.
-
-**Documento de respuestas:** [Taller2_Respuestas.md](https://github.com/DannyV1992/curso_sistemas_operativos/blob/main/Tareas/Taller_2/Taller2_Respuestas.md)
-
-**Archivos de salida (`salidas/`):** [entrega/salidas](https://github.com/DannyV1992/curso_sistemas_operativos/tree/main/Tareas/Taller_2/entrega/salidas)
-
-**Scripts con mi firma (`reporte_log.sh` y `vigilar_log.sh`, con sus `reportes/` y `capturas/`):** [entrega/scripts](https://github.com/DannyV1992/curso_sistemas_operativos/tree/main/Tareas/Taller_2/entrega/scripts)
-
-**Capturas de pantalla:** [Screenshots](https://github.com/DannyV1992/curso_sistemas_operativos/tree/main/Tareas/Taller_2/Screenshots)
-
-Las dos carpetas de archivos que el enunciado pedía adjuntar en OneDrive (los archivos de salida y los scripts) se entregan como carpetas de este repositorio.
-
-### Lista de verificación
-
-- Actividad 1: capturas de la demostración, los ejercicios 1 a 4 y el checkpoint.
-- Actividad 2: `salidas/` con 15 archivos (el mínimo era 5) y IPs externas arriba en el ranking.
-- Actividad 3: `tail -f`, `tail -F`, `--line-buffered`, `tee`, rotación, `watch` y ejercicios 1 a 4.
-- Actividad 4: rangos de horas, últimos 5 minutos, errores por minuto, `ventana.txt`, fechas de `web.log` y checkpoint.
-- Actividad 5: `reporte_log.sh` (códigos de salida 0, 1 y 2, 2 reportes) y `vigilar_log.sh` (1 captura con 15 líneas, sin `tail` huérfano). Los dos llevan la firma en el encabezado.
-- Desafío opcional: códigos HTTP de `web.log`.
