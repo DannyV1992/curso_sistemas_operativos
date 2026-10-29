@@ -1,0 +1,7 @@
+2026-10-29 10:35:31 [CRITICAL] correo[6696]: Servicio inventario no responde
+2026-10-29 10:35:31 [CRITICAL] auth[6019]: Servicio api-gateway no responde
+2026-10-29 10:35:32 [CRITICAL] api-gateway[9040]: Base de datos fuera de línea
+2026-10-29 10:35:34 [CRITICAL] correo[4344]: Intentos de acceso masivos detectados desde 201.204.33.8
+2026-10-29 10:35:34 [CRITICAL] auth[9521]: Servicio inventario no responde
+2026-10-29 10:35:34 [CRITICAL] pagos[4052]: Servicio api-gateway no responde
+2026-10-29 10:35:37 [CRITICAL] inventario[6400]: Intentos de acceso masivos detectados desde 10.0.0.5

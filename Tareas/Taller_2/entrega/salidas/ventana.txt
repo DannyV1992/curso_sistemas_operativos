@@ -1,0 +1,35 @@
+2026-10-29 09:33:33 [ERROR] pagos[8138]: NullPointerException en auth.procesar()
+2026-10-29 09:33:40 [ERROR] pagos[9095]: Pago #8354 rechazado: fondos insuficientes
+2026-10-29 09:33:52 [ERROR] inventario[2381]: NullPointerException en pagos.procesar()
+2026-10-29 09:33:56 [ERROR] reportes[3463]: Timeout conectando a db-primaria:5432
+2026-10-29 09:34:00 [ERROR] inventario[3093]: Disco /var al 79% de capacidad
+2026-10-29 09:34:02 [ERROR] pagos[4711]: Login fallido para usuario bruno desde 45.33.12.9
+2026-10-29 09:34:12 [ERROR] api-gateway[2502]: Login fallido para usuario ana desde 192.168.1.10
+2026-10-29 09:34:19 [ERROR] api-gateway[8349]: NullPointerException en correo.procesar()
+2026-10-29 09:34:22 [ERROR] pagos[5934]: Login fallido para usuario root desde 201.204.33.8
+2026-10-29 09:34:25 [ERROR] correo[4963]: Disco /var al 83% de capacidad
+2026-10-29 09:34:29 [ERROR] inventario[2108]: NullPointerException en api-gateway.procesar()
+2026-10-29 09:35:15 [ERROR] correo[5653]: Login fallido para usuario admin desde 201.204.33.8
+2026-10-29 09:35:58 [ERROR] api-gateway[9734]: Timeout conectando a db-primaria:5432
+2026-10-29 09:36:00 [ERROR] inventario[5735]: Disco /var al 79% de capacidad
+2026-10-29 09:36:43 [ERROR] correo[3178]: Disco /var al 93% de capacidad
+2026-10-29 09:36:48 [ERROR] api-gateway[9920]: Pago #7214 rechazado: fondos insuficientes
+2026-10-29 09:38:04 [ERROR] reportes[7853]: NullPointerException en inventario.procesar()
+2026-10-29 09:38:12 [ERROR] auth[3321]: Timeout conectando a db-primaria:5432
+2026-10-29 09:39:32 [ERROR] reportes[2889]: Login fallido para usuario ana desde 186.15.70.120
+2026-10-29 09:39:42 [ERROR] reportes[1157]: Timeout conectando a db-primaria:5432
+2026-10-29 09:39:48 [ERROR] auth[2020]: Pago #3141 rechazado: fondos insuficientes
+2026-10-29 09:39:55 [ERROR] inventario[7492]: NullPointerException en correo.procesar()
+2026-10-29 09:39:57 [ERROR] pagos[2989]: Login fallido para usuario diego desde 45.33.12.9
+2026-10-29 09:40:04 [ERROR] api-gateway[1483]: Pago #7990 rechazado: fondos insuficientes
+2026-10-29 09:40:05 [ERROR] pagos[5835]: Pago #8848 rechazado: fondos insuficientes
+2026-10-29 09:40:10 [ERROR] reportes[9907]: Login fallido para usuario admin desde 186.15.70.120
+2026-10-29 09:40:18 [ERROR] reportes[6761]: NullPointerException en auth.procesar()
+2026-10-29 09:40:19 [ERROR] pagos[2817]: NullPointerException en inventario.procesar()
+2026-10-29 09:40:23 [ERROR] pagos[3911]: Disco /var al 99% de capacidad
+2026-10-29 09:40:34 [ERROR] api-gateway[9078]: Pago #9946 rechazado: fondos insuficientes
+2026-10-29 09:40:44 [ERROR] inventario[8909]: Disco /var al 73% de capacidad
+2026-10-29 09:41:08 [ERROR] auth[9561]: Pago #7790 rechazado: fondos insuficientes
+2026-10-29 09:41:22 [ERROR] api-gateway[8937]: NullPointerException en api-gateway.procesar()
+2026-10-29 09:42:45 [ERROR] auth[9305]: Login fallido para usuario diego desde 10.0.0.5
+2026-10-29 09:42:51 [ERROR] reportes[5990]: NullPointerException en api-gateway.procesar()

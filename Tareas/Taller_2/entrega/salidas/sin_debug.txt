@@ -1,0 +1,443 @@
+2026-10-29 09:28:20 [INFO] auth[4257]: Health check OK
+2026-10-29 09:28:24 [INFO] pagos[4527]: Pedido #2519 creado correctamente
+2026-10-29 09:28:31 [WARN] api-gateway[5554]: Token próximo a expirar para fabian
+2026-10-29 09:28:32 [INFO] correo[5010]: Usuario admin cerró sesión
+2026-10-29 09:28:38 [INFO] api-gateway[7543]: Pedido #3266 creado correctamente
+2026-10-29 09:28:42 [INFO] auth[7304]: Reporte mensual generado en 2445 ms
+2026-10-29 09:28:44 [INFO] pagos[8433]: Usuario carla inició sesión desde 192.168.1.22
+2026-10-29 09:28:47 [INFO] correo[1009]: Correo enviado a bruno@ejemplo.com
+2026-10-29 09:28:57 [ERROR] reportes[4295]: Disco /var al 73% de capacidad
+2026-10-29 09:29:01 [INFO] api-gateway[4510]: Correo enviado a hugo@ejemplo.com
+2026-10-29 09:29:04 [INFO] reportes[1887]: Health check OK
+2026-10-29 09:29:06 [INFO] inventario[8579]: Usuario admin cerró sesión
+2026-10-29 09:29:11 [WARN] pagos[7658]: Token próximo a expirar para ana
+2026-10-29 09:29:13 [INFO] reportes[8973]: Usuario ana cerró sesión
+2026-10-29 09:29:16 [WARN] pagos[1931]: Tiempo de respuesta alto: 3492 ms en /api/productos
+2026-10-29 09:29:24 [INFO] inventario[2188]: Usuario admin inició sesión desde 10.0.0.17
+2026-10-29 09:29:28 [INFO] pagos[8179]: Correo enviado a admin@ejemplo.com
+2026-10-29 09:29:37 [INFO] auth[2512]: Health check OK
+2026-10-29 09:29:40 [INFO] auth[2832]: Usuario ana inició sesión desde 201.204.33.8
+2026-10-29 09:29:41 [INFO] auth[6862]: Usuario bruno cerró sesión
+2026-10-29 09:29:46 [INFO] pagos[3900]: Reporte mensual generado en 106 ms
+2026-10-29 09:29:50 [WARN] inventario[6753]: Token próximo a expirar para ana
+2026-10-29 09:29:51 [INFO] reportes[6139]: Reporte mensual generado en 2488 ms
+2026-10-29 09:29:54 [WARN] reportes[4228]: Reintento 2/3 conectando a la base de datos
+2026-10-29 09:29:57 [INFO] inventario[3085]: Usuario carla cerró sesión
+2026-10-29 09:29:59 [INFO] correo[6279]: Reporte mensual generado en 1814 ms
+2026-10-29 09:30:03 [INFO] pagos[6085]: Usuario ana cerró sesión
+2026-10-29 09:30:05 [INFO] pagos[7291]: Reporte mensual generado en 1641 ms
+2026-10-29 09:30:08 [INFO] auth[8478]: Usuario admin cerró sesión
+2026-10-29 09:30:11 [ERROR] api-gateway[3607]: Disco /var al 85% de capacidad
+2026-10-29 09:30:20 [INFO] reportes[7624]: Health check OK
+2026-10-29 09:30:21 [INFO] api-gateway[3977]: Usuario diego inició sesión desde 45.33.12.9
+2026-10-29 09:30:25 [WARN] inventario[2341]: Token próximo a expirar para fabian
+2026-10-29 09:30:32 [INFO] pagos[6096]: Usuario root inició sesión desde 186.15.70.120
+2026-10-29 09:30:36 [INFO] reportes[5941]: Health check OK
+2026-10-29 09:30:39 [INFO] api-gateway[9031]: Usuario hugo inició sesión desde 10.0.0.5
+2026-10-29 09:30:41 [WARN] correo[8921]: Token próximo a expirar para diego
+2026-10-29 09:30:45 [INFO] auth[9098]: Pedido #8988 creado correctamente
+2026-10-29 09:30:50 [INFO] correo[4130]: Usuario admin inició sesión desde 10.0.0.17
+2026-10-29 09:30:52 [INFO] pagos[6016]: Health check OK
+2026-10-29 09:30:54 [INFO] pagos[2976]: Health check OK
+2026-10-29 09:30:58 [ERROR] correo[5636]: Login fallido para usuario diego desde 201.204.33.8
+2026-10-29 09:31:02 [INFO] auth[5136]: Reporte mensual generado en 472 ms
+2026-10-29 09:31:12 [CRITICAL] inventario[1986]: Intentos de acceso masivos detectados desde 45.33.12.9
+2026-10-29 09:31:17 [WARN] pagos[7965]: Tiempo de respuesta alto: 2235 ms en /logout
+2026-10-29 09:31:20 [WARN] inventario[8195]: Tiempo de respuesta alto: 1924 ms en /static/app.js
+2026-10-29 09:31:24 [INFO] auth[2496]: Usuario elena cerró sesión
+2026-10-29 09:31:29 [INFO] correo[8141]: Health check OK
+2026-10-29 09:31:34 [INFO] reportes[9117]: Pedido #7561 creado correctamente
+2026-10-29 09:31:40 [INFO] correo[1018]: Health check OK
+2026-10-29 09:31:43 [WARN] pagos[5375]: Uso de memoria al 95%
+2026-10-29 09:31:44 [INFO] correo[7684]: Usuario bruno inició sesión desde 10.0.0.5
+2026-10-29 09:31:47 [INFO] api-gateway[4993]: Reporte mensual generado en 2262 ms
+2026-10-29 09:31:52 [INFO] auth[5634]: Health check OK
+2026-10-29 09:31:55 [INFO] pagos[4912]: Correo enviado a ana@ejemplo.com
+2026-10-29 09:32:00 [INFO] auth[3068]: Correo enviado a hugo@ejemplo.com
+2026-10-29 09:32:03 [INFO] pagos[2225]: Reporte mensual generado en 3206 ms
+2026-10-29 09:32:05 [INFO] reportes[8994]: Correo enviado a elena@ejemplo.com
+2026-10-29 09:32:10 [INFO] reportes[5906]: Usuario elena inició sesión desde 201.204.33.8
+2026-10-29 09:32:13 [INFO] pagos[3785]: Usuario diego cerró sesión
+2026-10-29 09:32:15 [INFO] auth[8622]: Pedido #9955 creado correctamente
+2026-10-29 09:32:18 [INFO] inventario[4263]: Reporte mensual generado en 3500 ms
+2026-10-29 09:32:20 [ERROR] reportes[7484]: Timeout conectando a db-primaria:5432
+2026-10-29 09:32:24 [INFO] reportes[3240]: Health check OK
+2026-10-29 09:32:29 [INFO] api-gateway[3877]: Usuario admin cerró sesión
+2026-10-29 09:32:33 [INFO] auth[8673]: Usuario gaby inició sesión desde 201.204.33.8
+2026-10-29 09:32:35 [INFO] reportes[5295]: Correo enviado a diego@ejemplo.com
+2026-10-29 09:32:40 [INFO] auth[8606]: Health check OK
+2026-10-29 09:32:41 [INFO] api-gateway[8432]: Pedido #9850 creado correctamente
+2026-10-29 09:32:44 [ERROR] auth[7070]: Login fallido para usuario fabian desde 201.204.33.8
+2026-10-29 09:32:45 [INFO] auth[8450]: Usuario root inició sesión desde 192.168.1.10
+2026-10-29 09:32:46 [WARN] correo[4394]: Uso de memoria al 74%
+2026-10-29 09:32:57 [ERROR] reportes[9543]: Timeout conectando a db-primaria:5432
+2026-10-29 09:33:01 [INFO] reportes[2874]: Health check OK
+2026-10-29 09:33:08 [INFO] pagos[1982]: Correo enviado a bruno@ejemplo.com
+2026-10-29 09:33:13 [INFO] inventario[2697]: Correo enviado a hugo@ejemplo.com
+2026-10-29 09:33:14 [INFO] pagos[8030]: Correo enviado a elena@ejemplo.com
+2026-10-29 09:33:17 [INFO] pagos[7566]: Usuario admin inició sesión desde 10.0.0.17
+2026-10-29 09:33:19 [INFO] correo[2391]: Usuario ana inició sesión desde 192.168.1.22
+2026-10-29 09:33:23 [INFO] pagos[9394]: Usuario elena inició sesión desde 45.33.12.9
+2026-10-29 09:33:29 [WARN] reportes[4770]: Reintento 2/3 conectando a la base de datos
+2026-10-29 09:33:32 [WARN] reportes[7843]: Reintento 3/3 conectando a la base de datos
+2026-10-29 09:33:33 [ERROR] pagos[8138]: NullPointerException en auth.procesar()
+2026-10-29 09:33:36 [INFO] correo[4176]: Pedido #3419 creado correctamente
+2026-10-29 09:33:40 [ERROR] pagos[9095]: Pago #8354 rechazado: fondos insuficientes
+2026-10-29 09:33:43 [WARN] inventario[1920]: Reintento 2/3 conectando a la base de datos
+2026-10-29 09:33:47 [CRITICAL] auth[9307]: Base de datos fuera de línea
+2026-10-29 09:33:52 [ERROR] inventario[2381]: NullPointerException en pagos.procesar()
+2026-10-29 09:33:54 [CRITICAL] api-gateway[7697]: Base de datos fuera de línea
+2026-10-29 09:33:56 [ERROR] reportes[3463]: Timeout conectando a db-primaria:5432
+2026-10-29 09:34:00 [ERROR] inventario[3093]: Disco /var al 79% de capacidad
+2026-10-29 09:34:02 [ERROR] pagos[4711]: Login fallido para usuario bruno desde 45.33.12.9
+2026-10-29 09:34:03 [INFO] reportes[3712]: Health check OK
+2026-10-29 09:34:05 [WARN] api-gateway[4178]: Reintento 1/3 conectando a la base de datos
+2026-10-29 09:34:09 [INFO] inventario[1854]: Health check OK
+2026-10-29 09:34:12 [ERROR] api-gateway[2502]: Login fallido para usuario ana desde 192.168.1.10
+2026-10-29 09:34:14 [INFO] pagos[1461]: Pedido #2623 creado correctamente
+2026-10-29 09:34:19 [ERROR] api-gateway[8349]: NullPointerException en correo.procesar()
+2026-10-29 09:34:22 [ERROR] pagos[5934]: Login fallido para usuario root desde 201.204.33.8
+2026-10-29 09:34:25 [ERROR] correo[4963]: Disco /var al 83% de capacidad
+2026-10-29 09:34:29 [ERROR] inventario[2108]: NullPointerException en api-gateway.procesar()
+2026-10-29 09:34:34 [WARN] auth[6850]: Tiempo de respuesta alto: 1417 ms en /logout
+2026-10-29 09:34:39 [INFO] reportes[8612]: Health check OK
+2026-10-29 09:34:44 [WARN] inventario[9444]: Token próximo a expirar para elena
+2026-10-29 09:34:46 [INFO] inventario[8159]: Reporte mensual generado en 3049 ms
+2026-10-29 09:34:50 [INFO] auth[8055]: Correo enviado a elena@ejemplo.com
+2026-10-29 09:34:52 [INFO] api-gateway[3730]: Health check OK
+2026-10-29 09:34:53 [INFO] inventario[9406]: Health check OK
+2026-10-29 09:34:56 [INFO] correo[1530]: Correo enviado a fabian@ejemplo.com
+2026-10-29 09:34:58 [INFO] pagos[2858]: Usuario admin inició sesión desde 186.15.70.120
+2026-10-29 09:35:01 [CRITICAL] inventario[9047]: Servicio inventario no responde
+2026-10-29 09:35:05 [INFO] correo[9882]: Pedido #5914 creado correctamente
+2026-10-29 09:35:06 [INFO] inventario[7044]: Reporte mensual generado en 3296 ms
+2026-10-29 09:35:09 [WARN] correo[2208]: Uso de memoria al 81%
+2026-10-29 09:35:13 [INFO] pagos[8088]: Correo enviado a admin@ejemplo.com
+2026-10-29 09:35:15 [ERROR] correo[5653]: Login fallido para usuario admin desde 201.204.33.8
+2026-10-29 09:35:18 [INFO] correo[3526]: Usuario ana cerró sesión
+2026-10-29 09:35:22 [WARN] api-gateway[1496]: Token próximo a expirar para elena
+2026-10-29 09:35:25 [INFO] api-gateway[8933]: Reporte mensual generado en 840 ms
+2026-10-29 09:35:30 [WARN] pagos[6364]: Reintento 1/3 conectando a la base de datos
+2026-10-29 09:35:36 [INFO] pagos[4524]: Correo enviado a elena@ejemplo.com
+2026-10-29 09:35:40 [INFO] inventario[6992]: Reporte mensual generado en 1503 ms
+2026-10-29 09:35:43 [WARN] inventario[2946]: Uso de memoria al 94%
+2026-10-29 09:35:47 [INFO] auth[1742]: Usuario admin inició sesión desde 45.33.12.9
+2026-10-29 09:35:49 [INFO] pagos[7438]: Correo enviado a fabian@ejemplo.com
+2026-10-29 09:35:55 [INFO] reportes[7229]: Usuario root cerró sesión
+2026-10-29 09:35:56 [INFO] api-gateway[9221]: Correo enviado a carla@ejemplo.com
+2026-10-29 09:35:58 [ERROR] api-gateway[9734]: Timeout conectando a db-primaria:5432
+2026-10-29 09:36:00 [ERROR] inventario[5735]: Disco /var al 79% de capacidad
+2026-10-29 09:36:04 [INFO] api-gateway[6654]: Usuario bruno cerró sesión
+2026-10-29 09:36:05 [INFO] correo[5450]: Usuario ana cerró sesión
+2026-10-29 09:36:10 [WARN] reportes[4804]: Tiempo de respuesta alto: 3745 ms en /admin
+2026-10-29 09:36:19 [INFO] reportes[8518]: Health check OK
+2026-10-29 09:36:24 [WARN] correo[6372]: Tiempo de respuesta alto: 1646 ms en /api/usuarios/42
+2026-10-29 09:36:26 [WARN] inventario[5947]: Tiempo de respuesta alto: 1076 ms en /static/app.js
+2026-10-29 09:36:29 [WARN] reportes[6095]: Tiempo de respuesta alto: 2621 ms en /api/productos
+2026-10-29 09:36:33 [INFO] api-gateway[9998]: Reporte mensual generado en 3107 ms
+2026-10-29 09:36:38 [INFO] correo[9008]: Usuario ana inició sesión desde 45.33.12.9
+2026-10-29 09:36:39 [INFO] inventario[1356]: Reporte mensual generado en 1047 ms
+2026-10-29 09:36:43 [ERROR] correo[3178]: Disco /var al 93% de capacidad
+2026-10-29 09:36:48 [ERROR] api-gateway[9920]: Pago #7214 rechazado: fondos insuficientes
+2026-10-29 09:36:56 [WARN] pagos[1724]: Token próximo a expirar para diego
+2026-10-29 09:36:59 [INFO] reportes[6253]: Usuario admin cerró sesión
+2026-10-29 09:37:04 [WARN] pagos[7999]: Token próximo a expirar para gaby
+2026-10-29 09:37:06 [INFO] pagos[4692]: Pedido #3365 creado correctamente
+2026-10-29 09:37:08 [INFO] reportes[2295]: Reporte mensual generado en 3474 ms
+2026-10-29 09:37:11 [WARN] pagos[4555]: Token próximo a expirar para ana
+2026-10-29 09:37:15 [INFO] api-gateway[4921]: Correo enviado a hugo@ejemplo.com
+2026-10-29 09:37:18 [WARN] reportes[8692]: Reintento 1/3 conectando a la base de datos
+2026-10-29 09:37:19 [INFO] correo[7841]: Pedido #4214 creado correctamente
+2026-10-29 09:37:24 [INFO] api-gateway[9037]: Reporte mensual generado en 694 ms
+2026-10-29 09:37:25 [WARN] reportes[1794]: Tiempo de respuesta alto: 1694 ms en /logout
+2026-10-29 09:37:27 [INFO] reportes[8916]: Health check OK
+2026-10-29 09:37:31 [INFO] correo[8054]: Usuario carla cerró sesión
+2026-10-29 09:37:32 [INFO] inventario[7652]: Reporte mensual generado en 2319 ms
+2026-10-29 09:37:41 [INFO] auth[2218]: Health check OK
+2026-10-29 09:37:42 [WARN] api-gateway[2260]: Reintento 3/3 conectando a la base de datos
+2026-10-29 09:37:43 [INFO] inventario[1879]: Usuario fabian inició sesión desde 186.15.70.120
+2026-10-29 09:37:46 [INFO] api-gateway[8075]: Usuario root cerró sesión
+2026-10-29 09:37:48 [WARN] pagos[7383]: Reintento 2/3 conectando a la base de datos
+2026-10-29 09:37:49 [INFO] api-gateway[9395]: Reporte mensual generado en 428 ms
+2026-10-29 09:37:50 [INFO] auth[4977]: Correo enviado a gaby@ejemplo.com
+2026-10-29 09:37:51 [INFO] inventario[7899]: Pedido #2260 creado correctamente
+2026-10-29 09:37:52 [INFO] api-gateway[6443]: Correo enviado a fabian@ejemplo.com
+2026-10-29 09:37:57 [INFO] inventario[3910]: Reporte mensual generado en 3972 ms
+2026-10-29 09:37:58 [INFO] correo[9939]: Usuario diego cerró sesión
+2026-10-29 09:38:01 [INFO] pagos[5139]: Health check OK
+2026-10-29 09:38:04 [ERROR] reportes[7853]: NullPointerException en inventario.procesar()
+2026-10-29 09:38:06 [INFO] correo[7547]: Pedido #8052 creado correctamente
+2026-10-29 09:38:09 [INFO] pagos[8303]: Pedido #8586 creado correctamente
+2026-10-29 09:38:12 [ERROR] auth[3321]: Timeout conectando a db-primaria:5432
+2026-10-29 09:38:16 [INFO] inventario[1732]: Health check OK
+2026-10-29 09:38:18 [INFO] api-gateway[4798]: Reporte mensual generado en 2584 ms
+2026-10-29 09:38:21 [INFO] reportes[4519]: Usuario bruno cerró sesión
+2026-10-29 09:38:23 [WARN] correo[6134]: Token próximo a expirar para bruno
+2026-10-29 09:38:27 [INFO] correo[2388]: Health check OK
+2026-10-29 09:38:30 [INFO] pagos[7286]: Reporte mensual generado en 765 ms
+2026-10-29 09:38:32 [WARN] correo[1878]: Reintento 3/3 conectando a la base de datos
+2026-10-29 09:38:34 [INFO] reportes[8272]: Reporte mensual generado en 690 ms
+2026-10-29 09:38:36 [WARN] correo[9115]: Tiempo de respuesta alto: 2350 ms en /static/logo.png
+2026-10-29 09:38:39 [CRITICAL] auth[5055]: Base de datos fuera de línea
+2026-10-29 09:38:41 [INFO] reportes[6744]: Health check OK
+2026-10-29 09:38:43 [INFO] correo[3758]: Pedido #5794 creado correctamente
+2026-10-29 09:38:49 [WARN] pagos[3174]: Uso de memoria al 90%
+2026-10-29 09:38:51 [INFO] reportes[2525]: Reporte mensual generado en 2116 ms
+2026-10-29 09:38:55 [INFO] reportes[6869]: Usuario diego inició sesión desde 186.15.70.120
+2026-10-29 09:38:57 [INFO] correo[8951]: Pedido #1793 creado correctamente
+2026-10-29 09:39:00 [CRITICAL] api-gateway[4314]: Intentos de acceso masivos detectados desde 45.33.12.9
+2026-10-29 09:39:01 [INFO] reportes[3711]: Usuario gaby inició sesión desde 192.168.1.22
+2026-10-29 09:39:02 [INFO] reportes[8291]: Usuario gaby inició sesión desde 10.0.0.5
+2026-10-29 09:39:08 [INFO] pagos[3480]: Reporte mensual generado en 2528 ms
+2026-10-29 09:39:10 [INFO] pagos[5059]: Pedido #2380 creado correctamente
+2026-10-29 09:39:13 [INFO] inventario[1894]: Usuario diego cerró sesión
+2026-10-29 09:39:21 [INFO] correo[4329]: Usuario root cerró sesión
+2026-10-29 09:39:23 [CRITICAL] auth[8428]: Intentos de acceso masivos detectados desde 186.15.70.120
+2026-10-29 09:39:26 [WARN] correo[5247]: Uso de memoria al 78%
+2026-10-29 09:39:27 [CRITICAL] reportes[2262]: Base de datos fuera de línea
+2026-10-29 09:39:32 [ERROR] reportes[2889]: Login fallido para usuario ana desde 186.15.70.120
+2026-10-29 09:39:37 [INFO] auth[7870]: Usuario fabian cerró sesión
+2026-10-29 09:39:41 [INFO] pagos[9450]: Usuario hugo inició sesión desde 172.16.4.2
+2026-10-29 09:39:41 [WARN] correo[5979]: Uso de memoria al 74%
+2026-10-29 09:39:42 [ERROR] reportes[1157]: Timeout conectando a db-primaria:5432
+2026-10-29 09:39:47 [INFO] inventario[2524]: Usuario gaby inició sesión desde 201.204.33.8
+2026-10-29 09:39:48 [ERROR] auth[2020]: Pago #3141 rechazado: fondos insuficientes
+2026-10-29 09:39:50 [WARN] auth[4321]: Uso de memoria al 80%
+2026-10-29 09:39:54 [CRITICAL] pagos[8404]: Base de datos fuera de línea
+2026-10-29 09:39:55 [ERROR] inventario[7492]: NullPointerException en correo.procesar()
+2026-10-29 09:39:57 [ERROR] pagos[2989]: Login fallido para usuario diego desde 45.33.12.9
+2026-10-29 09:40:02 [INFO] auth[4239]: Health check OK
+2026-10-29 09:40:04 [ERROR] api-gateway[1483]: Pago #7990 rechazado: fondos insuficientes
+2026-10-29 09:40:05 [ERROR] pagos[5835]: Pago #8848 rechazado: fondos insuficientes
+2026-10-29 09:40:10 [ERROR] reportes[9907]: Login fallido para usuario admin desde 186.15.70.120
+2026-10-29 09:40:16 [WARN] reportes[1916]: Uso de memoria al 80%
+2026-10-29 09:40:18 [ERROR] reportes[6761]: NullPointerException en auth.procesar()
+2026-10-29 09:40:19 [WARN] pagos[1326]: Token próximo a expirar para diego
+2026-10-29 09:40:19 [ERROR] pagos[2817]: NullPointerException en inventario.procesar()
+2026-10-29 09:40:21 [INFO] api-gateway[8982]: Health check OK
+2026-10-29 09:40:23 [ERROR] pagos[3911]: Disco /var al 99% de capacidad
+2026-10-29 09:40:30 [WARN] api-gateway[1186]: Reintento 2/3 conectando a la base de datos
+2026-10-29 09:40:34 [ERROR] api-gateway[9078]: Pago #9946 rechazado: fondos insuficientes
+2026-10-29 09:40:44 [ERROR] inventario[8909]: Disco /var al 73% de capacidad
+2026-10-29 09:40:49 [INFO] correo[9849]: Pedido #5612 creado correctamente
+2026-10-29 09:40:51 [INFO] api-gateway[2435]: Pedido #8869 creado correctamente
+2026-10-29 09:40:57 [WARN] pagos[1999]: Token próximo a expirar para admin
+2026-10-29 09:41:00 [WARN] auth[9226]: Uso de memoria al 71%
+2026-10-29 09:41:05 [INFO] reportes[3422]: Correo enviado a bruno@ejemplo.com
+2026-10-29 09:41:08 [ERROR] auth[9561]: Pago #7790 rechazado: fondos insuficientes
+2026-10-29 09:41:13 [WARN] api-gateway[5327]: Token próximo a expirar para root
+2026-10-29 09:41:17 [INFO] api-gateway[1635]: Reporte mensual generado en 3648 ms
+2026-10-29 09:41:19 [WARN] reportes[2609]: Uso de memoria al 90%
+2026-10-29 09:41:22 [ERROR] api-gateway[8937]: NullPointerException en api-gateway.procesar()
+2026-10-29 09:41:23 [WARN] correo[1474]: Uso de memoria al 99%
+2026-10-29 09:41:24 [INFO] api-gateway[9275]: Reporte mensual generado en 2607 ms
+2026-10-29 09:41:30 [INFO] correo[6730]: Pedido #5237 creado correctamente
+2026-10-29 09:41:34 [INFO] reportes[4387]: Pedido #7709 creado correctamente
+2026-10-29 09:41:39 [INFO] correo[6004]: Health check OK
+2026-10-29 09:41:43 [WARN] api-gateway[2676]: Tiempo de respuesta alto: 2100 ms en /api/pagos
+2026-10-29 09:41:48 [INFO] inventario[5278]: Health check OK
+2026-10-29 09:41:52 [INFO] reportes[9148]: Pedido #7857 creado correctamente
+2026-10-29 09:41:56 [INFO] correo[8794]: Health check OK
+2026-10-29 09:41:58 [WARN] pagos[6499]: Tiempo de respuesta alto: 915 ms en /api/usuarios/42
+2026-10-29 09:42:02 [INFO] api-gateway[8496]: Usuario hugo cerró sesión
+2026-10-29 09:42:05 [INFO] pagos[3595]: Reporte mensual generado en 3221 ms
+2026-10-29 09:42:05 [INFO] reportes[7112]: Usuario diego inició sesión desde 192.168.1.10
+2026-10-29 09:42:12 [CRITICAL] inventario[9031]: Base de datos fuera de línea
+2026-10-29 09:42:17 [INFO] pagos[3017]: Pedido #1612 creado correctamente
+2026-10-29 09:42:22 [INFO] auth[9524]: Pedido #3247 creado correctamente
+2026-10-29 09:42:23 [INFO] inventario[9571]: Usuario carla cerró sesión
+2026-10-29 09:42:28 [INFO] auth[1208]: Health check OK
+2026-10-29 09:42:29 [INFO] pagos[8483]: Pedido #8606 creado correctamente
+2026-10-29 09:42:34 [INFO] auth[7566]: Reporte mensual generado en 3946 ms
+2026-10-29 09:42:39 [CRITICAL] pagos[2699]: Base de datos fuera de línea
+2026-10-29 09:42:39 [INFO] reportes[3140]: Reporte mensual generado en 3774 ms
+2026-10-29 09:42:40 [WARN] correo[4669]: Reintento 3/3 conectando a la base de datos
+2026-10-29 09:42:45 [ERROR] auth[9305]: Login fallido para usuario diego desde 10.0.0.5
+2026-10-29 09:42:46 [INFO] inventario[2944]: Reporte mensual generado en 3057 ms
+2026-10-29 09:42:51 [ERROR] reportes[5990]: NullPointerException en api-gateway.procesar()
+2026-10-29 09:42:53 [WARN] correo[8751]: Reintento 3/3 conectando a la base de datos
+2026-10-29 09:42:56 [INFO] auth[1750]: Usuario bruno cerró sesión
+2026-10-29 09:42:58 [WARN] pagos[6536]: Tiempo de respuesta alto: 3106 ms en /static/app.js
+2026-10-29 09:42:59 [INFO] correo[1795]: Correo enviado a hugo@ejemplo.com
+2026-10-29 09:43:01 [INFO] inventario[9259]: Reporte mensual generado en 1719 ms
+2026-10-29 09:43:04 [INFO] reportes[9393]: Pedido #9975 creado correctamente
+2026-10-29 09:43:08 [ERROR] pagos[3913]: NullPointerException en api-gateway.procesar()
+2026-10-29 09:43:12 [WARN] correo[5684]: Token próximo a expirar para bruno
+2026-10-29 09:43:13 [WARN] pagos[5695]: Reintento 3/3 conectando a la base de datos
+2026-10-29 09:43:17 [WARN] reportes[7371]: Uso de memoria al 95%
+2026-10-29 09:43:23 [ERROR] reportes[9418]: Login fallido para usuario elena desde 45.33.12.9
+2026-10-29 09:43:26 [INFO] pagos[1654]: Usuario ana cerró sesión
+2026-10-29 09:43:30 [INFO] pagos[4012]: Correo enviado a gaby@ejemplo.com
+2026-10-29 09:43:32 [INFO] pagos[9691]: Reporte mensual generado en 2304 ms
+2026-10-29 09:43:37 [INFO] inventario[7248]: Usuario elena inició sesión desde 192.168.1.10
+2026-10-29 09:43:40 [INFO] reportes[4154]: Pedido #2349 creado correctamente
+2026-10-29 09:43:45 [INFO] auth[4368]: Correo enviado a bruno@ejemplo.com
+2026-10-29 09:43:53 [INFO] api-gateway[1504]: Reporte mensual generado en 645 ms
+2026-10-29 09:43:57 [ERROR] reportes[7113]: Login fallido para usuario ana desde 45.33.12.9
+2026-10-29 09:44:02 [INFO] reportes[6633]: Usuario carla cerró sesión
+2026-10-29 09:44:03 [INFO] correo[1891]: Correo enviado a bruno@ejemplo.com
+2026-10-29 09:44:08 [INFO] reportes[4842]: Usuario fabian inició sesión desde 45.33.12.9
+2026-10-29 09:44:12 [INFO] correo[6971]: Pedido #8017 creado correctamente
+2026-10-29 09:44:15 [WARN] pagos[6432]: Token próximo a expirar para elena
+2026-10-29 09:44:16 [INFO] pagos[9824]: Usuario ana cerró sesión
+2026-10-29 09:44:21 [INFO] correo[9842]: Reporte mensual generado en 2683 ms
+2026-10-29 09:44:24 [INFO] correo[1173]: Health check OK
+2026-10-29 09:44:30 [ERROR] inventario[7358]: Pago #8448 rechazado: fondos insuficientes
+2026-10-29 09:44:32 [INFO] pagos[7171]: Health check OK
+2026-10-29 09:44:37 [INFO] api-gateway[1108]: Correo enviado a carla@ejemplo.com
+2026-10-29 09:44:38 [INFO] correo[2938]: Health check OK
+2026-10-29 09:44:42 [INFO] pagos[1706]: Usuario admin cerró sesión
+2026-10-29 09:44:47 [INFO] api-gateway[1305]: Health check OK
+2026-10-29 09:44:49 [INFO] pagos[3979]: Correo enviado a carla@ejemplo.com
+2026-10-29 09:44:54 [WARN] correo[9246]: Tiempo de respuesta alto: 386 ms en /admin
+2026-10-29 09:44:58 [INFO] api-gateway[7246]: Pedido #2600 creado correctamente
+2026-10-29 09:45:02 [INFO] inventario[4096]: Usuario admin inició sesión desde 192.168.1.22
+2026-10-29 09:45:06 [INFO] inventario[2746]: Usuario admin cerró sesión
+2026-10-29 09:45:08 [INFO] correo[8904]: Usuario elena cerró sesión
+2026-10-29 09:45:13 [INFO] reportes[3650]: Usuario fabian inició sesión desde 192.168.1.10
+2026-10-29 09:45:17 [INFO] correo[8133]: Usuario fabian inició sesión desde 192.168.1.22
+2026-10-29 09:45:21 [INFO] reportes[1941]: Usuario ana cerró sesión
+2026-10-29 09:45:24 [INFO] correo[3776]: Health check OK
+2026-10-29 09:45:28 [INFO] pagos[9482]: Usuario admin inició sesión desde 172.16.4.2
+2026-10-29 09:45:29 [ERROR] api-gateway[7618]: NullPointerException en inventario.procesar()
+2026-10-29 09:45:35 [WARN] inventario[9813]: Reintento 2/3 conectando a la base de datos
+2026-10-29 09:45:37 [INFO] auth[8896]: Usuario diego inició sesión desde 10.0.0.17
+2026-10-29 09:45:38 [ERROR] pagos[5706]: Login fallido para usuario admin desde 186.15.70.120
+2026-10-29 09:45:40 [CRITICAL] reportes[4115]: Base de datos fuera de línea
+2026-10-29 09:45:42 [ERROR] auth[2285]: Disco /var al 89% de capacidad
+2026-10-29 09:45:47 [ERROR] correo[5501]: Pago #9374 rechazado: fondos insuficientes
+2026-10-29 09:45:50 [ERROR] correo[6689]: Pago #3863 rechazado: fondos insuficientes
+2026-10-29 09:45:52 [INFO] inventario[5254]: Usuario elena cerró sesión
+2026-10-29 09:45:55 [WARN] inventario[6981]: Token próximo a expirar para root
+2026-10-29 09:45:57 [WARN] api-gateway[7240]: Uso de memoria al 74%
+2026-10-29 09:46:00 [WARN] api-gateway[5915]: Reintento 2/3 conectando a la base de datos
+2026-10-29 09:46:05 [INFO] reportes[6483]: Pedido #6903 creado correctamente
+2026-10-29 09:46:09 [CRITICAL] pagos[9821]: Servicio inventario no responde
+2026-10-29 09:46:12 [CRITICAL] pagos[6527]: Base de datos fuera de línea
+2026-10-29 09:46:14 [WARN] reportes[7479]: Reintento 1/3 conectando a la base de datos
+2026-10-29 09:46:18 [ERROR] reportes[2311]: Login fallido para usuario bruno desde 201.204.33.8
+2026-10-29 09:46:21 [CRITICAL] auth[5300]: Intentos de acceso masivos detectados desde 186.15.70.120
+2026-10-29 09:46:25 [INFO] pagos[1468]: Usuario hugo inició sesión desde 45.33.12.9
+2026-10-29 09:46:30 [ERROR] pagos[8480]: Disco /var al 87% de capacidad
+2026-10-29 09:46:33 [WARN] inventario[3551]: Reintento 1/3 conectando a la base de datos
+2026-10-29 09:46:38 [CRITICAL] api-gateway[5908]: Servicio api-gateway no responde
+2026-10-29 09:46:43 [WARN] pagos[3675]: Token próximo a expirar para elena
+2026-10-29 09:46:47 [WARN] reportes[9715]: Reintento 2/3 conectando a la base de datos
+2026-10-29 09:46:50 [ERROR] api-gateway[4076]: Timeout conectando a db-primaria:5432
+2026-10-29 09:46:54 [ERROR] pagos[2477]: Login fallido para usuario fabian desde 10.0.0.17
+2026-10-29 09:46:58 [WARN] pagos[1918]: Reintento 2/3 conectando a la base de datos
+2026-10-29 09:47:03 [INFO] reportes[5078]: Reporte mensual generado en 3163 ms
+2026-10-29 09:47:06 [INFO] inventario[6293]: Usuario admin cerró sesión
+2026-10-29 09:47:11 [ERROR] reportes[1983]: Login fallido para usuario bruno desde 186.15.70.120
+2026-10-29 09:47:15 [WARN] api-gateway[4161]: Tiempo de respuesta alto: 2828 ms en /
+2026-10-29 09:47:17 [INFO] pagos[4057]: Correo enviado a elena@ejemplo.com
+2026-10-29 09:47:22 [INFO] api-gateway[1011]: Health check OK
+2026-10-29 09:47:26 [INFO] api-gateway[4110]: Correo enviado a carla@ejemplo.com
+2026-10-29 09:47:27 [INFO] auth[3126]: Usuario bruno cerró sesión
+2026-10-29 09:47:31 [INFO] correo[5193]: Usuario bruno inició sesión desde 192.168.1.10
+2026-10-29 09:47:37 [INFO] correo[7313]: Usuario diego cerró sesión
+2026-10-29 09:47:41 [INFO] reportes[8515]: Health check OK
+2026-10-29 09:47:42 [CRITICAL] api-gateway[6772]: Base de datos fuera de línea
+2026-10-29 09:47:44 [WARN] reportes[5162]: Reintento 1/3 conectando a la base de datos
+2026-10-29 09:47:45 [WARN] auth[5920]: Uso de memoria al 84%
+2026-10-29 09:47:46 [INFO] correo[5093]: Usuario root cerró sesión
+2026-10-29 09:47:48 [INFO] api-gateway[2562]: Correo enviado a root@ejemplo.com
+2026-10-29 09:47:53 [INFO] auth[4714]: Health check OK
+2026-10-29 09:47:57 [INFO] reportes[4617]: Usuario root cerró sesión
+2026-10-29 09:48:01 [INFO] pagos[9589]: Usuario gaby cerró sesión
+2026-10-29 09:48:03 [INFO] inventario[6644]: Correo enviado a carla@ejemplo.com
+2026-10-29 09:48:04 [WARN] pagos[7124]: Uso de memoria al 97%
+2026-10-29 09:48:06 [WARN] inventario[8373]: Token próximo a expirar para admin
+2026-10-29 09:48:09 [INFO] pagos[1301]: Reporte mensual generado en 2392 ms
+2026-10-29 09:48:11 [INFO] auth[2091]: Reporte mensual generado en 2709 ms
+2026-10-29 09:48:13 [INFO] reportes[2631]: Pedido #9709 creado correctamente
+2026-10-29 09:48:13 [ERROR] inventario[6465]: Pago #3572 rechazado: fondos insuficientes
+2026-10-29 09:48:18 [INFO] api-gateway[1482]: Correo enviado a carla@ejemplo.com
+2026-10-29 09:48:21 [INFO] reportes[4726]: Reporte mensual generado en 989 ms
+2026-10-29 09:48:22 [INFO] pagos[3262]: Pedido #9582 creado correctamente
+2026-10-29 09:48:25 [INFO] pagos[6203]: Usuario gaby cerró sesión
+2026-10-29 09:48:27 [WARN] auth[3155]: Uso de memoria al 77%
+2026-10-29 09:48:30 [INFO] api-gateway[3196]: Correo enviado a fabian@ejemplo.com
+2026-10-29 09:48:36 [WARN] api-gateway[7633]: Tiempo de respuesta alto: 2495 ms en /static/logo.png
+2026-10-29 09:48:41 [INFO] correo[7481]: Health check OK
+2026-10-29 09:48:44 [INFO] correo[1893]: Health check OK
+2026-10-29 09:48:47 [INFO] inventario[8387]: Usuario diego inició sesión desde 45.33.12.9
+2026-10-29 09:48:52 [WARN] reportes[3024]: Tiempo de respuesta alto: 472 ms en /static/logo.png
+2026-10-29 09:48:57 [INFO] api-gateway[1719]: Usuario carla cerró sesión
+2026-10-29 09:49:00 [INFO] api-gateway[5731]: Health check OK
+2026-10-29 09:49:05 [INFO] auth[9084]: Usuario gaby cerró sesión
+2026-10-29 09:49:09 [INFO] reportes[4401]: Usuario fabian inició sesión desde 192.168.1.10
+2026-10-29 09:49:11 [ERROR] auth[2784]: Pago #3643 rechazado: fondos insuficientes
+2026-10-29 09:49:16 [INFO] api-gateway[2108]: Reporte mensual generado en 3459 ms
+2026-10-29 09:49:19 [INFO] correo[1953]: Usuario hugo inició sesión desde 172.16.4.2
+2026-10-29 09:49:22 [CRITICAL] inventario[3125]: Intentos de acceso masivos detectados desde 45.33.12.9
+2026-10-29 09:49:32 [INFO] reportes[4296]: Health check OK
+2026-10-29 09:49:36 [INFO] reportes[1477]: Usuario hugo cerró sesión
+2026-10-29 09:49:39 [WARN] inventario[8577]: Token próximo a expirar para elena
+2026-10-29 09:49:43 [WARN] inventario[2084]: Uso de memoria al 82%
+2026-10-29 09:49:44 [WARN] inventario[6152]: Tiempo de respuesta alto: 1117 ms en /api/usuarios/42
+2026-10-29 09:49:47 [INFO] inventario[1612]: Usuario admin cerró sesión
+2026-10-29 09:49:52 [INFO] correo[6084]: Pedido #2609 creado correctamente
+2026-10-29 09:49:53 [INFO] auth[2426]: Pedido #1755 creado correctamente
+2026-10-29 09:49:58 [INFO] pagos[5695]: Pedido #6228 creado correctamente
+2026-10-29 09:50:03 [INFO] auth[4384]: Correo enviado a carla@ejemplo.com
+2026-10-29 09:50:07 [INFO] api-gateway[1831]: Usuario ana cerró sesión
+2026-10-29 09:50:08 [INFO] correo[8304]: Correo enviado a diego@ejemplo.com
+2026-10-29 09:50:11 [INFO] reportes[8625]: Reporte mensual generado en 954 ms
+2026-10-29 09:50:13 [WARN] inventario[8426]: Token próximo a expirar para bruno
+2026-10-29 09:50:18 [INFO] pagos[9322]: Usuario admin inició sesión desde 192.168.1.22
+2026-10-29 09:50:20 [INFO] correo[3605]: Reporte mensual generado en 1577 ms
+2026-10-29 09:50:24 [INFO] reportes[2276]: Health check OK
+2026-10-29 09:50:26 [INFO] correo[2781]: Health check OK
+2026-10-29 09:50:31 [INFO] auth[3403]: Health check OK
+2026-10-29 09:50:35 [INFO] correo[5989]: Reporte mensual generado en 2945 ms
+2026-10-29 09:50:36 [ERROR] auth[1013]: Disco /var al 92% de capacidad
+2026-10-29 09:50:40 [INFO] api-gateway[7251]: Reporte mensual generado en 2237 ms
+2026-10-29 09:50:44 [INFO] reportes[3056]: Usuario ana cerró sesión
+2026-10-29 09:50:48 [INFO] api-gateway[7974]: Correo enviado a gaby@ejemplo.com
+2026-10-29 09:50:51 [INFO] reportes[4878]: Health check OK
+2026-10-29 09:50:54 [INFO] reportes[2311]: Usuario hugo cerró sesión
+2026-10-29 09:50:57 [INFO] reportes[2279]: Health check OK
+2026-10-29 09:51:00 [ERROR] correo[6431]: Pago #5827 rechazado: fondos insuficientes
+2026-10-29 09:51:01 [INFO] pagos[1845]: Health check OK
+2026-10-29 09:51:02 [INFO] inventario[1232]: Health check OK
+2026-10-29 09:51:05 [WARN] auth[6617]: Tiempo de respuesta alto: 3967 ms en /admin
+2026-10-29 09:51:09 [INFO] correo[6653]: Usuario ana inició sesión desde 10.0.0.5
+2026-10-29 09:51:13 [WARN] correo[4828]: Token próximo a expirar para elena
+2026-10-29 09:51:16 [INFO] correo[1672]: Usuario fabian inició sesión desde 186.15.70.120
+2026-10-29 09:51:20 [INFO] correo[7408]: Reporte mensual generado en 3171 ms
+2026-10-29 09:51:28 [INFO] pagos[2816]: Health check OK
+2026-10-29 09:51:33 [WARN] inventario[5216]: Uso de memoria al 71%
+2026-10-29 09:51:41 [INFO] inventario[7411]: Correo enviado a hugo@ejemplo.com
+2026-10-29 09:51:44 [INFO] api-gateway[2985]: Correo enviado a elena@ejemplo.com
+2026-10-29 09:51:44 [INFO] inventario[4327]: Usuario diego cerró sesión
+2026-10-29 09:51:47 [WARN] api-gateway[4104]: Uso de memoria al 72%
+2026-10-29 09:51:49 [INFO] api-gateway[1268]: Usuario ana inició sesión desde 186.15.70.120
+2026-10-29 09:51:53 [ERROR] correo[3440]: Disco /var al 85% de capacidad
+2026-10-29 09:51:54 [INFO] auth[3822]: Health check OK
+2026-10-29 09:51:57 [WARN] pagos[2033]: Uso de memoria al 87%
+2026-10-29 09:52:02 [WARN] auth[3841]: Reintento 1/3 conectando a la base de datos
+2026-10-29 09:52:04 [ERROR] pagos[2637]: Disco /var al 70% de capacidad
+2026-10-29 09:52:08 [ERROR] inventario[7819]: Disco /var al 84% de capacidad
+2026-10-29 09:52:13 [ERROR] auth[3949]: Disco /var al 87% de capacidad
+2026-10-29 09:52:14 [ERROR] auth[6929]: NullPointerException en reportes.procesar()
+2026-10-29 09:52:19 [CRITICAL] api-gateway[3888]: Servicio correo no responde
+2026-10-29 09:52:23 [ERROR] auth[2710]: Disco /var al 73% de capacidad
+2026-10-29 09:52:27 [ERROR] inventario[7865]: Login fallido para usuario bruno desde 201.204.33.8
+2026-10-29 09:52:32 [WARN] pagos[2204]: Token próximo a expirar para gaby
+2026-10-29 09:52:35 [ERROR] pagos[6875]: Timeout conectando a db-primaria:5432
+2026-10-29 09:52:37 [ERROR] pagos[5835]: NullPointerException en api-gateway.procesar()
+2026-10-29 09:52:42 [WARN] api-gateway[8581]: Reintento 3/3 conectando a la base de datos
+2026-10-29 09:52:47 [ERROR] api-gateway[1724]: Login fallido para usuario gaby desde 201.204.33.8
+2026-10-29 09:52:48 [ERROR] reportes[7662]: Login fallido para usuario diego desde 10.0.0.17
+2026-10-29 09:52:52 [ERROR] reportes[1399]: Pago #3271 rechazado: fondos insuficientes
+2026-10-29 09:52:54 [ERROR] correo[1535]: Timeout conectando a db-primaria:5432
+2026-10-29 09:53:00 [ERROR] reportes[6963]: Login fallido para usuario hugo desde 45.33.12.9
+2026-10-29 09:53:04 [ERROR] pagos[3267]: Timeout conectando a db-primaria:5432
+2026-10-29 09:53:07 [WARN] auth[7108]: Reintento 3/3 conectando a la base de datos
+2026-10-29 09:53:10 [WARN] reportes[2075]: Uso de memoria al 72%
+2026-10-29 09:53:12 [ERROR] api-gateway[3465]: Login fallido para usuario gaby desde 45.33.12.9
+2026-10-29 09:53:16 [WARN] auth[1361]: Uso de memoria al 90%
+2026-10-29 09:53:19 [ERROR] correo[9986]: Pago #5982 rechazado: fondos insuficientes
+2026-10-29 09:53:24 [ERROR] auth[3430]: Timeout conectando a db-primaria:5432
+2026-10-29 09:53:28 [ERROR] pagos[3641]: Login fallido para usuario root desde 45.33.12.9

@@ -1,0 +1,6 @@
+     17 reportes
+     17 pagos
+     12 auth
+     12 api-gateway
+     10 inventario
+     10 correo

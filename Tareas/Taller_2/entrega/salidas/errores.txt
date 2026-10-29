@@ -1,0 +1,97 @@
+2026-10-29 09:28:57 [ERROR] reportes[4295]: Disco /var al 73% de capacidad
+2026-10-29 09:30:11 [ERROR] api-gateway[3607]: Disco /var al 85% de capacidad
+2026-10-29 09:30:58 [ERROR] correo[5636]: Login fallido para usuario diego desde 201.204.33.8
+2026-10-29 09:32:20 [ERROR] reportes[7484]: Timeout conectando a db-primaria:5432
+2026-10-29 09:32:44 [ERROR] auth[7070]: Login fallido para usuario fabian desde 201.204.33.8
+2026-10-29 09:32:57 [ERROR] reportes[9543]: Timeout conectando a db-primaria:5432
+2026-10-29 09:33:33 [ERROR] pagos[8138]: NullPointerException en auth.procesar()
+2026-10-29 09:33:40 [ERROR] pagos[9095]: Pago #8354 rechazado: fondos insuficientes
+2026-10-29 09:33:52 [ERROR] inventario[2381]: NullPointerException en pagos.procesar()
+2026-10-29 09:33:56 [ERROR] reportes[3463]: Timeout conectando a db-primaria:5432
+2026-10-29 09:34:00 [ERROR] inventario[3093]: Disco /var al 79% de capacidad
+2026-10-29 09:34:02 [ERROR] pagos[4711]: Login fallido para usuario bruno desde 45.33.12.9
+2026-10-29 09:34:12 [ERROR] api-gateway[2502]: Login fallido para usuario ana desde 192.168.1.10
+2026-10-29 09:34:19 [ERROR] api-gateway[8349]: NullPointerException en correo.procesar()
+2026-10-29 09:34:22 [ERROR] pagos[5934]: Login fallido para usuario root desde 201.204.33.8
+2026-10-29 09:34:25 [ERROR] correo[4963]: Disco /var al 83% de capacidad
+2026-10-29 09:34:29 [ERROR] inventario[2108]: NullPointerException en api-gateway.procesar()
+2026-10-29 09:35:15 [ERROR] correo[5653]: Login fallido para usuario admin desde 201.204.33.8
+2026-10-29 09:35:58 [ERROR] api-gateway[9734]: Timeout conectando a db-primaria:5432
+2026-10-29 09:36:00 [ERROR] inventario[5735]: Disco /var al 79% de capacidad
+2026-10-29 09:36:43 [ERROR] correo[3178]: Disco /var al 93% de capacidad
+2026-10-29 09:36:48 [ERROR] api-gateway[9920]: Pago #7214 rechazado: fondos insuficientes
+2026-10-29 09:38:04 [ERROR] reportes[7853]: NullPointerException en inventario.procesar()
+2026-10-29 09:38:12 [ERROR] auth[3321]: Timeout conectando a db-primaria:5432
+2026-10-29 09:39:32 [ERROR] reportes[2889]: Login fallido para usuario ana desde 186.15.70.120
+2026-10-29 09:39:42 [ERROR] reportes[1157]: Timeout conectando a db-primaria:5432
+2026-10-29 09:39:48 [ERROR] auth[2020]: Pago #3141 rechazado: fondos insuficientes
+2026-10-29 09:39:55 [ERROR] inventario[7492]: NullPointerException en correo.procesar()
+2026-10-29 09:39:57 [ERROR] pagos[2989]: Login fallido para usuario diego desde 45.33.12.9
+2026-10-29 09:40:04 [ERROR] api-gateway[1483]: Pago #7990 rechazado: fondos insuficientes
+2026-10-29 09:40:05 [ERROR] pagos[5835]: Pago #8848 rechazado: fondos insuficientes
+2026-10-29 09:40:10 [ERROR] reportes[9907]: Login fallido para usuario admin desde 186.15.70.120
+2026-10-29 09:40:18 [ERROR] reportes[6761]: NullPointerException en auth.procesar()
+2026-10-29 09:40:19 [ERROR] pagos[2817]: NullPointerException en inventario.procesar()
+2026-10-29 09:40:23 [ERROR] pagos[3911]: Disco /var al 99% de capacidad
+2026-10-29 09:40:34 [ERROR] api-gateway[9078]: Pago #9946 rechazado: fondos insuficientes
+2026-10-29 09:40:44 [ERROR] inventario[8909]: Disco /var al 73% de capacidad
+2026-10-29 09:41:08 [ERROR] auth[9561]: Pago #7790 rechazado: fondos insuficientes
+2026-10-29 09:41:22 [ERROR] api-gateway[8937]: NullPointerException en api-gateway.procesar()
+2026-10-29 09:42:45 [ERROR] auth[9305]: Login fallido para usuario diego desde 10.0.0.5
+2026-10-29 09:42:51 [ERROR] reportes[5990]: NullPointerException en api-gateway.procesar()
+2026-10-29 09:43:08 [ERROR] pagos[3913]: NullPointerException en api-gateway.procesar()
+2026-10-29 09:43:23 [ERROR] reportes[9418]: Login fallido para usuario elena desde 45.33.12.9
+2026-10-29 09:43:57 [ERROR] reportes[7113]: Login fallido para usuario ana desde 45.33.12.9
+2026-10-29 09:44:30 [ERROR] inventario[7358]: Pago #8448 rechazado: fondos insuficientes
+2026-10-29 09:45:29 [ERROR] api-gateway[7618]: NullPointerException en inventario.procesar()
+2026-10-29 09:45:38 [ERROR] pagos[5706]: Login fallido para usuario admin desde 186.15.70.120
+2026-10-29 09:45:42 [ERROR] auth[2285]: Disco /var al 89% de capacidad
+2026-10-29 09:45:47 [ERROR] correo[5501]: Pago #9374 rechazado: fondos insuficientes
+2026-10-29 09:45:50 [ERROR] correo[6689]: Pago #3863 rechazado: fondos insuficientes
+2026-10-29 09:46:18 [ERROR] reportes[2311]: Login fallido para usuario bruno desde 201.204.33.8
+2026-10-29 09:46:30 [ERROR] pagos[8480]: Disco /var al 87% de capacidad
+2026-10-29 09:46:50 [ERROR] api-gateway[4076]: Timeout conectando a db-primaria:5432
+2026-10-29 09:46:54 [ERROR] pagos[2477]: Login fallido para usuario fabian desde 10.0.0.17
+2026-10-29 09:47:11 [ERROR] reportes[1983]: Login fallido para usuario bruno desde 186.15.70.120
+2026-10-29 09:48:13 [ERROR] inventario[6465]: Pago #3572 rechazado: fondos insuficientes
+2026-10-29 09:49:11 [ERROR] auth[2784]: Pago #3643 rechazado: fondos insuficientes
+2026-10-29 09:50:36 [ERROR] auth[1013]: Disco /var al 92% de capacidad
+2026-10-29 09:51:00 [ERROR] correo[6431]: Pago #5827 rechazado: fondos insuficientes
+2026-10-29 09:51:53 [ERROR] correo[3440]: Disco /var al 85% de capacidad
+2026-10-29 09:52:04 [ERROR] pagos[2637]: Disco /var al 70% de capacidad
+2026-10-29 09:52:08 [ERROR] inventario[7819]: Disco /var al 84% de capacidad
+2026-10-29 09:52:13 [ERROR] auth[3949]: Disco /var al 87% de capacidad
+2026-10-29 09:52:14 [ERROR] auth[6929]: NullPointerException en reportes.procesar()
+2026-10-29 09:52:23 [ERROR] auth[2710]: Disco /var al 73% de capacidad
+2026-10-29 09:52:27 [ERROR] inventario[7865]: Login fallido para usuario bruno desde 201.204.33.8
+2026-10-29 09:52:35 [ERROR] pagos[6875]: Timeout conectando a db-primaria:5432
+2026-10-29 09:52:37 [ERROR] pagos[5835]: NullPointerException en api-gateway.procesar()
+2026-10-29 09:52:47 [ERROR] api-gateway[1724]: Login fallido para usuario gaby desde 201.204.33.8
+2026-10-29 09:52:48 [ERROR] reportes[7662]: Login fallido para usuario diego desde 10.0.0.17
+2026-10-29 09:52:52 [ERROR] reportes[1399]: Pago #3271 rechazado: fondos insuficientes
+2026-10-29 09:52:54 [ERROR] correo[1535]: Timeout conectando a db-primaria:5432
+2026-10-29 09:53:00 [ERROR] reportes[6963]: Login fallido para usuario hugo desde 45.33.12.9
+2026-10-29 09:53:04 [ERROR] pagos[3267]: Timeout conectando a db-primaria:5432
+2026-10-29 09:53:12 [ERROR] api-gateway[3465]: Login fallido para usuario gaby desde 45.33.12.9
+2026-10-29 09:53:19 [ERROR] correo[9986]: Pago #5982 rechazado: fondos insuficientes
+2026-10-29 09:53:24 [ERROR] auth[3430]: Timeout conectando a db-primaria:5432
+2026-10-29 09:53:28 [ERROR] pagos[3641]: Login fallido para usuario root desde 45.33.12.9
+2026-10-29 09:31:12 [CRITICAL] inventario[1986]: Intentos de acceso masivos detectados desde 45.33.12.9
+2026-10-29 09:33:47 [CRITICAL] auth[9307]: Base de datos fuera de línea
+2026-10-29 09:33:54 [CRITICAL] api-gateway[7697]: Base de datos fuera de línea
+2026-10-29 09:35:01 [CRITICAL] inventario[9047]: Servicio inventario no responde
+2026-10-29 09:38:39 [CRITICAL] auth[5055]: Base de datos fuera de línea
+2026-10-29 09:39:00 [CRITICAL] api-gateway[4314]: Intentos de acceso masivos detectados desde 45.33.12.9
+2026-10-29 09:39:23 [CRITICAL] auth[8428]: Intentos de acceso masivos detectados desde 186.15.70.120
+2026-10-29 09:39:27 [CRITICAL] reportes[2262]: Base de datos fuera de línea
+2026-10-29 09:39:54 [CRITICAL] pagos[8404]: Base de datos fuera de línea
+2026-10-29 09:42:12 [CRITICAL] inventario[9031]: Base de datos fuera de línea
+2026-10-29 09:42:39 [CRITICAL] pagos[2699]: Base de datos fuera de línea
+2026-10-29 09:45:40 [CRITICAL] reportes[4115]: Base de datos fuera de línea
+2026-10-29 09:46:09 [CRITICAL] pagos[9821]: Servicio inventario no responde
+2026-10-29 09:46:12 [CRITICAL] pagos[6527]: Base de datos fuera de línea
+2026-10-29 09:46:21 [CRITICAL] auth[5300]: Intentos de acceso masivos detectados desde 186.15.70.120
+2026-10-29 09:46:38 [CRITICAL] api-gateway[5908]: Servicio api-gateway no responde
+2026-10-29 09:47:42 [CRITICAL] api-gateway[6772]: Base de datos fuera de línea
+2026-10-29 09:49:22 [CRITICAL] inventario[3125]: Intentos de acceso masivos detectados desde 45.33.12.9
+2026-10-29 09:52:19 [CRITICAL] api-gateway[3888]: Servicio correo no responde

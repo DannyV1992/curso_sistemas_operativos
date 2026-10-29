@@ -1,0 +1,15 @@
+2026-10-29 13:15:51 [ERROR] auth[3173]: Disco /var al 82% de capacidad
+2026-10-29 13:15:52 [ERROR] reportes[2162]: Disco /var al 85% de capacidad
+2026-10-29 13:15:52 [ERROR] inventario[6290]: Disco /var al 99% de capacidad
+2026-10-29 13:15:53 [ERROR] pagos[9328]: Login fallido para usuario admin desde 201.204.33.8
+2026-10-29 13:15:53 [CRITICAL] inventario[5236]: Intentos de acceso masivos detectados desde 45.33.12.9
+2026-10-29 13:15:54 [ERROR] reportes[8289]: Login fallido para usuario ana desde 172.16.4.2
+2026-10-29 13:15:56 [CRITICAL] reportes[2250]: Servicio pagos no responde
+2026-10-29 13:15:57 [CRITICAL] reportes[1556]: Base de datos fuera de línea
+2026-10-29 13:15:58 [ERROR] inventario[4353]: Pago #5243 rechazado: fondos insuficientes
+2026-10-29 13:16:00 [CRITICAL] auth[6925]: Base de datos fuera de línea
+2026-10-29 13:16:01 [ERROR] reportes[1157]: Login fallido para usuario hugo desde 10.0.0.17
+2026-10-29 13:16:03 [ERROR] pagos[1106]: Timeout conectando a db-primaria:5432
+2026-10-29 13:16:06 [CRITICAL] reportes[3489]: Intentos de acceso masivos detectados desde 192.168.1.22
+2026-10-29 13:16:06 [CRITICAL] correo[5233]: Base de datos fuera de línea
+2026-10-29 13:16:08 [ERROR] reportes[8639]: Disco /var al 70% de capacidad

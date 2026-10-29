@@ -1,0 +1,67 @@
+2026-10-29 09:31:02 [INFO] auth[5136]: Reporte mensual generado en 472 ms
+2026-10-29 09:31:08 [DEBUG] pagos[2940]: Payload recibido de 79571 bytes
+2026-10-29 09:31:12 [CRITICAL] inventario[1986]: Intentos de acceso masivos detectados desde 45.33.12.9
+--
+2026-10-29 09:33:40 [ERROR] pagos[9095]: Pago #8354 rechazado: fondos insuficientes
+2026-10-29 09:33:43 [WARN] inventario[1920]: Reintento 2/3 conectando a la base de datos
+2026-10-29 09:33:47 [CRITICAL] auth[9307]: Base de datos fuera de línea
+2026-10-29 09:33:52 [ERROR] inventario[2381]: NullPointerException en pagos.procesar()
+2026-10-29 09:33:54 [CRITICAL] api-gateway[7697]: Base de datos fuera de línea
+--
+2026-10-29 09:34:56 [INFO] correo[1530]: Correo enviado a fabian@ejemplo.com
+2026-10-29 09:34:58 [INFO] pagos[2858]: Usuario admin inició sesión desde 186.15.70.120
+2026-10-29 09:35:01 [CRITICAL] inventario[9047]: Servicio inventario no responde
+--
+2026-10-29 09:38:34 [INFO] reportes[8272]: Reporte mensual generado en 690 ms
+2026-10-29 09:38:36 [WARN] correo[9115]: Tiempo de respuesta alto: 2350 ms en /static/logo.png
+2026-10-29 09:38:39 [CRITICAL] auth[5055]: Base de datos fuera de línea
+--
+2026-10-29 09:38:55 [INFO] reportes[6869]: Usuario diego inició sesión desde 186.15.70.120
+2026-10-29 09:38:57 [INFO] correo[8951]: Pedido #1793 creado correctamente
+2026-10-29 09:39:00 [CRITICAL] api-gateway[4314]: Intentos de acceso masivos detectados desde 45.33.12.9
+--
+2026-10-29 09:39:19 [DEBUG] api-gateway[9300]: Cache hit para clave user:9209
+2026-10-29 09:39:21 [INFO] correo[4329]: Usuario root cerró sesión
+2026-10-29 09:39:23 [CRITICAL] auth[8428]: Intentos de acceso masivos detectados desde 186.15.70.120
+2026-10-29 09:39:26 [WARN] correo[5247]: Uso de memoria al 78%
+2026-10-29 09:39:27 [CRITICAL] reportes[2262]: Base de datos fuera de línea
+--
+2026-10-29 09:39:48 [ERROR] auth[2020]: Pago #3141 rechazado: fondos insuficientes
+2026-10-29 09:39:50 [WARN] auth[4321]: Uso de memoria al 80%
+2026-10-29 09:39:54 [CRITICAL] pagos[8404]: Base de datos fuera de línea
+--
+2026-10-29 09:42:05 [INFO] reportes[7112]: Usuario diego inició sesión desde 192.168.1.10
+2026-10-29 09:42:07 [DEBUG] correo[6015]: Consulta SQL ejecutada en 272 ms
+2026-10-29 09:42:12 [CRITICAL] inventario[9031]: Base de datos fuera de línea
+--
+2026-10-29 09:42:32 [DEBUG] auth[1158]: Consulta SQL ejecutada en 2722 ms
+2026-10-29 09:42:34 [INFO] auth[7566]: Reporte mensual generado en 3946 ms
+2026-10-29 09:42:39 [CRITICAL] pagos[2699]: Base de datos fuera de línea
+--
+2026-10-29 09:45:37 [INFO] auth[8896]: Usuario diego inició sesión desde 10.0.0.17
+2026-10-29 09:45:38 [ERROR] pagos[5706]: Login fallido para usuario admin desde 186.15.70.120
+2026-10-29 09:45:40 [CRITICAL] reportes[4115]: Base de datos fuera de línea
+--
+2026-10-29 09:46:00 [WARN] api-gateway[5915]: Reintento 2/3 conectando a la base de datos
+2026-10-29 09:46:05 [INFO] reportes[6483]: Pedido #6903 creado correctamente
+2026-10-29 09:46:09 [CRITICAL] pagos[9821]: Servicio inventario no responde
+2026-10-29 09:46:12 [CRITICAL] pagos[6527]: Base de datos fuera de línea
+2026-10-29 09:46:14 [WARN] reportes[7479]: Reintento 1/3 conectando a la base de datos
+2026-10-29 09:46:18 [ERROR] reportes[2311]: Login fallido para usuario bruno desde 201.204.33.8
+2026-10-29 09:46:21 [CRITICAL] auth[5300]: Intentos de acceso masivos detectados desde 186.15.70.120
+--
+2026-10-29 09:46:30 [ERROR] pagos[8480]: Disco /var al 87% de capacidad
+2026-10-29 09:46:33 [WARN] inventario[3551]: Reintento 1/3 conectando a la base de datos
+2026-10-29 09:46:38 [CRITICAL] api-gateway[5908]: Servicio api-gateway no responde
+--
+2026-10-29 09:47:37 [INFO] correo[7313]: Usuario diego cerró sesión
+2026-10-29 09:47:41 [INFO] reportes[8515]: Health check OK
+2026-10-29 09:47:42 [CRITICAL] api-gateway[6772]: Base de datos fuera de línea
+--
+2026-10-29 09:49:16 [INFO] api-gateway[2108]: Reporte mensual generado en 3459 ms
+2026-10-29 09:49:19 [INFO] correo[1953]: Usuario hugo inició sesión desde 172.16.4.2
+2026-10-29 09:49:22 [CRITICAL] inventario[3125]: Intentos de acceso masivos detectados desde 45.33.12.9
+--
+2026-10-29 09:52:13 [ERROR] auth[3949]: Disco /var al 87% de capacidad
+2026-10-29 09:52:14 [ERROR] auth[6929]: NullPointerException en reportes.procesar()
+2026-10-29 09:52:19 [CRITICAL] api-gateway[3888]: Servicio correo no responde

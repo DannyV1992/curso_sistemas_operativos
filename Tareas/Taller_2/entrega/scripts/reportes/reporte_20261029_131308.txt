@@ -1,0 +1,33 @@
+===== REPORTE DE app.log =====
+Generado: 2026-10-29 13:13:08
+Total de líneas: 500
+
+--- Conteo por nivel ---
+DEBUG: 57
+INFO: 257
+WARN: 89
+ERROR: 78
+CRITICAL: 19
+
+--- Top 5 servicios con errores ---
+     17 reportes
+     17 pagos
+     12 auth
+     12 api-gateway
+     10 inventario
+
+--- IPs con Login fallido ---
+      7 45.33.12.9
+      7 201.204.33.8
+      4 186.15.70.120
+      2 10.0.0.17
+      1 192.168.1.10
+
+--- Últimos 5 CRITICAL ---
+2026-10-29 09:46:21 [CRITICAL] auth[5300]: Intentos de acceso masivos detectados desde 186.15.70.120
+2026-10-29 09:46:38 [CRITICAL] api-gateway[5908]: Servicio api-gateway no responde
+2026-10-29 09:47:42 [CRITICAL] api-gateway[6772]: Base de datos fuera de línea
+2026-10-29 09:49:22 [CRITICAL] inventario[3125]: Intentos de acceso masivos detectados desde 45.33.12.9
+2026-10-29 09:52:19 [CRITICAL] api-gateway[3888]: Servicio correo no responde
+
+OK: 78 errores (umbral: 100)
