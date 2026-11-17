@@ -1,0 +1,18 @@
+PID=10784, modo=chunks, archivo=/home/daniel/lab_mem/ventas_demo.csv, filas_limitadas=todas
+
+Top 10 por region y categoria (importe acumulado):
+region     categoria  
+Occidente  Deportes       1.712851e+09
+Pacifico   Servicios      1.674463e+09
+           Alimentos      1.669756e+09
+Caribe     Alimentos      1.666919e+09
+Occidente  Alimentos      1.661792e+09
+Sur        Alimentos      1.660215e+09
+           Salud          1.659365e+09
+Caribe     Hogar          1.655783e+09
+Norte      Electronica    1.650201e+09
+Caribe     Deportes       1.641107e+09
+
+Filas procesadas: 4,575,207
+Duración: 2.61 s
+RSS máximo del proceso: 111.3 MiB

@@ -14,9 +14,13 @@
 
 Todo el trabajo se entrega en este repositorio de GitHub. Los archivos de datos (CSV de 1, 2 y 4 GB) **no** se incluyen por su tamaño; se regeneran con `generar_dataset.py` y la semilla por defecto.
 
-**Scripts (los dos del profesor y los dos propios, con mi firma):** [scripts](https://github.com/DannyV1992/curso_sistemas_operativos/tree/main/Tareas/Taller_4/scripts)
+**Scripts (los dos del profesor y los tres propios, con mi firma):** [entrega/scripts](https://github.com/DannyV1992/curso_sistemas_operativos/tree/main/Tareas/Taller_4/entrega/scripts)
 
-**Resultados del monitoreo (una carpeta por corrida):** [scripts/resultados](https://github.com/DannyV1992/curso_sistemas_operativos/tree/main/Tareas/Taller_4/scripts/resultados)
+**Resultados del monitoreo (una carpeta por corrida, 19 corridas):** [entrega/resultados](https://github.com/DannyV1992/curso_sistemas_operativos/tree/main/Tareas/Taller_4/entrega/resultados)
+
+**Tabla resumen de todas las corridas:** [entrega/resumen_corridas.csv](https://github.com/DannyV1992/curso_sistemas_operativos/blob/main/Tareas/Taller_4/entrega/resumen_corridas.csv)
+
+**Gráficas:** [graficas](https://github.com/DannyV1992/curso_sistemas_operativos/tree/main/Tareas/Taller_4/graficas)
 
 **Capturas de pantalla:** [Screenshots](https://github.com/DannyV1992/curso_sistemas_operativos/tree/main/Tareas/Taller_4/Screenshots)
 
@@ -27,9 +31,9 @@ Todo el trabajo se entrega en este repositorio de GitHub. Los archivos de datos 
 - [x] Explicación de qué mide cada comando.
 - [x] Corridas en modo `chunks` y `full` con 1 GB.
 - [x] Corridas con 2 GB (`chunks` y `full`) y con 4 GB (`chunks`). El modo `full` con 4 GB no se ejecutó porque ya con 2 GB el sistema mata el proceso.
-- [ ] Serie de corridas repetidas, alternando `full` y `chunks`.
-- [ ] Procesamiento de los resultados y gráficas.
-- [ ] Interpretación final de `full` frente a `chunks`.
+- [x] Serie de 6 corridas por modo con 1 GB, alternando `full` y `chunks`.
+- [x] Procesamiento de los resultados (memoria virtual, swapping, presión de memoria y correlación con los procesos) y gráficas.
+- [x] Interpretación final de `full` frente a `chunks`.
 - [x] Pregunta extra: monitoreo en Windows.
 
 ---
@@ -38,7 +42,7 @@ Todo el trabajo se entrega en este repositorio de GitHub. Los archivos de datos 
 
 **¿Qué sucede cuando se intenta analizar un archivo que supera la RAM disponible, y cómo se resuelve sin agregar memoria física?**
 
-> **PENDIENTE:** la respuesta final va en la sección de conclusiones, cuando estén las corridas de 2 y 4 GB y la serie repetida.
+**Respuesta corta:** Si el programa carga todo el archivo en memoria (`full`), el sistema primero usa el swap en el disco, que es mucho más lento que la RAM; si el archivo es lo bastante grande, el swap también se llena y el kernel mata el proceso sin entregar resultado (así pasó con 2 GB en una máquina de 3,3 GiB de RAM). Se resuelve sin agregar memoria física cambiando **cómo** se procesa: leer el archivo por bloques (`chunks`) y acumular resultados parciales mantiene el uso de memoria constante (111 MiB) sin importar el tamaño del archivo. El detalle y las mediciones están en la sección de conclusiones.
 
 ---
 
@@ -321,13 +325,150 @@ Solo se ejecutó el modo `chunks`. El modo `full` no se probó: con 2 GB ya muer
 
 ## Paso 5: Serie de corridas repetidas
 
-> **PENDIENTE:** al menos 4 corridas por modo (de preferencia 6), con el mismo archivo y alternando `full` y `chunks`, con la tabla resumen (captura 14).
+Una sola corrida no basta: en el Paso 4.1 las dos corridas de `full` dieron 62,46 s y 45,47 s. Para separar el efecto del modo del ruido de la máquina virtual se hicieron **6 corridas por modo con el archivo de 1 GB, alternando** `chunks` y `full` (así cualquier deriva de la máquina, como swap sobrante o caché, afecta por igual a los dos modos). Cada corrida usa `correr_corrida.sh`, que vacía la caché de archivos antes de empezar.
+
+```bash
+for i in 1 2 3 4 5 6; do
+  ./correr_corrida.sh ~/lab_mem/ventas_1gb.csv chunks
+  ./correr_corrida.sh ~/lab_mem/ventas_1gb.csv full --force
+done
+```
+
+**Resultados de las 12 corridas** (extraídos de `analisis.txt`, `vmstat.txt`, `free.txt` y `psi.txt`, ver [resumen_corridas.csv](entrega/resumen_corridas.csv)):
+
+| Corrida | Duración (s) | RSS máx. (MiB) | Swap adicional (MiB) | Total enviado al swap (MiB) | `wa` promedio (%) | PSI `some` máx. (%) |
+|---|---|---|---|---|---|---|
+| `chunks` 1 | 20,96 | 111,2 | 0 | 0 | 1,4 | 0,0 |
+| `full` 1 | 61,40 | 2641,2 | 1817 | 1833 | 16,5 | 59,6 |
+| `chunks` 2 | 14,86 | 111,0 | 0 | 0 | 2,1 | 0,0 |
+| `full` 2 | 54,23 | 2598,2 | 1727 | 1734 | 18,4 | 57,4 |
+| `chunks` 3 | 15,77 | 111,1 | 0 | 0 | 1,9 | 0,0 |
+| `full` 3 | 63,91 | 2666,2 | 1926 | 1890 | 15,4 | 47,4 |
+| `chunks` 4 | 17,08 | 111,3 | 0 | 0 | 2,6 | 0,0 |
+| `full` 4 | 78,16 | 2669,8 | 1721 | 2339 | 15,6 | 58,7 |
+| `chunks` 5 | 18,47 | 111,2 | 0 | 0 | 2,4 | 0,0 |
+| `full` 5 | 55,84 | 2663,4 | 1627 | 1645 | 13,3 | 50,7 |
+| `chunks` 6 | 17,78 | 111,5 | 0 | 0 | 2,0 | 0,0 |
+| `full` 6 | 60,35 | 2692,0 | 1635 | 1604 | 27,0 | 57,8 |
+
+**Resumen por modo** (media, con mínimo y máximo entre paréntesis):
+
+| Métrica | `chunks` | `full` |
+|---|---|---|
+| Duración (s) | 17,5 (14,9 a 21,0) | 62,3 (54,2 a 78,2) |
+| RSS máximo (MiB) | 111,2 (111,0 a 111,5) | 2655,1 (2598,2 a 2692,0) |
+| Swap adicional usado (MiB) | 0 | 1742 (1627 a 1926) |
+| Total enviado al swap (MiB) | 0 | 1841 (1604 a 2339) |
+| Total leído del swap (MiB) | 0 | 931 (639 a 1426) |
+| Pico de `so` (KiB/s) | 0 | 150 961 (121 704 a 167 016) |
+| CPU en espera de disco, promedio (%) | 2,1 (1,4 a 2,6) | 17,7 (13,3 a 27,0) |
+| Procesos bloqueados, máximo | 0,7 (0 a 1) | 5,0 (4 a 8) |
+| Memoria disponible mínima (MiB) | 1824 (1810 a 1841) | 63 (52 a 87) |
+| PSI `some` máximo (%) | 0 | 55,3 (47,4 a 59,6) |
+| PSI `full` máximo (%) | 0 | 42,2 (37,3 a 45,6) |
+| Segundos con espera `some` | 0 | 19,7 (15,5 a 24,7) |
+
+**Respuesta:** Con la misma entrada y el mismo resultado, `full` usó **23,9 veces más memoria** (razón de los RSS medios) y tardó **3,56 veces más** que `chunks`. La diferencia es estable: el mejor `full` (54,2 s) sigue siendo más lento que el peor `chunks` (21,0 s), y los RSS de `chunks` varían solo 0,5 MiB. Lo que sí varía en `full` es el tiempo (de 54,2 s a 78,2 s) porque depende de cuánto swap deje ocupado la corrida anterior y de cómo reparta el kernel las páginas. En ninguna de las seis corridas de `chunks` apareció swap, presión de memoria ni espera de disco apreciable.
+
+Los mismos datos, leídos directamente de los archivos de la VM (los 12 `analisis.txt` y `marcas.txt`):
+
+```bash
+for d in $(ls -dt resultados/ventas_1gb_*/ | head -n 12 | sort); do
+  printf "%-38s " "$(basename $d)"
+  grep -h "Duración" $d/analisis.txt | tr '\n' ' '
+  grep -h "RSS máximo" $d/analisis.txt | tr '\n' ' '
+  grep -h codigo_salida $d/marcas.txt
+done
+```
+
+Las 12 corridas terminaron con `codigo_salida 0`.
+
+![Resumen de la serie](Screenshots/14_resumen_serie.png)
 
 ---
 
 ## Paso 6: Procesamiento de los resultados
 
-> **PENDIENTE:** script de análisis y gráficas de memoria virtual (`swpd`), swapping (`si` y `so`), presión de memoria (PSI) y correlación con los procesos (`RES` del proceso de Python en `top`), una gráfica por corrida o por modo.
+Se escribió `analizar_resultados.py` (propio, en `entrega/scripts`). Lee las carpetas de `resultados/`, convierte cada archivo de monitoreo a tablas con pandas y las **alinea por la hora de la muestra** (`vmstat -t` trae la hora de cada línea y los demás archivos llevan una marca `### hora`). Después calcula las métricas por corrida, la correlación entre series y las gráficas.
+
+```bash
+cd entrega/scripts
+python -I analizar_resultados.py
+```
+
+Cómo se obtiene cada magnitud que pide el enunciado:
+
+| Magnitud | Fuente | Qué se calcula |
+|---|---|---|
+| Memoria virtual | `vmstat` (`swpd`) y `free` (swap usado, disponible) | Swap adicional máximo y memoria disponible mínima |
+| Swapping | `vmstat` (`si`, `so`) | Pico de `so` y total enviado y leído del swap (suma de KiB/s con muestras de 1 s) |
+| Presión de memoria | `/proc/pressure/memory` | Máximo de `avg10` en `some` y `full`, y segundos con espera |
+| Procesos | `top` (columna `RES`) | `RES` del proceso `python` más grande, solo dentro de la ventana del análisis |
+| Disco | `vmstat` (`wa`, `b`) | Espera de disco promedio y procesos bloqueados |
+
+### Gráfica 1: la serie completa
+
+![Serie de 1 GB](graficas/01_serie_1gb.png)
+
+Cada punto es una corrida. En duración y en memoria, los puntos de los dos modos no se solapan en ningún caso.
+
+### Gráfica 2: una corrida de cada modo, lado a lado
+
+![Línea de tiempo de 1 GB](graficas/02_linea_de_tiempo_1gb.png)
+
+Es la gráfica que correlaciona todo (columna izquierda `chunks`, derecha `full`, la zona sombreada es el análisis):
+
+- **Memoria disponible** (`free`): en `chunks` baja de unos 1900 a 1840 MiB y se queda ahí. En `full` cae a unos 100 MiB en cuanto empieza la carga.
+- **Memoria virtual** (swap usado): en `chunks` es 0 todo el tiempo. En `full` sube a 1817 MiB y, al terminar el proceso, baja pero **queda cerca de 780 MiB ocupados** en el swap (páginas que nadie volvió a necesitar). Por eso la corrida siguiente no parte de cero.
+- **Swapping** (`si`, `so`): en `full` hay un pico de `so` de unos 167 000 KiB/s a los 10 s, justo cuando la memoria disponible se desploma, y luego un segundo tramo de unos 25 s con `so` y `si` simultáneos. Que entren y salgan páginas a la vez significa que el sistema saca páginas que enseguida vuelve a necesitar, que es la señal clásica de **hiperpaginación**.
+- **Presión de memoria** (PSI): el `some` sube a un 17 % en el primer tramo y llega a casi 60 % hacia el segundo 38; `full` va un poco por debajo (unos 45 %). Es decir, durante varios segundos **todos** los procesos útiles estaban esperando por memoria.
+- **Procesos** (`RES` de Python en `top`): en `chunks` es una línea plana de unos 110 MiB. En `full` sube a más de 2500 MiB, y la forma coincide con la de las otras gráficas: baja a 1100 MiB mientras el swap se dispara (el kernel le quita páginas) y cae casi a cero al terminar.
+
+### Gráfica 3: las 12 corridas superpuestas
+
+![Serie superpuesta](graficas/03_serie_superpuesta.png)
+
+Las seis corridas de `full` siguen la misma forma (swap sube desde el segundo 10, la presión de memoria alcanza un máximo cerca del segundo 40, `RES` llega al techo de unos 2600 MiB) pero con tiempos desplazados (una corrida, la de 78 s, se alarga mucho más que las otras). Las seis de `chunks` son una línea pegada al cero. Esto confirma que el comportamiento de la gráfica 2 es representativo y no un caso aislado.
+
+### Correlación entre las series
+
+Se calculó el coeficiente de Pearson dentro de la ventana del análisis (muestras alineadas por segundo) para las seis corridas de `full`:
+
+| Par de series | Media de las 6 corridas | Lectura |
+|---|---|---|
+| `RES` de Python y memoria disponible | **-0,95** (de -0,97 a -0,94) | Correlación negativa casi perfecta: cuando el proceso crece, la memoria disponible baja, y es el proceso Python quien la consume |
+| `RES` de Python y swap usado | 0,45 (de 0,34 a 0,53) | Positiva moderada: el swap crece junto con el proceso, pero con retardo (el swap se llena después y se vacía poco al final, mientras `RES` ya cayó) |
+| `so` y PSI `some` | 0,40 (de 0,32 a 0,48) | Positiva moderada: más páginas enviadas al swap implican más espera, pero la presión también se mantiene alta cuando `so` baja, porque el promedio de 10 s decae despacio |
+
+En `chunks` la correlación `RES`-memoria disponible también es negativa (-0,79), pero con variaciones de apenas decenas de MiB; las demás no se calculan porque swap y PSI valen cero todo el tiempo (no hay variación que correlacionar).
+
+### Gráfica 4: la corrida de 2 GB que no termina
+
+![full con 2 GB](graficas/04_full_2gb_muerte.png)
+
+Con los datos que se alcanzaron a guardar (608 s de muestras; el kernel mató el proceso en el segundo **624** de la corrida, según el registro del sistema, por eso la última muestra queda unos 16 s antes de la línea vertical):
+
+- El swap sube hasta **3909 MiB, su capacidad total**, y allí se queda.
+- La memoria disponible baja a un mínimo de **17 MiB**.
+- El `RES` de Python se mantiene entre 2200 y 2700 MiB casi todo el tiempo: no es que el proceso crezca sin parar, es que el sistema no tiene a dónde mover más páginas.
+- La CPU espera al disco en promedio **30,5 %** de los segundos y llega a **92 %** al final. Los procesos bloqueados suben de 0 a 5 en casi toda la corrida y **a 31 al final**.
+- El PSI `some` (promedio de 10 s) superó el 59 % y estuvo por encima de cero unos 149 s sumados, con `full` hasta 36,7 %.
+- Los saltos bruscos de memoria disponible (a los 112 s y a los 245 s) coinciden con caídas del `RES` de Python a unos 1300 MiB: el kernel le quitó páginas al proceso para llevarlas al swap y, al volver a necesitarlas, el proceso las trajo de nuevo. El sistema oscilaba sin lograr avanzar.
+
+### Gráfica 5: cómo escala con el tamaño
+
+![Escalado por tamaño](graficas/05_escalado_por_tamano.png)
+
+| Tamaño | `chunks`: duración | `chunks`: RSS | `full` |
+|---|---|---|---|
+| 0,2 GB | 2,6 s | 111 MiB | no se ejecutó |
+| 1 GB | 17 s (media de 6) | 111 MiB | 60 s, 2642 MiB |
+| 2 GB | 24,6 s | 111 MiB | **muere** a los 624 s |
+| 4 GB | 59,1 s | 111 MiB | no se ejecutó |
+
+La memoria de `chunks` es una línea horizontal; la de `full` ya con 1 GB está a más de un 75 % de la RAM total de la máquina (línea gris del gráfico), y con 2 GB el proceso desaparece.
+
+> La gráfica 5 usa las medias cuando hay varias corridas del mismo tamaño y modo, por eso `chunks` con 1 GB aparece en 17 s y no en los 12,2 s de la primera corrida exploratoria del Paso 4.1.
 
 ---
 
@@ -354,9 +495,16 @@ Por qué ocurre:
 
 ### Qué pasa cuando el archivo supera la memoria
 
-Con 1 GB, `full` todavía termina porque el DataFrame (4,2 GiB estimados) cabe en RAM + swap (7,1 GiB), pero a un costo alto: swapping, caché descartada, CPU en modo kernel y espera de disco, y 4 a 5 veces más tiempo. Con 2 GB, el DataFrame estimado (8,5 GiB) ya no cabe: el swap se llena, la máquina pasa más de 10 minutos casi sin avanzar (88 % a 92 % de espera de disco) y el OOM killer del kernel mata el proceso sin entregar ningún resultado. Es una falla total, no una degradación gradual.
+Con 1 GB, `full` todavía termina porque el DataFrame (4,2 GiB estimados) cabe en RAM + swap (7,1 GiB), pero a un costo alto. En las 6 corridas repetidas: **3,56 veces más tiempo**, 23,9 veces más memoria, entre 1,6 y 1,9 GiB de swap adicional, la memoria disponible cae a unos 63 MiB y el máximo de la presión de memoria es en promedio de 55 % para `some` y 42 % para `full`. Con 2 GB, el DataFrame estimado (8,5 GiB) ya no cabe: el swap se llena (3909 MiB), la máquina pasa más de 10 minutos casi sin avanzar (88 % a 92 % de espera de disco al final) y el OOM killer del kernel mata el proceso sin entregar ningún resultado. Es una falla total, no una degradación gradual.
 
-> **PENDIENTE:** completar con las gráficas y con la serie repetida de 1 GB.
+Los indicadores aparecen en un orden que sirve para diagnosticar. Primero baja la memoria disponible, luego suben `so` y el swap usado, después aparece la presión PSI `some`, y finalmente `full` y la espera de disco; el proceso muere cuando el swap llega a su capacidad. La presión de memoria (PSI) es el aviso más temprano y más directo: en `chunks` vale 0 siempre y en `full` supera el 40 % varios segundos.
+
+### Variabilidad y límites de las mediciones
+
+- El tiempo de `full` es muy variable (54 a 78 s, un 40 % de diferencia entre la mejor y la peor corrida) porque depende del estado del swap y de la caché; el de `chunks` varía de 15 a 21 s (la primera corrida de la serie fue la más lenta). Por eso se reportan medias con mínimo y máximo y no una sola corrida.
+- La memoria de `chunks` es prácticamente determinista (111,0 a 111,5 MiB); la de `full` también es estable (2598 a 2692 MiB), pero ese tope lo fija la RAM disponible, no el programa: Python quiere 4,2 GiB y el sistema solo le deja unos 2,6 GiB en RAM, el resto va al swap. En una máquina con más RAM el RSS sería mayor y el tiempo menor.
+- Las gráficas de `RES` usan una muestra de `top` por segundo y solo se interpretan dentro de la ventana del análisis, porque fuera de ella `top` muestra otro proceso `python`.
+- No se corrió `full` con 4 GB (ni con 200 MB): con 2 GB ya muere, y 4 GB no aportaría un dato nuevo.
 
 ---
 
@@ -405,4 +553,16 @@ El enunciado pide identificar las otras razones por las que los procesos pueden 
 
 ## Conclusiones
 
-> **PENDIENTE:** respuesta final a la pregunta del laboratorio, con los resultados de 2 y 4 GB y de la serie repetida.
+**¿Qué sucede cuando se intenta analizar un archivo que supera la RAM disponible?** Depende de cuánto la supere. Mientras el programa cabe en RAM más swap, sigue funcionando pero muy degradado: con 1 GB (DataFrame de unos 4,2 GiB en una máquina de 3,3 GiB de RAM) `full` terminó, pero con **3,56 veces más tiempo**, 1,7 GiB de swap adicional, la memoria disponible en 63 MiB y una presión de memoria de hasta 60 %. Cuando no cabe, con 2 GB (DataFrame de 8,5 GiB contra 7,1 GiB de RAM y swap), el swap se llena, el sistema pasa más de 10 minutos con 88 % a 92 % de la CPU esperando disco y el kernel mata el proceso (OOM killer, señal 9), sin entregar resultado y arrastrando consigo el script y el monitoreo de esa terminal.
+
+**¿Cómo se resuelve sin agregar memoria física?** Procesando el archivo por bloques (`chunks`): se lee un bloque de 100 000 filas, se calcula su parcial, se acumula y se descarta el bloque. La memoria depende del tamaño del bloque, no del archivo. Con los mismos 111 MiB se procesaron 200 MB, 1, 2 y 4 GB (este último más grande que toda la RAM), sin tocar el swap, sin presión de memoria y con el mismo resultado numérico que `full`. El tiempo crece de forma casi lineal con el tamaño (2,6 s, 17 s, 24,6 s y 59,1 s para 0,2, 1, 2 y 4 GB).
+
+**Lo aprendido:**
+
+1. **El tiempo de ejecución no es lo único que importa; la memoria decide si el programa termina o no.** `full` falla de golpe, no de forma gradual.
+2. **El swap es una red de seguridad, no memoria extra:** el disco es mucho más lento que la RAM, así que entrar en swap multiplica el tiempo y al llenarse mata el proceso.
+3. **La presión de memoria (PSI) es el mejor indicador de sufrimiento**, antes de que ocurra el fallo, y la correlación `RES` contra memoria disponible (-0,95) permite identificar al proceso responsable.
+4. **Un algoritmo que procesa por bloques cambia el problema de espacio a tiempo:** gasta memoria constante, pero hay que poder acumular el resultado parcialmente (suma por grupo sí; mediana exacta u orden global, no).
+5. **Un solo experimento no basta:** el mismo `full` con 1 GB tardó entre 45 s y 78 s en distintas corridas, por eso se repitió alternando los modos.
+
+**Otras razones por las que un proceso puede fallar** (el enunciado pregunta por ellas), además de quedarse sin memoria: falta de espacio en disco (el generador rechazó un archivo de 20 GB con 11 GB libres), permisos de archivo (el `Permission denied` del Taller 3), parámetros mal escritos (`--chuck-size`), o dependencias del sistema operativo (`resource` y `/proc` no existen en Windows). Todas aparecieron en este taller y están en la tabla de problemas.

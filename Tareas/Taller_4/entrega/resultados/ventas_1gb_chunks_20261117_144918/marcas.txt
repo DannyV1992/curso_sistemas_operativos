@@ -1,0 +1,3 @@
+inicio_analisis 2026-11-17 14:49:29
+fin_analisis 2026-11-17 14:49:46
+codigo_salida 0

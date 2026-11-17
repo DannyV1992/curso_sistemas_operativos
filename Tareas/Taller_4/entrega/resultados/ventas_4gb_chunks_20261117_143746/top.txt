@@ -1,0 +1,992 @@
+### 2026-11-17 14:37:47
+top - 14:37:47 up  1:11,  1 user,  load average: 0.03, 0.93, 1.43
+Tasks: 209 total,   1 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us, 15.0 sy,  5.0 ni, 35.0 id, 20.0 wa,  0.0 hi, 25.0 si,  0.0 st 
+MiB Mem :   3398.8 total,   2636.6 free,    781.1 used,    205.0 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2617.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 166068  57708 S   0.0   4.8   5:55.84 gnome-s+
+   8891 daniel    20   0 1823888  95648  67944 S   0.0   2.7   0:46.79 ptyxis
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1141640  19512   9868 S   0.0   0.6   1:38.03 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+    940 root      20   0 1951996  18660   9508 S   0.0   0.5   0:02.11 snapd
+  15534 daniel    39  19   84192  17320  15076 D  40.0   0.5   0:00.05 localse+
+### 2026-11-17 14:37:48
+top - 14:37:48 up  1:12,  1 user,  load average: 0.03, 0.93, 1.43
+Tasks: 209 total,   1 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us, 26.3 sy,  5.3 ni, 21.1 id, 31.6 wa,  0.0 hi, 15.8 si,  0.0 st 
+MiB Mem :   3398.8 total,   2473.3 free,    783.4 used,    378.9 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2615.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 166072  57708 S  33.3   4.8   5:55.97 gnome-s+
+   8891 daniel    20   0 1823888  95648  67944 S   0.0   2.7   0:46.80 ptyxis
+  15534 daniel    39  19  628568  46400  38684 S   8.3   1.3   0:00.20 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1149836  23804   9872 S  75.0   0.7   1:38.23 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+    940 root      20   0 1951996  18660   9508 S   0.0   0.5   0:02.11 snapd
+### 2026-11-17 14:37:49
+top - 14:37:49 up  1:12,  1 user,  load average: 0.03, 0.92, 1.42
+Tasks: 209 total,   1 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  5.3 sy,  5.3 ni, 89.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,   2461.9 free,    785.8 used,    387.8 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2613.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 166072  57708 S   0.0   4.8   5:56.01 gnome-s+
+   8891 daniel    20   0 1823888  95648  67944 S   0.0   2.7   0:46.81 ptyxis
+  15534 daniel    39  19  776164  46536  38684 S   0.0   1.3   0:00.22 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1149836  23848   9872 S   0.0   0.7   1:38.27 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+    940 root      20   0 1951996  18660   9508 S   0.0   0.5   0:02.11 snapd
+### 2026-11-17 14:37:50
+top - 14:37:51 up  1:12,  1 user,  load average: 0.03, 0.92, 1.42
+Tasks: 209 total,   1 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  5.3 sy,  0.0 ni, 94.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,   2461.6 free,    786.0 used,    387.9 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2612.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 166072  57708 S   0.0   4.8   5:56.01 gnome-s+
+   8891 daniel    20   0 1823888  95648  67944 S   0.0   2.7   0:46.81 ptyxis
+  15534 daniel    39  19  776164  46592  38684 S   0.0   1.3   0:00.23 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1158032  23936   9872 S   0.0   0.7   1:38.30 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+    940 root      20   0 1951996  18660   9508 S   0.0   0.5   0:02.11 snapd
+### 2026-11-17 14:37:52
+top - 14:37:52 up  1:12,  1 user,  load average: 0.03, 0.92, 1.42
+Tasks: 209 total,   1 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  9.5 sy,  4.8 ni, 81.0 id,  4.8 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,   2461.3 free,    785.8 used,    388.4 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2613.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 166076  57708 S   0.0   4.8   5:56.01 gnome-s+
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.82 ptyxis
+  15534 daniel    39  19  776164  46628  38684 S   0.0   1.3   0:00.23 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1158032  23940   9872 S   0.0   0.7   1:38.33 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+    940 root      20   0 1951996  18660   9508 S   0.0   0.5   0:02.11 snapd
+### 2026-11-17 14:37:53
+top - 14:37:53 up  1:12,  1 user,  load average: 0.03, 0.92, 1.42
+Tasks: 209 total,   1 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.3 us, 10.5 sy,  0.0 ni, 68.4 id,  5.3 wa,  0.0 hi, 10.5 si,  0.0 st 
+MiB Mem :   3398.8 total,   2461.1 free,    785.9 used,    388.4 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2612.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165944  57708 S   0.0   4.8   5:56.02 gnome-s+
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.82 ptyxis
+  15534 daniel    39  19  776164  46664  38684 S   0.0   1.3   0:00.24 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1158032  23940   9872 S   0.0   0.7   1:38.36 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+    940 root      20   0 1951996  18660   9508 S   0.0   0.5   0:02.11 snapd
+### 2026-11-17 14:37:54
+top - 14:37:54 up  1:12,  1 user,  load average: 0.03, 0.90, 1.41
+Tasks: 209 total,   1 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  5.3 sy,  0.0 ni, 94.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,   2461.1 free,    786.0 used,    388.4 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2612.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165944  57708 S   0.0   4.8   5:56.02 gnome-s+
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.82 ptyxis
+  15534 daniel    39  19  776164  46680  38684 S   0.0   1.3   0:00.26 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1158032  23972   9872 S   0.0   0.7   1:38.39 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+    940 root      20   0 1951996  18660   9508 S   0.0   0.5   0:02.11 snapd
+### 2026-11-17 14:37:55
+top - 14:37:56 up  1:12,  1 user,  load average: 0.03, 0.90, 1.41
+Tasks: 209 total,   1 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  5.0 sy,  5.0 ni, 90.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,   2461.1 free,    786.0 used,    388.4 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2612.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165944  57708 S   0.0   4.8   5:56.02 gnome-s+
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.82 ptyxis
+  15534 daniel    39  19  776164  46732  38684 S   0.0   1.3   0:00.27 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1158032  23972   9872 S   0.0   0.7   1:38.42 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+    940 root      20   0 1951996  18660   9508 S   0.0   0.5   0:02.11 snapd
+### 2026-11-17 14:37:57
+top - 14:37:57 up  1:12,  1 user,  load average: 0.03, 0.90, 1.41
+Tasks: 210 total,   2 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 10.0 us, 25.0 sy, 15.0 ni, 30.0 id, 10.0 wa,  0.0 hi, 10.0 si,  0.0 st 
+MiB Mem :   3398.8 total,   2450.9 free,    789.6 used,    395.0 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2609.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165944  57708 S   0.0   4.8   5:56.02 gnome-s+
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.82 ptyxis
+  15534 daniel    39  19  776164  46732  38684 S   0.0   1.3   0:00.29 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1158032  23972   9872 S   0.0   0.7   1:38.48 localse+
+  15592 daniel    20   0   41660  20236  11312 R  50.0   0.6   0:00.10 python3
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:37:58
+top - 14:37:58 up  1:12,  1 user,  load average: 0.03, 0.90, 1.41
+Tasks: 210 total,   2 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 22.2 us, 16.7 sy, 11.1 ni, 22.2 id, 16.7 wa,  0.0 hi, 11.1 si,  0.0 st 
+MiB Mem :   3398.8 total,   2324.4 free,    845.0 used,    466.2 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2553.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165944  57708 S   0.0   4.8   5:56.03 gnome-s+
+  15592 daniel    20   0  201296 105472  32660 R  90.9   3.0   0:00.70 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.83 ptyxis
+  15534 daniel    39  19  776164  46748  38684 S   0.0   1.3   0:00.31 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1158032  23972   9872 S   0.0   0.7   1:38.54 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:37:59
+top - 14:37:59 up  1:12,  1 user,  load average: 0.10, 0.90, 1.41
+Tasks: 210 total,   2 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 43.8 us, 12.5 sy,  6.2 ni, 37.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,   2231.7 free,    864.4 used,    539.4 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2534.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165944  57708 S   0.0   4.8   5:56.03 gnome-s+
+  15592 daniel    20   0  155184  97532  32724 R  90.9   2.8   0:01.97 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.84 ptyxis
+  15534 daniel    39  19  776164  46760  38684 S   0.0   1.3   0:00.33 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  23992   9872 S   0.0   0.7   1:38.58 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:00
+top - 14:38:01 up  1:12,  1 user,  load average: 0.10, 0.90, 1.41
+Tasks: 210 total,   3 running, 207 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy, 10.0 ni, 90.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,   2131.8 free,    876.4 used,    627.4 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2522.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165956  57708 S   0.0   4.8   5:56.05 gnome-s+
+  15592 daniel    20   0  204680 104508  32724 R  95.2   3.0   0:03.33 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.84 ptyxis
+  15534 daniel    39  19  776164  46796  38684 R   4.8   1.3   0:00.34 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24004   9872 S   9.5   0.7   1:38.63 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:02
+top - 14:38:02 up  1:12,  1 user,  load average: 0.10, 0.90, 1.41
+Tasks: 210 total,   3 running, 207 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  9.1 us,  0.0 sy,  9.1 ni, 72.7 id,  0.0 wa,  0.0 hi,  9.1 si,  0.0 st 
+MiB Mem :   3398.8 total,   2027.2 free,    876.6 used,    731.6 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2522.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165956  57708 S   0.0   4.8   5:56.06 gnome-s+
+  15592 daniel    20   0  202076 106380  32724 R 100.0   3.1   0:04.78 python3
+   8891 daniel    20   0 1823764  95524  67820 R   0.0   2.7   0:46.84 ptyxis
+  15534 daniel    39  19  776164  46824  38684 S   0.0   1.3   0:00.36 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24004   9872 S   0.0   0.7   1:38.66 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:03
+top - 14:38:03 up  1:12,  1 user,  load average: 0.10, 0.89, 1.40
+Tasks: 210 total,   2 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us, 10.0 sy,  0.0 ni, 80.0 id,  0.0 wa,  0.0 hi, 10.0 si,  0.0 st 
+MiB Mem :   3398.8 total,   1931.2 free,    876.6 used,    827.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2522.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165960  57708 S   0.0   4.8   5:56.07 gnome-s+
+  15592 daniel    20   0  204396 106088  32724 R 100.0   3.0   0:06.06 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.84 ptyxis
+  15534 daniel    39  19  776164  46836  38684 S   0.0   1.3   0:00.36 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24024   9872 S   0.0   0.7   1:38.71 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:05
+top - 14:38:05 up  1:12,  1 user,  load average: 0.10, 0.89, 1.40
+Tasks: 210 total,   3 running, 207 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  5.3 sy,  0.0 ni, 94.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,   1843.2 free,    876.6 used,    915.6 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2522.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165960  57708 S   0.0   4.8   5:56.07 gnome-s+
+  15592 daniel    20   0  198944 100196  32724 R 100.0   2.9   0:07.43 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  46896  38684 S   0.0   1.3   0:00.38 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24024   9872 S   0.0   0.7   1:38.76 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:06
+top - 14:38:06 up  1:12,  1 user,  load average: 0.10, 0.89, 1.40
+Tasks: 210 total,   2 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  9.5 us,  4.8 sy,  0.0 ni, 81.0 id,  0.0 wa,  0.0 hi,  4.8 si,  0.0 st 
+MiB Mem :   3398.8 total,   1739.2 free,    876.6 used,   1019.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2522.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165960  57708 S   0.0   4.8   5:56.07 gnome-s+
+  15592 daniel    20   0  204368 105692  32724 R 100.0   3.0   0:08.82 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  46912  38684 S   0.0   1.3   0:00.39 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24104   9872 S   0.0   0.7   1:38.79 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:07
+top - 14:38:08 up  1:12,  1 user,  load average: 0.10, 0.89, 1.40
+Tasks: 210 total,   2 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  8.3 us,  8.3 sy,  8.3 ni, 41.7 id,  8.3 wa,  0.0 hi, 25.0 si,  0.0 st 
+MiB Mem :   3398.8 total,   1651.2 free,    876.6 used,   1107.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2522.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165960  57708 S   0.0   4.8   5:56.08 gnome-s+
+  15592 daniel    20   0  198700 103848  32724 R 100.0   3.0   0:10.08 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  46916  38684 S   0.0   1.3   0:00.41 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24112   9872 S   0.0   0.7   1:38.83 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:09
+top - 14:38:09 up  1:12,  1 user,  load average: 0.17, 0.89, 1.40
+Tasks: 210 total,   3 running, 207 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 10.0 us,  0.0 sy, 10.0 ni, 80.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,   1570.7 free,    877.1 used,   1187.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2521.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165960  57708 S   0.0   4.8   5:56.08 gnome-s+
+  15592 daniel    20   0  197136  96340  32724 R 109.1   2.8   0:11.34 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  46956  38684 S   0.0   1.3   0:00.42 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24120   9872 S   0.0   0.7   1:38.89 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:10
+top - 14:38:10 up  1:12,  1 user,  load average: 0.17, 0.89, 1.40
+Tasks: 210 total,   2 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  8.3 sy,  0.0 ni, 83.3 id,  0.0 wa,  0.0 hi,  8.3 si,  0.0 st 
+MiB Mem :   3398.8 total,   1466.7 free,    877.1 used,   1291.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2521.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165892  57708 S   0.0   4.8   5:56.09 gnome-s+
+  15592 daniel    20   0  204508 110148  32724 R 110.0   3.2   0:12.84 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  46960  38684 S   0.0   1.3   0:00.42 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24132   9872 S   0.0   0.7   1:38.93 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:11
+top - 14:38:12 up  1:12,  1 user,  load average: 0.17, 0.89, 1.40
+Tasks: 210 total,   2 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 35.3 us, 23.5 sy,  0.0 ni, 35.3 id,  0.0 wa,  0.0 hi,  5.9 si,  0.0 st 
+MiB Mem :   3398.8 total,   1418.0 free,    861.9 used,   1355.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2536.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165892  57708 S   0.0   4.8   5:56.09 gnome-s+
+  15592 daniel    20   0  201816 103180  32724 R  90.9   3.0   0:14.08 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  46996  38684 S   0.0   1.4   0:00.44 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24136   9872 S   0.0   0.7   1:38.99 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:13
+top - 14:38:13 up  1:12,  1 user,  load average: 0.17, 0.89, 1.40
+Tasks: 210 total,   2 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 31.8 us, 59.1 sy,  9.1 ni,  0.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,   1314.0 free,    894.0 used,   1427.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2504.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165892  57708 S   0.0   4.8   5:56.09 gnome-s+
+  15592 daniel    20   0  202948 103308  32724 R  95.5   3.0   0:15.40 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  47000  38684 S   0.0   1.4   0:00.46 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24140   9872 S   9.1   0.7   1:39.07 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:14
+top - 14:38:14 up  1:12,  1 user,  load average: 0.24, 0.89, 1.39
+Tasks: 210 total,   3 running, 207 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  7.1 us,  7.1 sy,  7.1 ni, 64.3 id,  7.1 wa,  0.0 hi,  7.1 si,  0.0 st 
+MiB Mem :   3398.8 total,   1216.0 free,    887.8 used,   1531.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2510.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165892  57708 S   0.0   4.8   5:56.09 gnome-s+
+  15592 daniel    20   0  155296  97684  32724 R 100.0   2.8   0:16.70 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  47016  38684 S   0.0   1.4   0:00.47 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24156   9872 S   0.0   0.7   1:39.11 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:15
+top - 14:38:16 up  1:12,  1 user,  load average: 0.24, 0.89, 1.39
+Tasks: 210 total,   3 running, 207 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 30.4 us, 60.9 sy,  8.7 ni,  0.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,   1130.1 free,    894.1 used,   1611.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2504.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165892  57708 S   0.0   4.8   5:56.09 gnome-s+
+  15592 daniel    20   0  203900 109204  32724 D  83.3   3.1   0:17.98 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  47020  38684 S   0.0   1.4   0:00.49 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24160   9872 S   8.3   0.7   1:39.17 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:17
+top - 14:38:17 up  1:12,  1 user,  load average: 0.24, 0.89, 1.39
+Tasks: 210 total,   2 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 42.1 us, 21.1 sy,  5.3 ni, 15.8 id,  5.3 wa,  0.0 hi, 10.5 si,  0.0 st 
+MiB Mem :   3398.8 total,   1074.2 free,    885.6 used,   1675.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2513.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165892  57708 S   0.0   4.8   5:56.09 gnome-s+
+  15592 daniel    20   0  208560 112772  32724 R 110.0   3.2   0:19.21 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  47020  38684 S   0.0   1.4   0:00.51 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24164   9872 S   0.0   0.7   1:39.24 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:18
+top - 14:38:18 up  1:12,  1 user,  load average: 0.24, 0.89, 1.39
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 43.8 us, 18.8 sy,  0.0 ni, 31.2 id,  0.0 wa,  0.0 hi,  6.2 si,  0.0 st 
+MiB Mem :   3398.8 total,   1004.6 free,    883.1 used,   1747.8 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2515.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165892  57708 S   0.0   4.8   5:56.09 gnome-s+
+  15592 daniel    20   0  155184  97580  32724 R 110.0   2.8   0:20.45 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  47068  38684 S   0.0   1.4   0:00.53 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24168   9872 S   0.0   0.7   1:39.31 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:19
+top - 14:38:20 up  1:12,  1 user,  load average: 0.30, 0.89, 1.39
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.6 us,  0.0 sy,  0.0 ni, 88.9 id,  0.0 wa,  0.0 hi,  5.6 si,  0.0 st 
+MiB Mem :   3398.8 total,    941.8 free,    857.9 used,   1835.8 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2540.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165892  57708 S   0.0   4.8   5:56.09 gnome-s+
+  15592 daniel    20   0  202320 100636  32724 R 100.0   2.9   0:21.82 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  47076  38684 S   0.0   1.4   0:00.54 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24172   9872 S   5.6   0.7   1:39.35 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:21
+top - 14:38:21 up  1:12,  1 user,  load average: 0.30, 0.89, 1.39
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  6.2 us,  6.2 sy,  6.2 ni, 56.2 id,  6.2 wa,  0.0 hi, 18.8 si,  0.0 st 
+MiB Mem :   3398.8 total,    862.8 free,    829.5 used,   1931.2 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2569.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165892  57708 S   0.0   4.8   5:56.09 gnome-s+
+  15592 daniel    20   0  196620  96332  32724 R 108.3   2.8   0:23.13 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  47076  38684 S   0.0   1.4   0:00.56 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24176   9872 S   8.3   0.7   1:39.40 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:22
+top - 14:38:22 up  1:12,  1 user,  load average: 0.30, 0.89, 1.39
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 10.0 us,  0.0 sy, 10.0 ni, 80.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,    773.5 free,    830.7 used,   2019.3 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2568.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165892  57708 S   0.0   4.8   5:56.09 gnome-s+
+  15592 daniel    20   0  204396 105020  32724 R  90.0   3.0   0:24.37 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  47076  38684 S   0.0   1.4   0:00.57 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24180   9872 S   0.0   0.7   1:39.44 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:23
+top - 14:38:23 up  1:12,  1 user,  load average: 0.35, 0.89, 1.39
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 18.2 us,  9.1 sy,  0.0 ni, 54.5 id,  9.1 wa,  0.0 hi,  9.1 si,  0.0 st 
+MiB Mem :   3398.8 total,    713.4 free,    829.2 used,   2080.9 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2569.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165892  57708 S   0.0   4.8   5:56.09 gnome-s+
+  15592 daniel    20   0  203756 104436  32724 R 106.7   3.0   0:25.68 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  47100  38680 S   6.7   1.4   0:00.58 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24184   9872 S   0.0   0.7   1:39.49 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:24
+top - 14:38:25 up  1:12,  1 user,  load average: 0.35, 0.89, 1.39
+Tasks: 211 total,   3 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  9.1 us,  0.0 sy,  0.0 ni, 81.8 id,  0.0 wa,  0.0 hi,  9.1 si,  0.0 st 
+MiB Mem :   3398.8 total,    621.2 free,    832.9 used,   2169.4 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2565.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165892  57708 S   0.0   4.8   5:56.09 gnome-s+
+  15592 daniel    20   0  201296 104392  32724 R 105.0   3.0   0:27.05 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  47172  38680 S   0.0   1.4   0:00.59 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24188   9872 S   0.0   0.7   1:39.55 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:26
+top - 14:38:26 up  1:12,  1 user,  load average: 0.35, 0.89, 1.39
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 17.4 us, 34.8 sy,  0.0 ni,  0.0 id, 17.4 wa,  0.0 hi, 30.4 si,  0.0 st 
+MiB Mem :   3398.8 total,    556.3 free,    851.6 used,   2215.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2547.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165888  57704 S   0.0   4.8   5:56.09 gnome-s+
+  15592 daniel    20   0  208060 112296  32724 R  68.8   3.2   0:28.43 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  47160  38668 S   0.0   1.4   0:00.61 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24196   9872 S  12.5   0.7   1:39.65 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:27
+top - 14:38:28 up  1:12,  1 user,  load average: 0.35, 0.89, 1.39
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 15.8 us, 10.5 sy, 10.5 ni, 36.8 id, 15.8 wa,  0.0 hi, 10.5 si,  0.0 st 
+MiB Mem :   3398.8 total,    568.2 free,    823.7 used,   2231.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2575.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165888  57704 S   0.0   4.8   5:56.09 gnome-s+
+  15592 daniel    20   0  208560 111980  32724 R 109.1   3.2   0:29.77 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  47132  38636 S   0.0   1.4   0:00.63 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24268   9872 S   0.0   0.7   1:39.72 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:29
+top - 14:38:29 up  1:12,  1 user,  load average: 0.41, 0.90, 1.39
+Tasks: 211 total,   3 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 26.7 us, 13.3 sy,  0.0 ni, 40.0 id, 13.3 wa,  0.0 hi,  6.7 si,  0.0 st 
+MiB Mem :   3398.8 total,    479.9 free,    823.6 used,   2320.0 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2575.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165888  57704 S   0.0   4.8   5:56.09 gnome-s+
+  15592 daniel    20   0  209480 112580  32724 R 100.0   3.2   0:31.21 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  47176  38636 S   0.0   1.4   0:00.63 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24280   9872 S   0.0   0.7   1:39.77 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:30
+top - 14:38:30 up  1:12,  1 user,  load average: 0.41, 0.90, 1.39
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  6.7 sy,  0.0 ni, 86.7 id,  0.0 wa,  0.0 hi,  6.7 si,  0.0 st 
+MiB Mem :   3398.8 total,    383.6 free,    823.6 used,   2416.3 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2575.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165888  57704 S   0.0   4.8   5:56.09 gnome-s+
+  15592 daniel    20   0  202860 106248  32724 R  95.0   3.1   0:32.61 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.86 ptyxis
+  15534 daniel    39  19  776324  47180  38636 S   0.0   1.4   0:00.65 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24284   9872 S   0.0   0.7   1:39.82 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:32
+top - 14:38:32 up  1:12,  1 user,  load average: 0.41, 0.90, 1.39
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 11.1 us, 16.7 sy,  5.6 ni, 55.6 id,  5.6 wa,  0.0 hi,  5.6 si,  0.0 st 
+MiB Mem :   3398.8 total,    324.9 free,    823.4 used,   2475.3 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2575.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165888  57704 S   0.0   4.8   5:56.10 gnome-s+
+  15592 daniel    20   0  155180  97604  32724 R  90.9   2.8   0:33.97 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.87 ptyxis
+  15534 daniel    39  19  776324  47176  38620 S   0.0   1.4   0:00.66 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24292   9872 S   0.0   0.7   1:39.87 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:33
+top - 14:38:33 up  1:12,  1 user,  load average: 0.41, 0.90, 1.39
+Tasks: 211 total,   3 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 28.6 us, 14.3 sy,  7.1 ni, 28.6 id,  7.1 wa,  0.0 hi, 14.3 si,  0.0 st 
+MiB Mem :   3398.8 total,    279.5 free,    825.9 used,   2518.1 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2572.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165888  57704 R  15.4   4.8   5:56.16 gnome-s+
+  15592 daniel    20   0  201272  99440  32724 R 100.0   2.9   0:35.29 python3
+   8891 daniel    20   0 1823764  95524  67820 S   7.7   2.7   0:46.90 ptyxis
+  15534 daniel    39  19  776324  47160  38600 S   0.0   1.4   0:00.68 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24300   9872 S   0.0   0.7   1:39.95 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:34
+top - 14:38:34 up  1:12,  1 user,  load average: 0.45, 0.90, 1.38
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  8.3 us,  8.3 sy,  8.3 ni, 58.3 id,  0.0 wa,  0.0 hi, 16.7 si,  0.0 st 
+MiB Mem :   3398.8 total,    190.6 free,    826.3 used,   2606.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2572.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165936  57704 S   0.0   4.8   5:56.61 gnome-s+
+  15592 daniel    20   0  155464  97612  32724 R 107.7   2.8   0:36.63 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.91 ptyxis
+  15534 daniel    39  19  776324  47164  38600 S   0.0   1.4   0:00.69 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24304   9872 S   0.0   0.7   1:39.99 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:36
+top - 14:38:36 up  1:12,  1 user,  load average: 0.45, 0.90, 1.38
+Tasks: 211 total,   3 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 50.0 sy,  0.0 ni,  0.0 id,  0.0 wa,  0.0 hi, 16.7 si,  0.0 st 
+MiB Mem :   3398.8 total,    165.3 free,    827.8 used,   2630.5 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2571.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165980  57704 S  92.9   4.8   5:57.32 gnome-s+
+  15592 daniel    20   0  154824  97256  32724 R  92.9   2.8   0:37.96 python3
+   8891 daniel    20   0 1823764  95524  67820 R   0.0   2.7   0:46.91 ptyxis
+  15534 daniel    39  19  776496  47240  38596 S   0.0   1.4   0:00.69 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24304   9872 S   7.1   0.7   1:40.03 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:37
+top - 14:38:37 up  1:12,  1 user,  load average: 0.45, 0.90, 1.38
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 42.1 us, 15.8 sy,  5.3 ni,  0.0 id,  5.3 wa,  0.0 hi, 31.6 si,  0.0 st 
+MiB Mem :   3398.8 total,    150.4 free,    831.5 used,   2641.6 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2567.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165980  57704 S   0.0   4.8   5:57.48 gnome-s+
+  15592 daniel    20   0  208556 112520  32724 R  90.9   3.2   0:39.18 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.92 ptyxis
+  15534 daniel    39  19  776496  47308  38596 S   9.1   1.4   0:00.73 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24320   9872 S   9.1   0.7   1:40.14 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:38
+top - 14:38:38 up  1:12,  1 user,  load average: 0.45, 0.90, 1.38
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.0 us, 22.2 sy,  0.0 ni,  0.0 id,  5.6 wa,  0.0 hi, 22.2 si,  0.0 st 
+MiB Mem :   3398.8 total,    141.6 free,    831.2 used,   2650.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2567.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165980  57704 S   0.0   4.8   5:57.48 gnome-s+
+  15592 daniel    20   0  204392 108392  32724 R  91.7   3.1   0:40.46 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.93 ptyxis
+  15534 daniel    39  19  776496  47324  38596 S   0.0   1.4   0:00.74 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24324   9872 S   0.0   0.7   1:40.21 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:39
+top - 14:38:40 up  1:12,  1 user,  load average: 0.90, 0.98, 1.41
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 43.8 us,  6.2 sy,  6.2 ni, 31.2 id,  6.2 wa,  0.0 hi,  6.2 si,  0.0 st 
+MiB Mem :   3398.8 total,    125.1 free,    829.8 used,   2668.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2569.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165980  57704 S   0.0   4.8   5:57.49 gnome-s+
+  15592 daniel    20   0  202312 100620  32724 R  90.9   2.9   0:41.72 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.93 ptyxis
+  15534 daniel    39  19  776496  47332  38596 S   0.0   1.4   0:00.76 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24332   9872 S   0.0   0.7   1:40.27 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:41
+top - 14:38:41 up  1:12,  1 user,  load average: 0.90, 0.98, 1.41
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 41.2 us, 11.8 sy,  0.0 ni, 41.2 id,  0.0 wa,  0.0 hi,  5.9 si,  0.0 st 
+MiB Mem :   3398.8 total,    146.8 free,    834.0 used,   2642.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2564.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165980  57704 S   0.0   4.8   5:57.49 gnome-s+
+  15592 daniel    20   0  202320 102152  32724 R  90.9   2.9   0:42.97 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.93 ptyxis
+  15534 daniel    39  19  776496  47336  38596 S   0.0   1.4   0:00.77 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24336   9872 S   0.0   0.7   1:40.33 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:42
+top - 14:38:42 up  1:12,  1 user,  load average: 0.90, 0.98, 1.41
+Tasks: 211 total,   5 running, 206 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  8.3 sy,  0.0 ni, 83.3 id,  0.0 wa,  0.0 hi,  8.3 si,  0.0 st 
+MiB Mem :   3398.8 total,    142.4 free,    826.5 used,   2654.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2572.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165984  57704 R   9.1   4.8   5:57.50 gnome-s+
+  15592 daniel    20   0  204400 106840  32724 R  90.9   3.1   0:44.23 python3
+   8891 daniel    20   0 1823764  95524  67820 S   9.1   2.7   0:46.94 ptyxis
+  15534 daniel    39  19  776496  47336  38596 R   0.0   1.4   0:00.78 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24344   9872 R   9.1   0.7   1:40.38 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:43
+top - 14:38:43 up  1:12,  1 user,  load average: 0.99, 1.00, 1.41
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 10.0 us,  0.0 sy,  0.0 ni, 90.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,    140.3 free,    824.5 used,   2658.7 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2574.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165984  57704 S   9.1   4.8   5:57.51 gnome-s+
+  15592 daniel    20   0  153900  96344  32724 R 100.0   2.8   0:45.49 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.94 ptyxis
+  15534 daniel    39  19  776496  47364  38596 S   0.0   1.4   0:00.81 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24396   9872 S   0.0   0.7   1:40.45 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:45
+top - 14:38:45 up  1:12,  1 user,  load average: 0.99, 1.00, 1.41
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  9.1 us,  0.0 sy,  9.1 ni, 72.7 id,  0.0 wa,  0.0 hi,  9.1 si,  0.0 st 
+MiB Mem :   3398.8 total,    163.1 free,    831.3 used,   2629.1 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2567.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165980  57704 S   0.0   4.8   5:57.52 gnome-s+
+  15592 daniel    20   0  204680 109308  32664 R 100.0   3.1   0:46.81 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.94 ptyxis
+  15534 daniel    39  19  776496  47368  38596 S   0.0   1.4   0:00.82 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24400   9872 S   0.0   0.7   1:40.52 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:46
+top - 14:38:46 up  1:12,  1 user,  load average: 0.99, 1.00, 1.41
+Tasks: 211 total,   3 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 16.7 us,  8.3 sy,  8.3 ni, 58.3 id,  0.0 wa,  0.0 hi,  8.3 si,  0.0 st 
+MiB Mem :   3398.8 total,    135.8 free,    830.7 used,   2657.1 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2568.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165980  57704 S   0.0   4.8   5:57.53 gnome-s+
+  15592 daniel    20   0  202332 106664  32664 R  81.8   3.1   0:48.19 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.95 ptyxis
+  15534 daniel    39  19  776496  47404  38596 S   0.0   1.4   0:00.84 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24432   9872 S   0.0   0.7   1:40.59 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:47
+top - 14:38:48 up  1:13,  1 user,  load average: 0.99, 1.00, 1.41
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 10.0 us, 10.0 sy,  5.0 ni, 75.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,    165.7 free,    827.1 used,   2630.8 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2571.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165980  57704 S   0.0   4.8   5:57.53 gnome-s+
+  15592 daniel    20   0  208556 111924  32580 R  91.7   3.2   0:49.53 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.95 ptyxis
+  15534 daniel    39  19  776496  47404  38596 S   0.0   1.4   0:00.87 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24436   9872 S   0.0   0.7   1:40.67 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:49
+top - 14:38:49 up  1:13,  1 user,  load average: 0.99, 1.00, 1.41
+Tasks: 211 total,   3 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 11.1 us, 11.1 sy,  0.0 ni, 55.6 id, 22.2 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,    151.6 free,    829.1 used,   2642.8 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2569.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165980  57704 S   0.0   4.8   5:57.53 gnome-s+
+  15592 daniel    20   0  155176  97484  32580 R 100.0   2.8   0:50.81 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.95 ptyxis
+  15534 daniel    39  19  776496  47404  38596 S   0.0   1.4   0:00.89 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24444   9872 S   0.0   0.7   1:40.72 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:50
+top - 14:38:50 up  1:13,  1 user,  load average: 0.99, 1.00, 1.41
+Tasks: 211 total,   3 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 14.3 us, 14.3 sy,  7.1 ni, 35.7 id,  7.1 wa,  0.0 hi, 21.4 si,  0.0 st 
+MiB Mem :   3398.8 total,    147.9 free,    827.0 used,   2648.5 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2571.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165980  57704 S   0.0   4.8   5:57.53 gnome-s+
+  15592 daniel    20   0  202320 100600  32328 R  90.9   2.9   0:52.06 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.95 ptyxis
+  15534 daniel    39  19  776496  47408  38596 S   0.0   1.4   0:00.89 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24452   9872 S   0.0   0.7   1:40.80 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:51
+top - 14:38:51 up  1:13,  1 user,  load average: 0.99, 1.00, 1.41
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us, 10.0 sy,  0.0 ni, 90.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,    173.9 free,    827.3 used,   2622.3 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2571.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165980  57704 S   0.0   4.8   5:57.53 gnome-s+
+  15592 daniel    20   0  202320 100936  32328 R 100.0   2.9   0:53.34 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.95 ptyxis
+  15534 daniel    39  19  776496  47428  38596 S   0.0   1.4   0:00.91 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24456   9872 S   0.0   0.7   1:40.86 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:52
+top - 14:38:53 up  1:13,  1 user,  load average: 0.99, 1.00, 1.41
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us, 11.1 sy,  0.0 ni, 88.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,    175.1 free,    826.1 used,   2622.3 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2572.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165980  57704 S   0.0   4.8   5:57.53 gnome-s+
+  15592 daniel    20   0  204400 104044  32328 R  90.9   3.0   0:54.59 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.95 ptyxis
+  15534 daniel    39  19  776496  47428  38596 S   0.0   1.4   0:00.92 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24512   9872 S   0.0   0.7   1:40.90 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:54
+top - 14:38:54 up  1:13,  1 user,  load average: 0.99, 1.00, 1.41
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  6.7 us, 13.3 sy,  6.7 ni, 40.0 id,  6.7 wa,  0.0 hi, 26.7 si,  0.0 st 
+MiB Mem :   3398.8 total,    170.4 free,    826.8 used,   2626.3 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2571.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165980  57704 S   0.0   4.8   5:57.53 gnome-s+
+  15592 daniel    20   0  204396 107236  32328 R  96.2   3.1   0:56.00 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.95 ptyxis
+  15534 daniel    39  19  776496  47432  38596 S   0.0   1.4   0:00.94 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24524   9872 S   0.0   0.7   1:40.96 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:55
+top - 14:38:55 up  1:13,  1 user,  load average: 0.99, 1.00, 1.41
+Tasks: 211 total,   3 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 10.0 us,  0.0 sy, 10.0 ni, 70.0 id,  0.0 wa,  0.0 hi, 10.0 si,  0.0 st 
+MiB Mem :   3398.8 total,    153.0 free,    824.2 used,   2646.3 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2574.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165980  57704 S   0.0   4.8   5:57.53 gnome-s+
+  15592 daniel    20   0  198700 101580  32328 R 100.0   2.9   0:57.31 python3
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.95 ptyxis
+  15534 daniel    39  19  776496  47432  38596 S   0.0   1.4   0:00.95 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24532   9872 S   0.0   0.7   1:41.00 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:57
+top - 14:38:57 up  1:13,  1 user,  load average: 0.99, 1.00, 1.41
+Tasks: 211 total,   2 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  9.1 us,  0.0 sy,  9.1 ni, 72.7 id,  0.0 wa,  0.0 hi,  9.1 si,  0.0 st 
+MiB Mem :   3398.8 total,    179.8 free,    825.4 used,   2618.3 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2573.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165980  57704 S   0.0   4.8   5:57.53 gnome-s+
+   8891 daniel    20   0 1823764  95524  67820 S   0.0   2.7   0:46.95 ptyxis
+  15592 daniel    20   0  154964  91492  32328 R 109.1   2.6   0:58.63 python3
+  15534 daniel    39  19  776496  47432  38596 S   0.0   1.4   0:00.96 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24532   9872 S   0.0   0.7   1:41.05 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+### 2026-11-17 14:38:58
+top - 14:38:58 up  1:13,  1 user,  load average: 0.99, 1.00, 1.41
+Tasks: 210 total,   2 running, 208 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us, 10.0 sy,  5.0 ni, 85.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,    182.5 free,    800.1 used,   2641.1 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2598.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165980  57704 S  10.0   4.8   5:57.57 gnome-s+
+   8891 daniel    20   0 1823764  95600  67868 R   0.0   2.7   0:46.97 ptyxis
+  15534 daniel    39  19  776496  47432  38596 S   0.0   1.4   0:00.99 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24800  10128 S   0.0   0.7   1:41.15 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+    940 root      20   0 1951996  18660   9508 S   0.0   0.5   0:02.12 snapd
+### 2026-11-17 14:38:59
+top - 14:38:59 up  1:13,  1 user,  load average: 0.91, 0.98, 1.40
+Tasks: 210 total,   1 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us, 11.1 sy,  0.0 ni, 88.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,    181.3 free,    801.2 used,   2641.1 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2597.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165984  57704 S   0.0   4.8   5:57.66 gnome-s+
+   8891 daniel    20   0 1823764  95600  67868 S   0.0   2.7   0:47.01 ptyxis
+  15534 daniel    39  19  776496  47440  38596 S   0.0   1.4   0:01.01 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1947 daniel    39  19 1166228  24800  10128 S   0.0   0.7   1:41.20 localse+
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+    940 root      20   0 1951996  18660   9508 S   0.0   0.5   0:02.12 snapd
+### 2026-11-17 14:39:00
+top - 14:39:01 up  1:13,  1 user,  load average: 0.91, 0.98, 1.40
+Tasks: 210 total,   1 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  5.6 ni, 88.9 id,  0.0 wa,  0.0 hi,  5.6 si,  0.0 st 
+MiB Mem :   3398.8 total,    181.3 free,    801.2 used,   2641.1 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2597.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4029824 165984  57704 S   0.0   4.8   5:57.72 gnome-s+
+   8891 daniel    20   0 1823764  95600  67868 S   0.0   2.7   0:47.04 ptyxis
+  15534 daniel    39  19  776496  47440  38596 S   0.0   1.4   0:01.03 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+   1947 daniel    39  19 1166228  24844  10128 S   0.0   0.7   1:41.26 localse+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+    940 root      20   0 1951996  18660   9508 S   0.0   0.5   0:02.12 snapd
+### 2026-11-17 14:39:02
+top - 14:39:02 up  1:13,  1 user,  load average: 0.91, 0.98, 1.40
+Tasks: 210 total,   1 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.0 us, 10.0 sy,  5.0 ni, 75.0 id,  0.0 wa,  0.0 hi,  5.0 si,  0.0 st 
+MiB Mem :   3398.8 total,    181.2 free,    801.2 used,   2641.1 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2597.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165988  57704 S   0.0   4.8   5:57.73 gnome-s+
+   8891 daniel    20   0 1823764  95600  67868 S   0.0   2.7   0:47.05 ptyxis
+  15534 daniel    39  19  776496  47456  38596 S   0.0   1.4   0:01.05 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+   1947 daniel    39  19 1166228  24860  10128 S   0.0   0.7   1:41.34 localse+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+    940 root      20   0 1951996  18660   9508 S   0.0   0.5   0:02.12 snapd
+### 2026-11-17 14:39:03
+top - 14:39:03 up  1:13,  1 user,  load average: 0.91, 0.98, 1.40
+Tasks: 210 total,   1 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.3 us, 15.8 sy, 10.5 ni, 57.9 id,  5.3 wa,  0.0 hi,  5.3 si,  0.0 st 
+MiB Mem :   3398.8 total,    181.2 free,    801.3 used,   2641.1 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2597.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165988  57704 S  10.0   4.8   5:57.79 gnome-s+
+   8891 daniel    20   0 1823764  95672  67932 S  10.0   2.7   0:47.07 ptyxis
+  15534 daniel    39  19  776680  47712  38596 S   0.0   1.4   0:01.08 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+   1947 daniel    39  19 1166228  24888  10128 S   0.0   0.7   1:41.42 localse+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+    940 root      20   0 1951996  18660   9508 S   0.0   0.5   0:02.12 snapd
+### 2026-11-17 14:39:04
+top - 14:39:04 up  1:13,  1 user,  load average: 0.84, 0.97, 1.39
+Tasks: 210 total,   1 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.8 us, 14.3 sy,  4.8 ni, 71.4 id,  0.0 wa,  0.0 hi,  4.8 si,  0.0 st 
+MiB Mem :   3398.8 total,    177.2 free,    805.2 used,   2641.1 buff/cache     
+MiB Swap:   3910.0 total,   3096.7 free,    813.3 used.   2593.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4037984 165988  57704 S   9.1   4.8   5:57.87 gnome-s+
+   8891 daniel    20   0 1823764  95672  67932 S   0.0   2.7   0:47.10 ptyxis
+  15534 daniel    39  19  776680  47864  38596 S   0.0   1.4   0:01.11 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+   1947 daniel    39  19 1166228  24904  10128 S   0.0   0.7   1:41.50 localse+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+    940 root      20   0 1951996  18660   9508 S   0.0   0.5   0:02.12 snapd
+### 2026-11-17 14:39:05
+top - 14:39:06 up  1:13,  1 user,  load average: 0.84, 0.97, 1.39
+Tasks: 210 total,   3 running, 207 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 33.3 sy, 16.7 ni, 16.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,    206.1 free,    776.3 used,   2631.3 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2622.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4026096 155860  47532 R 200.0   4.5   5:59.13 gnome-s+
+   8891 daniel    20   0 1828516  86516  57832 R   0.0   2.5   0:47.32 ptyxis
+  15534 daniel    39  19  776680  47900  38596 S   0.0   1.4   0:01.14 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+   1947 daniel    39  19 1166228  24916  10128 S   0.0   0.7   1:41.56 localse+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+    940 root      20   0 1951996  18660   9508 S   0.0   0.5   0:02.12 snapd
+### 2026-11-17 14:39:07
+top - 14:39:07 up  1:13,  1 user,  load average: 0.84, 0.97, 1.39
+Tasks: 210 total,   1 running, 209 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.9 us, 17.6 sy,  5.9 ni, 70.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   3398.8 total,    206.0 free,    776.4 used,   2631.3 buff/cache     
+MiB Swap:   3910.0 total,   3096.8 free,    813.2 used.   2622.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1551 daniel    20   0 4034416 155904  47572 S  36.4   4.5   5:59.89 gnome-s+
+   8891 daniel    20   0 1820244  86564  57872 S   0.0   2.5   0:47.55 ptyxis
+  15534 daniel    39  19  776680  47900  38596 S   0.0   1.4   0:01.15 localse+
+   2255 daniel    20   0  298116  34800   1524 S   0.0   1.0   0:01.06 VBoxCli+
+   1947 daniel    39  19 1166228  24924  10128 S   0.0   0.7   1:41.62 localse+
+  14380 daniel    20   0 3198688  24844  16388 S   0.0   0.7   0:01.07 gjs
+   1709 daniel    20   0 2662392  19256  15208 S   0.0   0.6   0:00.53 gjs
+    940 root      20   0 1951996  18660   9508 S   0.0   0.5   0:02.12 snapd

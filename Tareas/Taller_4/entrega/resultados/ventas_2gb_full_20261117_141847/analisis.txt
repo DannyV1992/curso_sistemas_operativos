@@ -1,0 +1,2 @@
+PID=12448, modo=full, archivo=/home/daniel/lab_mem/ventas_2gb.csv, filas_limitadas=todas
+DataFrame completo antes del filtro: 8504.7 MiB (memoria estimada)

@@ -1,0 +1,60 @@
+### 2026-11-17 14:03:14
+some avg10=0.18 avg60=0.05 avg300=0.00 total=259705
+full avg10=0.18 avg60=0.03 avg300=0.00 total=184661
+### 2026-11-17 14:03:15
+some avg10=0.18 avg60=0.05 avg300=0.00 total=259705
+full avg10=0.18 avg60=0.03 avg300=0.00 total=184661
+### 2026-11-17 14:03:17
+some avg10=0.14 avg60=0.05 avg300=0.00 total=259705
+full avg10=0.14 avg60=0.03 avg300=0.00 total=184661
+### 2026-11-17 14:03:18
+some avg10=0.12 avg60=0.04 avg300=0.00 total=259705
+full avg10=0.12 avg60=0.02 avg300=0.00 total=184661
+### 2026-11-17 14:03:19
+some avg10=0.12 avg60=0.04 avg300=0.00 total=259705
+full avg10=0.12 avg60=0.02 avg300=0.00 total=184661
+### 2026-11-17 14:03:20
+some avg10=0.09 avg60=0.04 avg300=0.00 total=259705
+full avg10=0.09 avg60=0.02 avg300=0.00 total=184661
+### 2026-11-17 14:03:22
+some avg10=0.09 avg60=0.04 avg300=0.00 total=259705
+full avg10=0.09 avg60=0.02 avg300=0.00 total=184661
+### 2026-11-17 14:03:23
+some avg10=0.08 avg60=0.04 avg300=0.00 total=259705
+full avg10=0.08 avg60=0.02 avg300=0.00 total=184661
+### 2026-11-17 14:03:24
+some avg10=0.06 avg60=0.04 avg300=0.00 total=259705
+full avg10=0.06 avg60=0.02 avg300=0.00 total=184661
+### 2026-11-17 14:03:25
+some avg10=0.06 avg60=0.04 avg300=0.00 total=259705
+full avg10=0.06 avg60=0.02 avg300=0.00 total=184661
+### 2026-11-17 14:03:27
+some avg10=0.05 avg60=0.04 avg300=0.00 total=259705
+full avg10=0.05 avg60=0.02 avg300=0.00 total=184661
+### 2026-11-17 14:03:28
+some avg10=0.04 avg60=0.04 avg300=0.00 total=259705
+full avg10=0.04 avg60=0.02 avg300=0.00 total=184661
+### 2026-11-17 14:03:29
+some avg10=0.04 avg60=0.04 avg300=0.00 total=259705
+full avg10=0.04 avg60=0.02 avg300=0.00 total=184661
+### 2026-11-17 14:03:30
+some avg10=0.03 avg60=0.03 avg300=0.00 total=259705
+full avg10=0.03 avg60=0.02 avg300=0.00 total=184661
+### 2026-11-17 14:03:32
+some avg10=0.03 avg60=0.03 avg300=0.00 total=259705
+full avg10=0.03 avg60=0.02 avg300=0.00 total=184661
+### 2026-11-17 14:03:33
+some avg10=0.02 avg60=0.03 avg300=0.00 total=259705
+full avg10=0.02 avg60=0.02 avg300=0.00 total=184661
+### 2026-11-17 14:03:34
+some avg10=0.02 avg60=0.03 avg300=0.00 total=259705
+full avg10=0.02 avg60=0.02 avg300=0.00 total=184661
+### 2026-11-17 14:03:35
+some avg10=0.02 avg60=0.03 avg300=0.00 total=259705
+full avg10=0.02 avg60=0.02 avg300=0.00 total=184661
+### 2026-11-17 14:03:37
+some avg10=0.01 avg60=0.03 avg300=0.00 total=259705
+full avg10=0.01 avg60=0.02 avg300=0.00 total=184661
+### 2026-11-17 14:03:38
+some avg10=0.01 avg60=0.03 avg300=0.00 total=259705
+full avg10=0.01 avg60=0.02 avg300=0.00 total=184661

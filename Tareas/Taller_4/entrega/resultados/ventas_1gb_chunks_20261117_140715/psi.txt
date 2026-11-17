@@ -1,0 +1,81 @@
+### 2026-11-17 14:07:15
+some avg10=0.00 avg60=0.13 avg300=0.06 total=606816
+full avg10=0.00 avg60=0.13 avg300=0.06 total=525227
+### 2026-11-17 14:07:16
+some avg10=0.00 avg60=0.13 avg300=0.06 total=606816
+full avg10=0.00 avg60=0.13 avg300=0.06 total=525227
+### 2026-11-17 14:07:18
+some avg10=0.00 avg60=0.13 avg300=0.06 total=606816
+full avg10=0.00 avg60=0.13 avg300=0.06 total=525227
+### 2026-11-17 14:07:19
+some avg10=0.00 avg60=0.12 avg300=0.06 total=606816
+full avg10=0.00 avg60=0.12 avg300=0.06 total=525227
+### 2026-11-17 14:07:20
+some avg10=0.00 avg60=0.12 avg300=0.06 total=606816
+full avg10=0.00 avg60=0.12 avg300=0.06 total=525227
+### 2026-11-17 14:07:21
+some avg10=0.00 avg60=0.12 avg300=0.06 total=606816
+full avg10=0.00 avg60=0.12 avg300=0.06 total=525227
+### 2026-11-17 14:07:23
+some avg10=0.00 avg60=0.12 avg300=0.06 total=606816
+full avg10=0.00 avg60=0.12 avg300=0.06 total=525227
+### 2026-11-17 14:07:24
+some avg10=0.00 avg60=0.11 avg300=0.06 total=606816
+full avg10=0.00 avg60=0.11 avg300=0.06 total=525227
+### 2026-11-17 14:07:25
+some avg10=0.00 avg60=0.11 avg300=0.06 total=606816
+full avg10=0.00 avg60=0.11 avg300=0.06 total=525227
+### 2026-11-17 14:07:26
+some avg10=0.00 avg60=0.11 avg300=0.06 total=606816
+full avg10=0.00 avg60=0.11 avg300=0.06 total=525227
+### 2026-11-17 14:07:28
+some avg10=0.00 avg60=0.11 avg300=0.06 total=606816
+full avg10=0.00 avg60=0.11 avg300=0.06 total=525227
+### 2026-11-17 14:07:29
+some avg10=0.00 avg60=0.10 avg300=0.05 total=606816
+full avg10=0.00 avg60=0.10 avg300=0.05 total=525227
+### 2026-11-17 14:07:30
+some avg10=0.00 avg60=0.10 avg300=0.05 total=606816
+full avg10=0.00 avg60=0.10 avg300=0.05 total=525227
+### 2026-11-17 14:07:31
+some avg10=0.00 avg60=0.10 avg300=0.05 total=606816
+full avg10=0.00 avg60=0.10 avg300=0.05 total=525227
+### 2026-11-17 14:07:33
+some avg10=0.00 avg60=0.10 avg300=0.05 total=606816
+full avg10=0.00 avg60=0.10 avg300=0.05 total=525227
+### 2026-11-17 14:07:34
+some avg10=0.00 avg60=0.09 avg300=0.05 total=606816
+full avg10=0.00 avg60=0.09 avg300=0.05 total=525227
+### 2026-11-17 14:07:35
+some avg10=0.00 avg60=0.09 avg300=0.05 total=606816
+full avg10=0.00 avg60=0.09 avg300=0.05 total=525227
+### 2026-11-17 14:07:37
+some avg10=0.00 avg60=0.09 avg300=0.05 total=606816
+full avg10=0.00 avg60=0.09 avg300=0.05 total=525227
+### 2026-11-17 14:07:38
+some avg10=0.00 avg60=0.09 avg300=0.05 total=606816
+full avg10=0.00 avg60=0.09 avg300=0.05 total=525227
+### 2026-11-17 14:07:39
+some avg10=0.00 avg60=0.09 avg300=0.05 total=606816
+full avg10=0.00 avg60=0.09 avg300=0.05 total=525227
+### 2026-11-17 14:07:40
+some avg10=0.00 avg60=0.08 avg300=0.05 total=606816
+full avg10=0.00 avg60=0.08 avg300=0.05 total=525227
+### 2026-11-17 14:07:42
+some avg10=0.00 avg60=0.08 avg300=0.05 total=606816
+full avg10=0.00 avg60=0.08 avg300=0.05 total=525227
+### 2026-11-17 14:07:43
+some avg10=0.00 avg60=0.08 avg300=0.05 total=606816
+full avg10=0.00 avg60=0.08 avg300=0.05 total=525227
+### 2026-11-17 14:07:44
+some avg10=0.00 avg60=0.08 avg300=0.05 total=606816
+full avg10=0.00 avg60=0.08 avg300=0.05 total=525227
+### 2026-11-17 14:07:45
+some avg10=0.00 avg60=0.08 avg300=0.05 total=606816
+full avg10=0.00 avg60=0.08 avg300=0.05 total=525227
+### 2026-11-17 14:07:47
+some avg10=0.00 avg60=0.07 avg300=0.05 total=606816
+full avg10=0.00 avg60=0.07 avg300=0.05 total=525227
+### 2026-11-17 14:07:48
+some avg10=0.00 avg60=0.07 avg300=0.05 total=606816
+full avg10=0.00 avg60=0.07 avg300=0.05 total=525227

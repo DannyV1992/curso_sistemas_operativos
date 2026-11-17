@@ -1,0 +1,18 @@
+PID=12186, modo=chunks, archivo=/home/daniel/lab_mem/ventas_2gb.csv, filas_limitadas=todas
+
+Top 10 por region y categoria (importe acumulado):
+region     categoria  
+Norte      Electronica    1.640723e+10
+Sur        Libros         1.631936e+10
+           Alimentos      1.631902e+10
+Central    Salud          1.630017e+10
+Pacifico   Deportes       1.627265e+10
+Central    Libros         1.626952e+10
+Norte      Deportes       1.624695e+10
+Occidente  Electronica    1.622383e+10
+Caribe     Deportes       1.621731e+10
+Occidente  Salud          1.618086e+10
+
+Filas procesadas: 45,754,872
+Duración: 24.62 s
+RSS máximo del proceso: 111.1 MiB
