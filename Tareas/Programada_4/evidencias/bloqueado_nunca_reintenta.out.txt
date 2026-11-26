@@ -1,0 +1,182 @@
+=== SIMULADOR DE IMPRESORA 3D ===
+
+Seleccione el modo de administración:
+
+1. BLOQUEO (sin cola)
+2. COLA DE ESPERA (FIFO)
+
+Seleccione una opción: 1
+
+Modo seleccionado: BLOQUEO (sin cola). No se puede cambiar durante la simulación.
+
+============================================
+IMPRESORA 3D | Modo: BLOQUEO (sin cola)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 1
+Proceso P1 creado (estado LISTO).
+
+============================================
+IMPRESORA 3D | Modo: BLOQUEO (sin cola)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 1
+Proceso P2 creado (estado LISTO).
+
+============================================
+IMPRESORA 3D | Modo: BLOQUEO (sin cola)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 1
+Proceso P3 creado (estado LISTO).
+
+============================================
+IMPRESORA 3D | Modo: BLOQUEO (sin cola)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 2
+Proceso que solicita la impresora (ej. P1): P1
+P1 solicita impresora -> ASIGNADA
+
+============================================
+IMPRESORA 3D | Modo: BLOQUEO (sin cola)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 2
+Proceso que solicita la impresora (ej. P1): P2
+P2 solicita impresora -> BLOQUEADO
+P2 queda BLOQUEADO; deberá volver a solicitar la impresora.
+
+============================================
+IMPRESORA 3D | Modo: BLOQUEO (sin cola)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 2
+Proceso que solicita la impresora (ej. P1): P3
+P3 solicita impresora -> BLOQUEADO
+P3 queda BLOQUEADO; deberá volver a solicitar la impresora.
+
+============================================
+IMPRESORA 3D | Modo: BLOQUEO (sin cola)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 3
+P1 libera impresora.
+Impresora: LIBRE
+P2 y P3 continúan BLOQUEADOS.
+
+============================================
+IMPRESORA 3D | Modo: BLOQUEO (sin cola)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 2
+Proceso que solicita la impresora (ej. P1): P3
+P3 reintenta -> ASIGNADA
+
+============================================
+IMPRESORA 3D | Modo: BLOQUEO (sin cola)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 4
+
+--- ESTADO DEL SISTEMA ---
+Modo        : BLOQUEO (sin cola)
+Impresora   : OCUPADA por P3
+Bloqueados  : P2
+
+Proceso  Estado
+-------  ---------
+P1       LISTO
+P2       BLOQUEADO
+P3       USANDO
+
+============================================
+IMPRESORA 3D | Modo: BLOQUEO (sin cola)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 3
+P3 libera impresora.
+Impresora: LIBRE
+P2 continúa BLOQUEADO.
+
+============================================
+IMPRESORA 3D | Modo: BLOQUEO (sin cola)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 4
+
+--- ESTADO DEL SISTEMA ---
+Modo        : BLOQUEO (sin cola)
+Impresora   : LIBRE
+Bloqueados  : P2
+
+Proceso  Estado
+-------  ---------
+P1       LISTO
+P2       BLOQUEADO
+P3       LISTO
+
+Aviso: la impresora está LIBRE pero hay procesos BLOQUEADOS que la necesitan (P2). Nadie la asigna: deben reintentar la solicitud.
+
+============================================
+IMPRESORA 3D | Modo: BLOQUEO (sin cola)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 5
+
+--- ESTADÍSTICAS ---
+Solicitudes realizadas                          : 4
+Solicitudes sin impresora inmediata             : 2
+Asignaciones exitosas de la impresora           : 2
+
+Procesos que terminaron la simulación sin obtener la impresora: P2 (BLOQUEADO)
+
+Fin de la simulación.

@@ -1,0 +1,218 @@
+=== SIMULADOR DE IMPRESORA 3D ===
+
+Seleccione el modo de administración:
+
+1. BLOQUEO (sin cola)
+2. COLA DE ESPERA (FIFO)
+
+Seleccione una opción: 7
+Error: '7' no es una opción válida. Escriba 1 o 2.
+Seleccione una opción: abc
+Error: 'abc' no es una opción válida. Escriba 1 o 2.
+Seleccione una opción: 2
+
+Modo seleccionado: COLA DE ESPERA (FIFO). No se puede cambiar durante la simulación.
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 2
+Error: No hay procesos. Cree uno con la opción 1.
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: P1
+Error: 'P1' no es una opción válida. Elija un número del 1 al 5.
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 3
+Error: La impresora ya está libre; no hay nada que liberar.
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 9
+Error: '9' no es una opción válida. Elija un número del 1 al 5.
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: x
+Error: 'x' no es una opción válida. Elija un número del 1 al 5.
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 1
+Proceso P1 creado (estado LISTO).
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 1
+Proceso P2 creado (estado LISTO).
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 2
+Proceso que solicita la impresora (ej. P1): P9
+Error: El proceso 'P9' no existe.
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 2
+Proceso que solicita la impresora (ej. P1): 
+Error: El proceso '' no existe.
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 2
+Proceso que solicita la impresora (ej. P1): p1
+P1 solicita impresora -> ASIGNADA
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 2
+Proceso que solicita la impresora (ej. P1): P1
+Error: P1 ya está usando la impresora; no puede solicitarla de nuevo.
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 2
+Proceso que solicita la impresora (ej. P1): 1
+Error: P1 ya está usando la impresora; no puede solicitarla de nuevo.
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 2
+Proceso que solicita la impresora (ej. P1): P2
+P2 solicita impresora -> EN COLA
+Cola: [P2]
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 2
+Proceso que solicita la impresora (ej. P1): P2
+Error: P2 ya está en la cola de espera; no puede solicitarla de nuevo.
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 3
+P1 libera impresora.
+P2 recibe impresora automáticamente.
+Cola: vacía
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 3
+P2 libera impresora.
+Impresora: LIBRE
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 5
+
+--- ESTADÍSTICAS ---
+Solicitudes realizadas                          : 2
+Solicitudes sin impresora inmediata             : 1
+Asignaciones exitosas de la impresora           : 2
+
+Fin de la simulación.

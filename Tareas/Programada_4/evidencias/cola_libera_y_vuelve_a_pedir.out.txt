@@ -1,0 +1,193 @@
+=== SIMULADOR DE IMPRESORA 3D ===
+
+Seleccione el modo de administración:
+
+1. BLOQUEO (sin cola)
+2. COLA DE ESPERA (FIFO)
+
+Seleccione una opción: 2
+
+Modo seleccionado: COLA DE ESPERA (FIFO). No se puede cambiar durante la simulación.
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 1
+Proceso P1 creado (estado LISTO).
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 1
+Proceso P2 creado (estado LISTO).
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 1
+Proceso P3 creado (estado LISTO).
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 2
+Proceso que solicita la impresora (ej. P1): P1
+P1 solicita impresora -> ASIGNADA
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 2
+Proceso que solicita la impresora (ej. P1): P2
+P2 solicita impresora -> EN COLA
+Cola: [P2]
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 2
+Proceso que solicita la impresora (ej. P1): P3
+P3 solicita impresora -> EN COLA
+Cola: [P2, P3]
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 3
+P1 libera impresora.
+P2 recibe impresora automáticamente.
+Cola: [P3]
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 2
+Proceso que solicita la impresora (ej. P1): P1
+P1 solicita impresora -> EN COLA
+Cola: [P3, P1]
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 4
+
+--- ESTADO DEL SISTEMA ---
+Modo        : COLA DE ESPERA (FIFO)
+Impresora   : OCUPADA por P2
+Cola (FIFO) : [P3, P1]
+
+Proceso  Estado
+-------  ---------
+P1       ESPERANDO
+P2       USANDO
+P3       ESPERANDO
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 3
+P2 libera impresora.
+P3 recibe impresora automáticamente.
+Cola: [P1]
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 3
+P3 libera impresora.
+P1 recibe impresora automáticamente.
+Cola: vacía
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 4
+
+--- ESTADO DEL SISTEMA ---
+Modo        : COLA DE ESPERA (FIFO)
+Impresora   : OCUPADA por P1
+Cola (FIFO) : vacía
+
+Proceso  Estado
+-------  ---------
+P1       USANDO
+P2       LISTO
+P3       LISTO
+
+============================================
+IMPRESORA 3D | Modo: COLA DE ESPERA (FIFO)
+============================================
+1. Crear un proceso
+2. Solicitar impresora
+3. Liberar impresora
+4. Mostrar estado del sistema
+5. Salir
+Opción: 5
+
+--- ESTADÍSTICAS ---
+Solicitudes realizadas                          : 4
+Solicitudes sin impresora inmediata             : 3
+Asignaciones exitosas de la impresora           : 4
+P1 seguía usando la impresora al salir.
+
+Fin de la simulación.
