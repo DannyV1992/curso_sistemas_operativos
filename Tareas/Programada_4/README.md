@@ -62,6 +62,12 @@ Un proceso `USANDO` o `ESPERANDO` no puede volver a solicitar la impresora (el p
 - **Orden en la cola:** si un proceso libera la impresora y la vuelve a pedir mientras otros esperan, entra al final de la cola.
 - **Al salir** se listan los procesos que se quedaron sin obtener la impresora (bloqueados o en cola).
 
+## Nota: proceso bloqueado vs. trabajo en cola (*spooling*)
+
+En clase se explicó el modo COLA como la cola de impresión (*spooling*): el proceso **no se bloquea**, su trabajo queda encolado y el proceso sigue ejecutándose. El enunciado, en cambio, pide que el proceso pase al estado `ESPERANDO` mientras está en la cola FIFO y lo reciba automáticamente al liberarse la impresora. Esta implementación sigue el enunciado, porque es lo que define los estados y la rúbrica.
+
+La diferencia de fondo entre los dos modos se mantiene igual: en BLOQUEO nadie atiende al proceso rechazado y este debe reintentar por su cuenta; en COLA el sistema guarda la solicitud y la atiende solo, en orden de llegada. El estado `ESPERANDO` representa el trabajo pendiente en la cola. La solicitud ya está registrada, a diferencia de `BLOQUEADO`, donde no hay nada registrado.
+
 ## Organización del código (`impresora.py`)
 
 | Función / clase | Responsabilidad |
